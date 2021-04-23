@@ -1,0 +1,48 @@
+/* ================Main================== */
+body {
+    margin: 0 5%;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ================Navbar================== */
+.navbar-brand {
+    display:flex;
+    margin-left: 1em;
+}
+
+.navbar-bottom {
+    background-color: #333645;
+    color: white;
+    display: block;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    word-wrap: break-word;
+}
+
+
+.item-1,
+.item-2,
+.item-3,
+.item-4,
+.item-5,
+.item-6 {
+    padding: ;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+/* ================Media================== */
+
+@media  {
+
+}
