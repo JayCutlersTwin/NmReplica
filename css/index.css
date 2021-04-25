@@ -1,31 +1,87 @@
 /* ================Main================== */
 body {
-    margin: 0 5%;
+    font-size: 1rem;
+    font-family: sans-serif;
+}
+
+.structure {
+    margin: 0 auto;
+    width: 85%;
+    background-color: #fff;
+
+}
+small {
+    display: block;
+}
+
+ul {
+    list-style-type: none;
 }
 
 
-
-
-
-
-
-
-
-
-
 /* ================Navbar================== */
-.navbar-brand {
-    display:flex;
-    margin-left: 1em;
+
+.main-header {
+    text-align: center;
+
+}
+
+.logo-con {
+    display: block;
+    width:auto;
+    padding: 20px;
+}
+.navbar-logo {
+    max-width: 100%
+    height:auto;
+    display:block;
+    margin: 10px auto;
+    padding: 10px 20px
+    float: left;
+}
+
+.telephone-con {
+    display: block;
 }
 
 .navbar-bottom {
     background-color: #333645;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows:1;
+    justify-content: center;
+
+
+}
+.navbar-bottom a {
+    display:block;
     color: white;
-    display: block;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    word-wrap: break-word;
+    max-width: 100%;
+    text-decoration: none;
+}
+
+.navbar-bottom a:hover{
+    color: white;
+}
+
+.item-1:hover {
+    background-color: #79539a;
+}
+
+.item-2:hover {
+    background-color: #286ADB;
+}
+.item-3:hover {
+    background-color: #d44645;
+}
+.item-4:hover {
+    background-color: #526781;
+}
+.item-5:hover {
+    background-color: #25a25a;
+}
+.item-6:hover {
+    background-color: #DE093F;
 }
 
 
@@ -35,14 +91,113 @@ body {
 .item-4,
 .item-5,
 .item-6 {
-    padding: ;
+    padding: 30px 30px;
     text-align: center;
     text-transform: uppercase;
+    text-decoration: none;
+    /* border-right: .3px solid #D3D3D3;
+    border-left: 3px solid #424242; */
+    border-bottom: .5px solid white;
+    box-shadow: 1px 0px 0px 0px #666666;
+}
+
+/* ================Banner================== */
+
+#banner-img{
+    background: url("images/banner.jpg") no-repeat center fixed;
+    background-size: cover;
+    width: 100%;
+    height:auto;
+}
+
+.banner-con {
+
+}
+
+.Banner {
+    max-width: 100%;
+    height: auto;
 }
 
 
-/* ================Media================== */
+/* ================7 blocks================== */
+.seven-blocks {
+    position: absolute;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    height: 3em; */
+}
+.seven-blocks h2{
+    font-size: 1rem;
+}
 
-@media  {
 
+.block-1,
+.block-2,
+.block-3,
+.block-4,
+.block-5,
+.block-6,
+.block-7 {
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 150px;
+    margin: 2%;
+    text-align: center;
+}
+
+
+/* ================ Footer ================== */
+
+footer {
+    max-width: 100%;
+    height: auto;
+    position:;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-row: auto;
+    background-color: #333645;
+    text-align: center;
+}
+
+footer h4{
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+footer ul li {
+    font-size: .65em;
+    text-decoration: none;
+}
+
+
+.f-contact,
+.f-about,
+.f-web,
+.f-social {
+    color: white;
+    padding: 47px 0px 43px;
+}
+
+/* ========================================= */
+/* ========================================= */
+/* ================ Media ================== */
+/* ========================================= */
+/* ========================================= */
+
+
+
+/* ================ Navbar ================== */
+@media  (max-width: 991px){
+    .navbar-bottom-container {
+        display: none;
+    }
+    .navbar-logo {
+
+    }
+    .seven-blocks {
+
+    }
 }
