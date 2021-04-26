@@ -26,7 +26,8 @@ ul {
 
 .container {
     padding: 0px 15px;
-    margin: 0px 34px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 /* ================Navbar================== */
@@ -77,21 +78,43 @@ ul {
 .item-1:hover {
     background-color: #79539a;
 }
+.item-1:hover #item-1 path{
+    fill: white;
+}
 
 .item-2:hover {
     background-color: #286ADB;
 }
+.item-2:hover #item-2 path{
+    fill: white;
+}
+
 .item-3:hover {
     background-color: #d44645;
 }
+.item-3:hover #item-3 path{
+    fill: white;
+}
+
 .item-4:hover {
     background-color: #526781;
 }
+.item-4:hover #item-4 path{
+    fill: white;
+}
+
 .item-5:hover {
     background-color: #25a25a;
 }
+.item-5:hover #item-5 path{
+    fill: white;
+}
+
 .item-6:hover {
     background-color: #DE093F;
+}
+.item-6:hover #item-6 path{
+    fill: white;
 }
 
 
@@ -128,21 +151,32 @@ span icon-1 a:hover {
 
 .col-md-4,
 .col {
-    margin: 0px 15px;
+    padding: 0px 15px;
+}
+
+.block-container {
+    margin: auto;
+    padding: 50px 15px;
 }
 
 .block {
-    border: 1px solid #333645;
+    border: 1px solid #666666;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 35px 0px;
     border-radius: 3px;
     padding: 30px;
     margin-top: 30px;
     text-align: center;
+    color: black;
 }
 
-.block:hover {
+.block:hover,
+.block:hover path {
     color: #fff;
+    fill: white;
+    border: none;
+
 }
+
 
 .block-1:hover {
     background-color: #67809f;
@@ -166,6 +200,95 @@ span icon-1 a:hover {
 .block-7:hover {
     background-color: #926fb1;
 }
+#btn-block-1 {
+    background-color: #67809f;
+    padding: 5px 15px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    color: white;
+    font-size: 1rem;
+}
+#btn-block-2 {
+    background-color: #4183d7;
+    padding: 5px 15px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    color: white;
+}
+#btn-block-3 {
+    background-color: #2ecc71;
+    padding: 5px 15px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    color: white;
+}
+#btn-block-4{
+    background-color: #d64541;
+    padding: 5px 15px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    color: white;
+}
+#btn-block-5 {
+    background-color: #926fb1;
+    padding: 5px 15px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    color: white;
+}
+#btn-block-6 {
+    background-color: #f62459;
+    padding: 5px 15px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    color: white;
+}
+#btn-block-7 {
+    background-color: #926fb1;
+    padding: 5px 15px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    color: white;
+}
+.block:hover #btn-block-1{
+    color: #67809f;
+    background: white;
+}
+.block:hover #btn-block-2 {
+    color: #4183d7;
+    background: white;
+}
+.block:hover #btn-block-3 {
+    color: #2ecc71;
+    background: white;
+}
+.block:hover #btn-block-4 {
+    color: #d64541;
+    background: white;
+}
+.block:hover #btn-block-5 {
+    color: #926fb1;
+    background: white;
+}
+.block:hover #btn-block-6 {
+    color: #f62459;
+    background: white;
+}
+.block:hover #btn-block-7 {
+    color: #926fb1;
+    background: white;
+}
+
+a .block-links {
+    text-decoration: none;
+    color: black;
+}
+
+.block-links:hover {
+    color: white;
+}
+
+
 
 /* ================Netmatters Logo ================== */
 
@@ -182,6 +305,32 @@ span icon-1 a:hover {
 /* ================ News cards ================== */
 
 
+/* ================ Previous Work ================== */
+
+.row-dw {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px 15px;
+    height: 70px;
+    max-width: 100%;
+}
+
+.ford,
+.crane,
+.northdiver,
+.beat {
+    display: inline-flex;
+    padding: 0px 20px;
+    height: 70px;
+    width: 17em;
+}
+
+
+/* ================ News Letter section ================== */
+
+
+
+
 
 /* ================ Footer ================== */
 
@@ -196,13 +345,10 @@ footer {
     text-align: center; */
 }
 .flex-container{
-    position: block;
     max-width: 100%;
     height: auto;
     background-color: #333645;
-    text-align: center;
-    display: flex;
-    flex-direction: row;
+    display: block;
     padding-top: 47px;
     padding-bottom: 43px;
 }
@@ -210,19 +356,26 @@ footer {
 footer h4{
     text-transform: uppercase;
     font-size: 1rem;
+    text-align: center;
 }
 
 footer ul li {
     font-size: .65em;
     text-decoration: none;
+    text-align: left;
 }
 
+.footer-container {
+    margin: 0 -15px;
+    display: flex;
+    justify-content: space-between;
+}
 
 .f-contact,
 .f-about,
 .f-web,
 .f-social {
-    position: relative;
+    display: inline-block;
     color: white;
     padding: 0px 15px;
 }
