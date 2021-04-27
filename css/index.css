@@ -5,14 +5,12 @@ body {
 }
 
 .structure {
-    margin: 0 auto;
-    width: 85%;
+    width: 100%;
     background-color: #fff;
     display: block;
 }
 
 section {
-    /* margin: 50px 0; */
     padding: 50px 0;
 }
 
@@ -33,22 +31,119 @@ ul {
 /* ================Navbar================== */
 
 .main-header {
-    text-align: center;
-
+    vertical-align: middle;
+    position: block;
 }
 
 .logo-con {
-    display: block;
     width:auto;
     padding: 20px;
 }
 .navbar-logo {
-    max-width: 100%
     height:auto;
-    display:block;
+    width: auto;
+    display:inline-block;
     margin: 10px auto;
-    padding: 10px 20px
-    float: left;
+    padding: 10px 20px;
+    float: none;
+}
+
+.searchbar-input {
+    height: 56px;
+    width: auto;
+}
+
+header a {
+    text-decoration: none;
+    display: inline-block;
+}
+.button-support {
+    background-color: #4183d7;
+    padding: 5px 15px;
+    width: 156px;
+    height: 56px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+}
+.button-support:hover {
+    background-color: #2a6ec6;
+}
+
+.button-contact {
+    background-color: #999aa2;
+    padding: 5px 15px;
+    width: 156px;
+    height: 56px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.button-contact:hover {
+    background-color: #84858f;
+}
+
+
+.button-menu {
+    background-color: #333645;
+    padding: 5px 15px;
+    width: 63px;
+    height: 56px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.button-menu:hover {
+    background-color: #22242e;
+}
+
+
+.button-search {
+    background-color: #999aa2;
+    padding: 5px 15px;
+    width: 63px;
+    height: 56px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    text-transform: uppercase;
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.button-search:hover {
+    background-color: #7e808f;
+}
+
+
+.search-bar {
+    width: 300px;
+    display: inline-block;
+}
+
+#icon-support {
+    height: 44px;
+    width: 23px;
+}
+#icon-contact {
+    height: 44px;
+    width: 23px;
+}
+#icon-search {
+    height: 22px;
+    width: 23px;
+}
+#icon-menu {
+    height: 19px;
+    width: 33px;
 }
 
 .telephone-con {
@@ -128,8 +223,6 @@ ul {
     text-align: center;
     text-transform: uppercase;
     text-decoration: none;
-    /* border-right: .3px solid #D3D3D3;
-    border-left: 3px solid #424242; */
     border-bottom: .5px solid white;
     box-shadow: 1px 0px 0px 0px #666666;
 }
@@ -140,10 +233,25 @@ span icon-1 a:hover {
 /* ================Banner================== */
 
 #banner-img{
-    background: url("images/banner.jpg") no-repeat center fixed;
+    display: block;
+    background: url("images/banner.jpg") no-repeat center relative;
     background-size: cover;
     width: 100%;
     height:auto;
+}
+
+
+.banner-text-con {
+    position: relative;
+    display: block;
+    margin: 25px;
+}
+.large-readmore {
+    padding: 15px;
+    color: white;
+    background-color: black;
+    border: 1px solid green;
+    border-radius: 3px;
 }
 
 
@@ -152,6 +260,11 @@ span icon-1 a:hover {
 .col-md-4,
 .col {
     padding: 0px 15px;
+}
+
+.col a,
+.col-md-4 a {
+    text-decoration: none;
 }
 
 .block-container {
@@ -174,14 +287,12 @@ span icon-1 a:hover {
     color: #fff;
     fill: white;
     border: none;
-
 }
 
 
 .block-1:hover {
     background-color: #67809f;
 }
-
 .block-2:hover {
     background-color: #4183d7;
 }
@@ -299,7 +410,6 @@ a .block-links {
 
 /* ================Netmatters Logo ================== */
 
-.news-images
 
 
 /* ================ News cards ================== */
@@ -311,7 +421,7 @@ a .block-links {
     margin-left: auto;
     margin-right: auto;
     padding: 0px 15px;
-    height: 70px;
+    height: 170px;
     max-width: 100%;
 }
 
@@ -320,14 +430,39 @@ a .block-links {
 .northdiver,
 .beat {
     display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
     padding: 0px 20px;
     height: 70px;
-    width: 17em;
+    width: 350px;
+
+}
+
+#bussey,
+#crane,
+#northdiver,
+#beat {
+    display: inline-block;
 }
 
 
 /* ================ News Letter section ================== */
 
+.email-newsletter {
+    background-color: #dddddd;
+}
+
+.newletter-submit {
+    background-color: #4183d7;
+    padding: 5px 15px;
+    width: 156px;
+    height: 56px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+}
 
 
 
@@ -380,6 +515,37 @@ footer ul li {
     padding: 0px 15px;
 }
 
+/* ================ partners ================== */
+
+
+
+.google-box,
+.silver-micro-box,
+.future-50-box,
+.qms-box,
+.charter-box {
+    padding: 0px 20px;
+    height: 88px;
+    width: 240px;
+    display: inline-block;
+}
+#google {
+    height: auto;
+    width: 240px;
+}
+
+.investing-box,
+.princess-box,
+.winner-box {
+    height: 58px;
+    width: 400px;
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+
+
+
 /* ========================================= */
 /* ========================================= */
 /* ================ Media ================== */
@@ -389,11 +555,35 @@ footer ul li {
 
 
 /* ================ Navbar ================== */
-@media  (max-width: 991px){
+@media (min-width:1151px) {
+    .telephone-con {
+        display:none;
+    }
+}
+
+@media (max-width:1151px) {
+    .button-contact,
+    .button-support {
+        display: none;
+    }
+}
+
+
+
+@media  (max-width: 1488px){
     .navbar-bottom-container,
     .partners,
     .previous-work
      {
         display: none;
+    }
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
     }
 }
