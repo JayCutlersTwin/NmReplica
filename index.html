@@ -6,9 +6,12 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width-device-width, initial-scale=1">
         <title>Netmatters | Full Service digital agency | Norwich, Norfolk Netmatters</title>
-        <link rel="shortcut icon" type="image/x-icon" href="icons/490-svg.png" />
-        <link rel="stylesheet" href="css/index.css">
+        <link rel="shortcut icon" type="image/x-icon" href="icons/user-2.png" />
+        <link rel="stylesheet" href="css/styles.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/custom-bootstrap.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
     </head>
 
@@ -16,12 +19,11 @@
 
         <header class="main-header">
             <div class="structure">
-                <div class="container">
+                <div class="container-header">
                     <div class="logo-con">
                         <a class="navbar-logo" href="#">
-                            <img src="images/netmatters-logo.png" alt="netmatters-logo">
+                            <img src="images/netmatters-logo.png" alt="netmatters-logo" id="logo">
                         </a>
-
 
                         <a href="#">
                             <div class="button-support">
@@ -44,38 +46,29 @@
 
                         <div class="telephone-con">
                             <a href="#">
-                                <img src="icons/067-phone.svg" alt="Call Now">
+                                <img id="telephone" src="icons/067-phone.svg" alt="Call Now">
                             </a>
                         </div>
 
 
                         <div class="search-bar">
-                            <input type="text" class="searchbar-input" placeholder="Search...">
-                            <a href="#">
-                                <div class="button-search">
-                                    <span>
-                                        <img src="icons/135-search.svg" alt="search Button" id="icon-search">
-                                    </span>
-                                </div>
-                            </a>
+                            <div class="input-group mb-3">
+                              <input type="text" class="form-control" placeholder="Search.." aria-label="Recipient's username" aria-describedby="button-addon2" id="searchbar-input">
+                              <button class="button-search" type="button" id="button-addon2"><img src="icons/135-search.svg" alt="search Button" id="icon-search"></button>
+                            </div>
                         </div>
 
-                        <a href="#">
-                            <div class="button-menu">
-                                <span>
-                                    <img src="icons/190-menu.svg" alt"menu sandwich" id="icon-menu">
-                                </span>
-                                menu
-                            </div>
-                        </a>
+                        <button type="button" name="button" class="button-menu"><img src="icons/190-menu.svg" alt"menu sandwich" id="icon-menu">Menu</button>
                     </div>
                 </div>
             </div>
         </header>
 
+
+
+
         <div class="navbar-bottom-container">
             <div class="navbar-bottom">
-
                 <a href="#">
                     <div class="item-1">
                         <span id="item-1">
@@ -83,7 +76,7 @@
                                 <path fill="#926fb1" d="M0.946 0l1.284 14.4 5.762 1.6 5.777-1.602 1.286-14.398h-14.108zM12.26 4.71h-6.758l0.161 1.809h6.437l-0.485 5.422-3.623 1.004-3.618-1.004-0.247-2.774h1.773l0.126 1.41 1.967 0.53 0.004-0.001 1.968-0.531 0.204-2.29h-6.121l-0.476-5.341h8.847l-0.158 1.766z"></path>
                             </svg>
                         </span>
-                        <small>Web</small> Design
+                        <small class="correct">Web</small> Design
                     </div>
                 </a>
 
@@ -94,7 +87,7 @@
                                 <path fill="#4183d7" d="M0 1v10h16v-10h-16zM15 10h-14v-8h14v8zM10.5 12h-5l-0.5 2-1 1h8l-1-1z"></path>
                             </svg>
                         </span>
-                        <small>IT</small> Support
+                        <small class="correct">IT</small> Support
                     </div>
                 </a>
 
@@ -105,18 +98,20 @@
                                 <path fill="#d64541" d="M11 10c-1 1-1 2-2 2s-2-1-3-2-2-2-2-3 1-1 2-2-2-4-3-4-3 3-3 3c0 2 2.055 6.055 4 8s6 4 8 4c0 0 3-2 3-3s-3-4-4-3z"></path>
                             </svg>
                         </span>
-                        <small>Telecoms</small> Services
+                        <small class="correct">Telecoms</small> Services
                     </div>
                 </a>
 
                 <a href="#">
                     <div class="item-4">
                         <span id="item-4">
-                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
-                                <path fill="#67809f" d="M7 2v-0.25c0-0.413-0.338-0.75-0.75-0.75h-2.5c-0.413 0-0.75 0.337-0.75 0.75v0.25h-3v2h3v0.25c0 0.412 0.337 0.75 0.75 0.75h2.5c0.412 0 0.75-0.338 0.75-0.75v-0.25h9v-2h-9zM4 4v-2h2v2h-2zM13 6.75c0-0.412-0.338-0.75-0.75-0.75h-2.5c-0.412 0-0.75 0.338-0.75 0.75v0.25h-9v2h9v0.25c0 0.412 0.338 0.75 0.75 0.75h2.5c0.412 0 0.75-0.338 0.75-0.75v-0.25h3v-2h-3v-0.25zM10 9v-2h2v2h-2zM7 11.75c0-0.412-0.338-0.75-0.75-0.75h-2.5c-0.413 0-0.75 0.338-0.75 0.75v0.25h-3v2h3v0.25c0 0.412 0.337 0.75 0.75 0.75h2.5c0.412 0 0.75-0.338 0.75-0.75v-0.25h9v-2h-9v-0.25zM4 14v-2h2v2h-2z"></path>
+                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="th" class="svg-inline--fa fa-th fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="16" height="16">
+                                <path fill="#67809f" d="M149.333 56v80c0 13.255-10.745 24-24 24H24c-13.255 0-24-10.745-24-24V56c0-13.255 10.745-24 24-24h101.333c13.255 0 24 10.745 24 24zm181.334 240v-80c0-13.255-10.745-24-24-24H205.333c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24h101.333c13.256 0 24.001-10.745 24.001-24zm32-240v80c0 13.255 10.745 24 24 24H488c13.255 0 24-10.745 24-24V56c0-13.255-10.745-24-24-24H386.667c-13.255 0-24 10.745-24 24zm-32 80V56c0-13.255-10.745-24-24-24H205.333c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24h101.333c13.256 0 24.001-10.745 24.001-24zm-205.334 56H24c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24h101.333c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24zM0 376v80c0 13.255 10.745 24 24 24h101.333c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H24c-13.255 0-24 10.745-24 24zm386.667-56H488c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H386.667c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24zm0 160H488c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H386.667c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24zM181.333 376v80c0 13.255 10.745 24 24 24h101.333c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H205.333c-13.255 0-24 10.745-24 24z">
+                                </path>
                             </svg>
+
                         </span>
-                        <small>Bespoke</small> Software
+                        <small class="correct">Bespoke</small> Software
                     </div>
                 </a>
 
@@ -127,7 +122,7 @@
                                 <path fill="#2ecc71" d="M14 4v-2h-14v11c0 0.552 0.448 1 1 1h13.5c0.828 0 1.5-0.672 1.5-1.5v-8.5h-2zM13 13h-12v-10h12v10zM2 5h10v1h-10zM8 7h4v1h-4zM8 9h4v1h-4zM8 11h3v1h-3zM2 7h5v5h-5z"></path>
                             </svg>
                         </span>
-                        <small>Digital</small> Marketing
+                        <small class="correct">Digital</small> Marketing
                     </div>
                 </a>
 
@@ -138,21 +133,29 @@
                                 <path fill="#f62459" d="M15 0l-7 2-7-2c0 0-0.070 0.808 0 2l7 2.189 7-2.189c0.070-1.192 0-2 0-2zM1.128 3.049c0.375 3.917 1.773 10.504 6.872 12.951 5.099-2.448 6.497-9.034 6.872-12.951l-6.872 2.584-6.872-2.584z"></path>
                             </svg>
                         </span>
-                        <small>Cyber</small> Security
+                        <small class="correct">Cyber</small> Security
                     </div>
                 </a>
             </div>
         </div>
 
 
-
     <!--                        Banner                  -->
         <div class="banner-con">
-            <img id="banner-img"src="images/banner.jpg" alt="Dis Banner">
-            <div class="banner-text-con">
-                <h1>Test</h1>
-                <p>this is test text</p>
-                <button type="button" name="Read More" class="large-readmore">Read More</button>
+            <div class="banner-outer">
+                <img id="banner-img" src="images/web-design-banner.jpeg" alt="This is the Banner">
+                <div class="banner-text-con">
+                    <div class="container">
+                        <h1>Web Design</h1>
+                        <p>For businesses looking to make a strong <br> and effective first impression. </p>
+                        <button type="button" name="Read More" class="large-readmore">
+                            Find Out More
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="35" viewBox="0 0 16 16">
+                                <path fill="#fff" d="M9.707 13.707l5-5c0.391-0.39 0.391-1.024 0-1.414l-5-5c-0.391-0.391-1.024-0.391-1.414 0s-0.391 1.024 0 1.414l3.293 3.293h-9.586c-0.552 0-1 0.448-1 1s0.448 1 1 1h9.586l-3.293 3.293c-0.195 0.195-0.293 0.451-0.293 0.707s0.098 0.512 0.293 0.707c0.391 0.391 1.024 0.391 1.414 0z"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -161,14 +164,14 @@
 
     <!--                7 Blocks                -->
         <section class="block-section">
-            <div class="block-container">
+            <div class="container">
                 <div class="row">
                     <div class="col-md-4">
                         <a href="#">
                             <div class="block block-1">
-                                <span>
+                                <span class="icon icon-1" >
                                     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
-                                        <path fill="#67809f" d="M7 2v-0.25c0-0.413-0.338-0.75-0.75-0.75h-2.5c-0.413 0-0.75 0.337-0.75 0.75v0.25h-3v2h3v0.25c0 0.412 0.337 0.75 0.75 0.75h2.5c0.412 0 0.75-0.338 0.75-0.75v-0.25h9v-2h-9zM4 4v-2h2v2h-2zM13 6.75c0-0.412-0.338-0.75-0.75-0.75h-2.5c-0.412 0-0.75 0.338-0.75 0.75v0.25h-9v2h9v0.25c0 0.412 0.338 0.75 0.75 0.75h2.5c0.412 0 0.75-0.338 0.75-0.75v-0.25h3v-2h-3v-0.25zM10 9v-2h2v2h-2zM7 11.75c0-0.412-0.338-0.75-0.75-0.75h-2.5c-0.413 0-0.75 0.338-0.75 0.75v0.25h-3v2h3v0.25c0 0.412 0.337 0.75 0.75 0.75h2.5c0.412 0 0.75-0.338 0.75-0.75v-0.25h9v-2h-9v-0.25zM4 14v-2h2v2h-2z"></path>
+                                        <path fill="#fff" d="M7 2v-0.25c0-0.413-0.338-0.75-0.75-0.75h-2.5c-0.413 0-0.75 0.337-0.75 0.75v0.25h-3v2h3v0.25c0 0.412 0.337 0.75 0.75 0.75h2.5c0.412 0 0.75-0.338 0.75-0.75v-0.25h9v-2h-9zM4 4v-2h2v2h-2zM13 6.75c0-0.412-0.338-0.75-0.75-0.75h-2.5c-0.412 0-0.75 0.338-0.75 0.75v0.25h-9v2h9v0.25c0 0.412 0.338 0.75 0.75 0.75h2.5c0.412 0 0.75-0.338 0.75-0.75v-0.25h3v-2h-3v-0.25zM10 9v-2h2v2h-2zM7 11.75c0-0.412-0.338-0.75-0.75-0.75h-2.5c-0.413 0-0.75 0.338-0.75 0.75v0.25h-3v2h3v0.25c0 0.412 0.337 0.75 0.75 0.75h2.5c0.412 0 0.75-0.338 0.75-0.75v-0.25h9v-2h-9v-0.25zM4 14v-2h2v2h-2z"></path>
                                     </svg>
                                 </span>
                                 <h2>Bespoke Software</h2>
@@ -180,9 +183,9 @@
                     <div class="col-md-4">
                         <a href="#">
                             <div class="block block-2">
-                                <span>
+                                <span class="icon icon-2">
                                     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
-                                        <path fill="#4183d7" d="M0 1v10h16v-10h-16zM15 10h-14v-8h14v8zM10.5 12h-5l-0.5 2-1 1h8l-1-1z"></path>
+                                        <path fill="#fff" d="M0 1v10h16v-10h-16zM15 10h-14v-8h14v8zM10.5 12h-5l-0.5 2-1 1h8l-1-1z"></path>
                                     </svg>
                                 </span>
                                 <h2>IT Support</h2>
@@ -195,9 +198,9 @@
                     <div class="col-md-4">
                         <a href="#">
                             <div class="block block-3">
-                                <span>
+                                <span class="icon icon-3">
                                     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
-                                        <path fill="#2ecc71" d="M14 4v-2h-14v11c0 0.552 0.448 1 1 1h13.5c0.828 0 1.5-0.672 1.5-1.5v-8.5h-2zM13 13h-12v-10h12v10zM2 5h10v1h-10zM8 7h4v1h-4zM8 9h4v1h-4zM8 11h3v1h-3zM2 7h5v5h-5z"></path>
+                                        <path fill="#fff" d="M14 4v-2h-14v11c0 0.552 0.448 1 1 1h13.5c0.828 0 1.5-0.672 1.5-1.5v-8.5h-2zM13 13h-12v-10h12v10zM2 5h10v1h-10zM8 7h4v1h-4zM8 9h4v1h-4zM8 11h3v1h-3zM2 7h5v5h-5z"></path>
                                     </svg>
                                 </span>
                                 <h2>Digital Marketing</h2>
@@ -208,12 +211,12 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col">
+                    <div class="col column-small">
                         <a href="#">
                             <div class="block block-4">
-                                <span>
+                                <span class="icon icon-4">
                                     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
-                                        <path fill="#d64541" d="M11 10c-1 1-1 2-2 2s-2-1-3-2-2-2-2-3 1-1 2-2-2-4-3-4-3 3-3 3c0 2 2.055 6.055 4 8s6 4 8 4c0 0 3-2 3-3s-3-4-4-3z"></path>
+                                        <path fill="#fff" d="M11 10c-1 1-1 2-2 2s-2-1-3-2-2-2-2-3 1-1 2-2-2-4-3-4-3 3-3 3c0 2 2.055 6.055 4 8s6 4 8 4c0 0 3-2 3-3s-3-4-4-3z"></path>
                                     </svg>
                                 </span>
                                 <h2>Telecoms Services</h2>
@@ -223,12 +226,12 @@
                         </a>
                     </div>
 
-                    <div class="col">
+                    <div class="col column-small">
                         <a href="#">
                             <div class="block block-5">
-                                <span>
+                                <span class="icon icon-5">
                                     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
-                                        <path fill="#926fb1" d="M0.946 0l1.284 14.4 5.762 1.6 5.777-1.602 1.286-14.398h-14.108zM12.26 4.71h-6.758l0.161 1.809h6.437l-0.485 5.422-3.623 1.004-3.618-1.004-0.247-2.774h1.773l0.126 1.41 1.967 0.53 0.004-0.001 1.968-0.531 0.204-2.29h-6.121l-0.476-5.341h8.847l-0.158 1.766z"></path>
+                                        <path fill="#fff" d="M0.946 0l1.284 14.4 5.762 1.6 5.777-1.602 1.286-14.398h-14.108zM12.26 4.71h-6.758l0.161 1.809h6.437l-0.485 5.422-3.623 1.004-3.618-1.004-0.247-2.774h1.773l0.126 1.41 1.967 0.53 0.004-0.001 1.968-0.531 0.204-2.29h-6.121l-0.476-5.341h8.847l-0.158 1.766z"></path>
                                     </svg>
                                 </span>
                                 <h2>Web Design</h2>
@@ -238,12 +241,12 @@
                         </a>
                     </div>
 
-                    <div class="col">
+                    <div class="col column-small">
                         <a href="#">
                             <div class="block block-6">
-                                <span>
+                                <span class="icon icon-6">
                                     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
-                                        <path fill="#f62459" d="M15 0l-7 2-7-2c0 0-0.070 0.808 0 2l7 2.189 7-2.189c0.070-1.192 0-2 0-2zM1.128 3.049c0.375 3.917 1.773 10.504 6.872 12.951 5.099-2.448 6.497-9.034 6.872-12.951l-6.872 2.584-6.872-2.584z"></path>
+                                        <path fill="#fff" d="M15 0l-7 2-7-2c0 0-0.070 0.808 0 2l7 2.189 7-2.189c0.070-1.192 0-2 0-2zM1.128 3.049c0.375 3.917 1.773 10.504 6.872 12.951 5.099-2.448 6.497-9.034 6.872-12.951l-6.872 2.584-6.872-2.584z"></path>
                                     </svg>
                                 </span>
                                 <h2>Cyber Security</h2>
@@ -253,15 +256,15 @@
                         </a>
                     </div>
 
-                    <div class="col">
+                    <div class="col column-small">
                         <a href="#">
                             <div class="block block-7">
-                                <span>
+                                <span class="icon icon-7">
                                     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="16" viewBox="0 0 18 16">
-                                        <path fill="#926fb1" d="M3.5 2h-3c-0.275 0-0.5 0.225-0.5 0.5v11c0 0.275 0.225 0.5 0.5 0.5h3c0.275 0 0.5-0.225 0.5-0.5v-11c0-0.275-0.225-0.5-0.5-0.5zM3 5h-2v-1h2v1z"></path>
-                                        <path fill="#926fb1" d="M8.5 2h-3c-0.275 0-0.5 0.225-0.5 0.5v11c0 0.275 0.225 0.5 0.5 0.5h3c0.275 0 0.5-0.225 0.5-0.5v-11c0-0.275-0.225-0.5-0.5-0.5zM8 5h-2v-1h2v1z"></path>
-                                        <path fill="#926fb1" d="M11.954 2.773l-2.679 1.35c-0.246 0.124-0.345 0.426-0.222 0.671l4.5 8.93c0.124 0.246 0.426 0.345 0.671 0.222l2.679-1.35c0.246-0.124 0.345-0.426 0.222-0.671l-4.5-8.93c-0.124-0.246-0.426-0.345-0.671-0.222z"></path>
-                                        <path fill="#926fb1" d="M14.5 13.5c0 0.276-0.224 0.5-0.5 0.5s-0.5-0.224-0.5-0.5c0-0.276 0.224-0.5 0.5-0.5s0.5 0.224 0.5 0.5z"></path>
+                                        <path fill="#fff" d="M3.5 2h-3c-0.275 0-0.5 0.225-0.5 0.5v11c0 0.275 0.225 0.5 0.5 0.5h3c0.275 0 0.5-0.225 0.5-0.5v-11c0-0.275-0.225-0.5-0.5-0.5zM3 5h-2v-1h2v1z"></path>
+                                        <path fill="#fff" d="M8.5 2h-3c-0.275 0-0.5 0.225-0.5 0.5v11c0 0.275 0.225 0.5 0.5 0.5h3c0.275 0 0.5-0.225 0.5-0.5v-11c0-0.275-0.225-0.5-0.5-0.5zM8 5h-2v-1h2v1z"></path>
+                                        <path fill="#fff" d="M11.954 2.773l-2.679 1.35c-0.246 0.124-0.345 0.426-0.222 0.671l4.5 8.93c0.124 0.246 0.426 0.345 0.671 0.222l2.679-1.35c0.246-0.124 0.345-0.426 0.222-0.671l-4.5-8.93c-0.124-0.246-0.426-0.345-0.671-0.222z"></path>
+                                        <path fill="#fff" d="M14.5 13.5c0 0.276-0.224 0.5-0.5 0.5s-0.5-0.224-0.5-0.5c0-0.276 0.224-0.5 0.5-0.5s0.5 0.224 0.5 0.5z"></path>
                                     </svg>
                                 </span>
                                 <h2>Developer Training</h2>
@@ -277,69 +280,135 @@
 
     <!--                Netmatters block               -->
         <div class="netmatters-logo-bg">
+            <div class="banner2">
+
+            </div>
             <section class="section-nm">
-                <div class="banner-con">
-                    <img id="banner-img-2" src="images/banner-2.jpg" alt="Netmatters Logo image here">
+                <div class="container">
+                    <div class="row-nm">
+                        <div class="column-nm">
+                            <h1 id="sec-nm-h1">Netmatters</h1>
+                            <p><strong>Netmatters Ltd is a leading web design, IT support and digital marketing agency based in Wymondham, Norfolk.</strong></p>
+                            <p>Founded in 2008, we work with businesses from a variety of industries to gain new prospects, nurture existing leads and further grow their sales.</p>
+                            <p>We provide cost effective, reliable solutions to a range of services; from bespoke cloud-based management systems, workflow and IT solutions through to creative website development and integrated digital campaigning.</p>
+                            <button type="button" name="button" class="culture-btn">
+                                Our Culture
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="35" viewBox="0 0 16 16">
+                                    <path fill="#333645" d="M9.707 13.707l5-5c0.391-0.39 0.391-1.024 0-1.414l-5-5c-0.391-0.391-1.024-0.391-1.414 0s-0.391 1.024 0 1.414l3.293 3.293h-9.586c-0.552 0-1 0.448-1 1s0.448 1 1 1h9.586l-3.293 3.293c-0.195 0.195-0.293 0.451-0.293 0.707s0.098 0.512 0.293 0.707c0.391 0.391 1.024 0.391 1.414 0z"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </section>
         </div>
 
     <!--                Latest Heading                 -->
         <div class="container">
-            <h1>Latest</h1>
+            <span class="latest-heading">
+                Latest
+            </span>
         </div>
 
     <!--                Latest News                    -->
         <section class="news">
             <div class="container">
                 <div class="row align-items-start">
-                    <div class="col-lg-4">
-                        <div class="card" style="width: 12rem;">
-                          <img class="card-img-top" src="images/image-1.jpg" alt="Card image cap">
-                          <div class="card-body">
-                            <a href="#"><h5 class="card-title">Drowning in Spreadsheets? A business system m...</h5></a>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                          </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="card" style="width: 12rem;">
-                            <img class="card-img-top" src="images/image-1.jpg" alt="Card image cap">
+
+                    <div class="col-lg-4 card1">
+                        <div class="card" style="width: 20rem;">
+                            <img class="card-img-top" src="images/card-top-1.jpeg" alt="Card image cap">
                             <div class="card-body">
-                                <a href="#"><h5 class="card-title">Drowning in Spreadsheets? A business system m...</h5></a>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+
+                                <div class="card-heading">
+                                    <a href="#"><h5 class="card-title">Drowning in Spreadsheets? A business system m...</h5></a>
+                                </div>
+                                <div class="card-paragraph">
+                                    <p class="card-text">Salary Ra...</p>
+                                </div>
+
+                                <a href="#" class="card-btn">Read More</a>
+
+                                <div class="createdby">
+                                    <img src="icons/user-1.jpeg" alt="User icon" class="user-icon">
+                                    <p class="author">
+                                        <strong>Posted by Tom Lancaster</strong><br>
+                                        23rd April 2021
+                                    </p>
+                                </div>
                             </div>
                         </div>
+                    </div>
+
+                    <div class="col-lg-4 card2">
+                        <div class="card" style="width: 20rem;">
+                            <img class="card-img-top" src="images/card-top-2.jpeg" alt="Card image cap">
+                            <div class="card-body">
+
+                                <div class="card-heading">
+                                    <a href="#"><h5 class="card-title">Drowning in Spreadsheets? A business system m...</h5></a>
+                                </div>
+                                <div class="card-paragraph">
+                                    <p class="card-text">Netmatters is constantly evolving and day-by-day it continues to grow in every aspect. Despit...</p>
+                                </div>
+
+                                <a href="#" class="card-btn">Read More</a>
+
+                                <div class="createdby">
+                                    <img src="icons/user-2.png" alt="User icon" class="user-icon">
+                                    <p class="author">
+                                        <strong>Posted by Netmatters Ltd</strong><br>
+                                        21st April 2021
+                                    </p>
+                                </div>
+                            </div>
                         </div>
-                    <div class="col-lg-4">
-                    <div class="card" style="width: 12rem;">
-                      <img class="card-img-top" src="images/image-1.jpg" alt="Card image cap">
-                      <div class="card-body">
-                        <a href="#"><h5 class="card-title">Drowning in Spreadsheets? A business system m...</h5></a>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                      </div>
+                    </div>
+
+                    <div id="card3" class="col-lg-4 card3">
+                        <div class="card" style="width: 20rem;">
+                            <img id="card-img-top" class="card-img-top" src="images/card-top-3.jpeg" alt="Card image cap">
+                            <div class="card-body">
+
+                                <div class="card-heading">
+                                    <a href="#"><h5 class="card-title">Drowning in Spreadsheets? A business system m...</h5></a>
+                                </div>
+                                <div class="card-paragraph">
+                                    <p class="card-text">If like many business owners you find yourself creating large numbers of spreadsheets to keep...</p>
+                                </div>
+
+                                <a href="#" class="card-btn">Read More</a>
+
+                                <div class="createdby">
+                                    <img src="icons/user-3.jpeg" alt="User icon" class="user-icon">
+                                    <p class="author">
+                                        <strong>Posted by James Gulliver</strong><br>
+                                        20th April 2021
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
+    <!--                         Previous work                 -->
+
         <section class="previous-work">
             <div class="container">
                 <div class="row-dw">
-                    <div class="ford">
-                        <img src="images/busseys.png" alt="Busseys Image" id="bussey">
+                    <div class="ford" id="bussey">
+                        <!-- <img src="images/busseys-no-color.jpeg" alt="Busseys Image"> -->
                     </div>
                     <div class="crane">
-                        <img src="images/crane.png" alt="Crane Image" id="crane">
+                        <!-- <img src="images/crane-no-color.jpeg" alt="Crane Image" id="crane"> -->
                     </div>
                     <div class="beat">
-                        <img src="images/beat.jpg" alt="Beat Image" id="beat">
+                        <!-- <img src="images/beat-no-color.jpeg" alt="Beat Image" id="beat"> -->
                     </div>
                     <div class="northdiver">
-                        <img src="images/northdiver.png" alt="North DIver Image" id="northdiver">
+                        <!-- <img src="images/northerndiver-no-color.jpeg" alt="North Diver Image" id="northdiver"> -->
                     </div>
                 </div>
             </div>
@@ -351,13 +420,25 @@
         <div class="container">
             <form action="#">
                 <h2>Email Newsletter Sign-Up</h2>
+
+                <div class="sign-up">
                 <label for="Yname">Your Name *</label><br>
-                <input type="text" name="Yname" id="Yname"><br>
-                <label for="Email">Email *</label><br>
-                <input type="text" name="Email" id="Email"><br>
-                <input type="checkbox" name="Recieve">
-                <label for="Recieve">Please tick this box if you wish to receive marketing information from us. Please see our <a href="#">Privacy Policy</a> for more information on how we use your data.</label><br>
-                <button type="checkbox" name="" id="newletter-submit">Submit</button>
+                <input type="text" name="Yname" id="Yname">
+                </div>
+
+                <div class="sign-up">
+                    <label for="Email">Email *</label><br>
+                    <input type="text" name="Email" id="Email"><br>
+                </div>
+
+                <div class="checkbox-outer">
+                    <div class="checkbox-1">
+                        <input type="checkbox" name="Recieve" class="">
+                        <label for="Recieve"><strong>Please tick this box if you wish to receive marketing information from us. Please see our <a href="#">Privacy Policy</a> for more information on how we use your data.</strong></label><br>
+                    </div>
+                </div>
+
+                <button type="checkbox" name="" id="newsletter-submit">Submit</button>
             </form>
 
         </div>
@@ -367,10 +448,8 @@
 
 
     <!--                         Footer                 -->
-        <footer class=flex-container>
+        <footer class=block-container-footer>
             <div class="footer-container">
-
-
                 <div class="f-contact">
                     <h4>Contact</h4>
                     <ul>
@@ -379,8 +458,8 @@
                         <li>Norfolk</li>
                         <li>NR18 0WZ</li>
                         <br>
-                        <li>tel:0123456789</li>
-                        <li>Email:admin@email.com</li>
+                        <li>tel: <a href="#">0123456789</a></li>
+                        <li>Email: <a href="#">admin@email.com</a></li>
                     </ul>
                 </div>
                 <div class="f-about">
@@ -399,21 +478,53 @@
                 <div class="f-web">
                     <h4>Website</h4>
                     <ul>
-                        <li>Sitemap</li>
+                        <li><a href="#">Sitemap</a></li>
                         <li>&copy Copyright Netmatters Ltd. 2021</li>
                         <li>All rights reserved</li>
                     </ul>
                 </div>
                 <div class="f-social">
                     <h4>Socials</h4>
-                    <div class="fb">
-                        <button type="button"><img src="" alt="Facebook"></button>
-                    </div>
-                    <div class="twit">
-                        <button type="button"><img src="" alt="Twitter"></button>
-                    </div>
-                    <div class="indeed">
-                        <button type="button"><img src="" alt="indeed"></button>
+                    <div class="social-block">
+                        <div class="facebook">
+                            <a href="#">
+                                <span id="facebook">
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="auto" height="auto" viewBox="0 0 16 16">
+                                        <path fill="#fff" d="M9.5 3h2.5v-3h-2.5c-1.93 0-3.5 1.57-3.5 3.5v1.5h-2v3h2v8h3v-8h2.5l0.5-3h-3v-1.5c0-0.271 0.229-0.5 0.5-0.5z"></path>
+                                    </svg>
+                                </span>
+                            </a>
+                        </div>
+
+                        <div class="twitter">
+                            <a href="#">
+                                <span id="twitter">
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="auto" height="auto" viewBox="0 0 16 16">
+                                        <path fill="#fff" d="M16 3.538c-0.588 0.263-1.222 0.438-1.884 0.516 0.678-0.406 1.197-1.050 1.444-1.816-0.634 0.375-1.338 0.65-2.084 0.797-0.6-0.638-1.453-1.034-2.397-1.034-1.813 0-3.281 1.469-3.281 3.281 0 0.256 0.028 0.506 0.084 0.747-2.728-0.138-5.147-1.444-6.766-3.431-0.281 0.484-0.444 1.050-0.444 1.65 0 1.138 0.578 2.144 1.459 2.731-0.538-0.016-1.044-0.166-1.488-0.409 0 0.013 0 0.028 0 0.041 0 1.591 1.131 2.919 2.634 3.219-0.275 0.075-0.566 0.116-0.866 0.116-0.212 0-0.416-0.022-0.619-0.059 0.419 1.303 1.631 2.253 3.066 2.281-1.125 0.881-2.538 1.406-4.078 1.406-0.266 0-0.525-0.016-0.784-0.047 1.456 0.934 3.181 1.475 5.034 1.475 6.037 0 9.341-5.003 9.341-9.341 0-0.144-0.003-0.284-0.009-0.425 0.641-0.459 1.197-1.038 1.637-1.697z"></path>
+                                    </svg>
+                                </span>
+                            </a>
+                        </div>
+
+                        <div class="instagram">
+                            <a href="#">
+                                <span id="instagram">
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="auto" height="auto" viewBox="0 0 16 16">
+                                        <path fill="#fff" d="M14.5 0h-13c-0.825 0-1.5 0.675-1.5 1.5v13c0 0.825 0.675 1.5 1.5 1.5h13c0.825 0 1.5-0.675 1.5-1.5v-13c0-0.825-0.675-1.5-1.5-1.5zM11 2.5c0-0.275 0.225-0.5 0.5-0.5h2c0.275 0 0.5 0.225 0.5 0.5v2c0 0.275-0.225 0.5-0.5 0.5h-2c-0.275 0-0.5-0.225-0.5-0.5v-2zM8 5c1.656 0 3 1.344 3 3s-1.344 3-3 3c-1.656 0-3-1.344-3-3s1.344-3 3-3zM14 13.5v0c0 0.275-0.225 0.5-0.5 0.5h-11c-0.275 0-0.5-0.225-0.5-0.5v0-6.5h1.1c-0.066 0.322-0.1 0.656-0.1 1 0 2.762 2.237 5 5 5s5-2.238 5-5c0-0.344-0.034-0.678-0.1-1h1.1v6.5z"></path>
+                                    </svg>
+                                </span>
+                            </a>
+                        </div>
+
+                        <div class="linkedin">
+                            <a href="#">
+                                <span id="linkedin">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="auto" height="auto" viewBox="0 0 24 24">
+                                        <path fill="#fff" d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/>
+                                    </svg>
+                                </span>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -423,31 +534,31 @@
         <section class="partners">
             <div class="container">
                 <div class="google-box">
-                    <img src="images/google-partners.jpg" alt="Google Partner" id="google">
+                    <!-- <img src="images/google.png" alt="Google Partner" id="google"> -->
                 </div>
                 <div class="silver-micro-box">
-                    <img src="images/silver.jpg" alt="Microsoft Partner">
+                    <!-- <img src="images/silver.jpeg" alt="Microsoft Partner"> -->
                 </div>
                 <div class="future-50-box">
-                    <img src="images/f50.jpg" alt="Future 50">
+                    <!-- <img src="images/f50-no-color.jpeg" alt="Future 50"> -->
                 </div>
                 <div class="qms-box">
-                    <img src="images/qms.jpg" alt="QMS">
+                    <!-- <img src="images/qms-no-color.jpeg" alt="QMS"> -->
                 </div>
                 <div class="charter-box">
-                    <img src="images/carbon.jpg" alt="Charter">
+                    <!-- <img src="images/carbon-no-color.jpeg" alt="Charter"> -->
                 </div>
             </div>
 
-            <div class="container">
+            <div class="container" id="second-row">
                 <div class="investing-box">
-                    <img src="images/business.jpg" alt="Investing">
+                    <!-- <img src="images/investing-no-color.jpeg" alt="Investing"> -->
                 </div>
                 <div class="princess-box">
-                    <img src="images/princess.jpg" alt="princess">
+                    <!-- <img src="images/princess-no-color.jpeg" alt="princess"> -->
                 </div>
                 <div class="winner-box">
-                    <img src="images/business.jpg" alt="winner">
+                    <!-- <img src="images/business-no-color.jpeg" alt="winner"> -->
                 </div>
             </div>
         </section>

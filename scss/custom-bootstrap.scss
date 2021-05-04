@@ -1,0 +1,51 @@
+/* ================ Banner ================== */
+@media (max-width:768px) {
+    .search-bar {
+        display: none;
+    }
+}
+
+@media (max-width:992px) {
+    .form-control {
+        display: none;
+    }
+
+    #button-addon2 {
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px;
+    }
+}
+
+/* ================ Banner ================== */
+
+
+
+
+/* ================ blocks ================== */
+// block section
+@media (min-width: 768px){
+    .col{
+        flex: none;
+        width: 50%;
+    }
+}
+
+@media (max-width:991px) {
+    .col-md-4 {
+        width:100%;
+    }
+}
+
+@media (min-width:1260px) {
+    .col{
+        width: 25%;
+    }
+}
+
+
+/* ================ partners ================== */
+
+.partners .container {
+    display: flex;
+    justify-content: center;
+}
