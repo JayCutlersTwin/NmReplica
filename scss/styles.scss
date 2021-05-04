@@ -265,45 +265,60 @@ span icon-1 a:hover {
 
 
 /* ================Banner================== */
+.unfair {
+    display: flex;
+    flex-direction: row;
+}
+
+.microphone {
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    width: 100%;
+}
 .banner-con {
     flex: 1 0 auto;
+    color: #fff;
+    border-top: 1px solid rgba(51,54,69,.5);
 }
 .banner-con .container{
     display: block;
     position: relative;
-    border-top: 1px solid rgba(51,54,69,.5);
+    top: 150px;
 }
 
 .banner-outer {
     position: relative;
-    overflow: hidden;
+    height: 100%;
 }
 
 #banner-img{
     position: absolute;
-    width: auto;
+    object-fit: cover;
+    width: 100%;
     height: 100%;
     text-align: left;
-
 }
 
 
 .banner-text-con {
     position: relative;
     display: block;
+    h1 {
+        font-size: 48px;
+        line-height: 52.8px;
+        margin-bottom: 25px;
+        text-transform: uppercase;
+    }
+    p {
+        line-height: 36px;
+        font-size: 20px;
+        margin-bottom: 35px;
+    }
 }
 
-.banner-text-con h1 {
-    font-size: 48px;
-    line-height: 52.8px;
-    margin-bottom: 25px;
-    text-transform: uppercase;
-}
-.banner-text-con p {
-    line-height: 36px;
-    font-size: 20px;
-    margin-bottom: 35px;
-}
+
+
 .large-readmore {
     padding: 15px;
     color: white;
@@ -339,7 +354,7 @@ span icon-1 a:hover {
     font-size: 1.125em;
     padding-bottom: 17px;
     margin-bottom:11px;
-    border-bottom:5px solid #333645;
+    border-bottom:3px solid #333645;
 }
 .block p {
     margin-bottom: 13px;
@@ -365,24 +380,45 @@ span icon-1 a:hover {
 
 .block-1:hover {
     background-color: #67809f;
+    h2 {
+        border-bottom:3px solid #ffffff;
+    }
 }
 .block-2:hover {
     background-color: #4183d7;
+    h2 {
+        border-bottom:3px solid #ffffff;
+    }
 }
 .block-3:hover {
     background-color: #2ecc71;
+    h2 {
+        border-bottom:3px solid #ffffff;
+    }
 }
 .block-4:hover {
     background-color: #d64541;
+    h2 {
+        border-bottom:3px solid #ffffff;
+    }
 }
 .block-5:hover {
     background-color: #926fb1;
+    h2 {
+        border-bottom:3px solid #ffffff;
+    }
 }
 .block-6:hover {
     background-color: #f62459;
+    h2 {
+        border-bottom:3px solid #ffffff;
+    }
 }
 .block-7:hover {
     background-color: #926fb1;
+    h2 {
+        border-bottom:3px solid #ffffff;
+    }
 }
 #btn-block-1 {
     background-color: #67809f;
@@ -674,7 +710,16 @@ a .block-links {
     height: 70px;
     max-width: 100%;
     display: flex;
-    justify-content: center;
+}
+
+.invisble-link {
+    span {
+    display: block;
+    position: absolute;
+    height: 70px;
+    width: 100%;
+    left: 0px;
+    }
 }
 
 .ford,
@@ -682,58 +727,104 @@ a .block-links {
 .northdiver,
 .beat {
     display: block;
-    flex-direction: row;
-    justify-content: center;
+    position: relative;
     padding: 0px 20px;
-    height: 70px;
-    width: auto;
-    vertical-align: middle;
-    text-align: center;
-
+    height: auto;
+    width: 100%;
 }
-
-// #bussey,
-// #crane,
-// #northdiver,
-// #beat {
-//     display: block;
-// }
 
 .ford {
     background-image: url(../images/busseys-no-color.jpeg);
     background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
 }
 .ford:hover {
     background-image: url(../images/busseys-color.png);
-    background-repeat: no-repeat;
+
+    .description-box {
+        display: block;
+    }
 }
 
 
 .crane {
     background-image: url(../images/crane-no-color.jpeg);
     background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
 }
 .crane:hover {
     background-image: url(../images/crane-color.png);
-    background-repeat: no-repeat;
+
+    .description-box {
+        display: block;
+    }
 }
 
 .beat {
     background-image: url(../images/beat-no-color.jpeg);
     background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
 }
 .beat:hover {
     background-image: url(../images/beat-color.png);
-    background-repeat: no-repeat;
+
+    .description-box {
+        display: block;
+    }
 }
 
 .northdiver {
     background-image: url(../images/northerndiver-no-color.jpeg);
     background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
 }
 .northdiver:hover {
     background-image: url(../images/northerndiver-color.png);
-    background-repeat: no-repeat;
+
+    .description-box {
+        display: block;
+    }
+}
+
+.description-box {
+    display:none;
+    position: absolute;
+    bottom: 100%;
+    right: -200px;
+    left: -200px;
+}
+.speechbubble {
+    display: block;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    max-width: 260px;
+    background-color: #333645;
+    color: #ffffff;
+    text-align: center;
+
+    h3 {
+        position: relative;
+        padding-bottom: 17px;
+        margin-bottom: 11px;
+        font-size: 1.125rem;
+        border-bottom: 5px solid #ffffff;
+    }
+    p {
+        font-size: .8125rem;
+        line-height: 1.375rem;
+    }
+    .bottom-speechbubble {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        margin-left: -36px;
+    }
 }
 
 
