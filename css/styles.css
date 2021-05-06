@@ -43,11 +43,8 @@ ul {
   position: block;
 }
 
-.container-header {
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
+.inner-row {
+  padding-bottom: 15px;
 }
 
 .logo-con {
@@ -121,12 +118,23 @@ header a {
   color: white;
   font-size: .75em;
   text-align: center;
-  vertical-align: super;
   margin-left: 20px;
 }
 
 .button-menu:hover {
   background-color: #22242e;
+}
+
+.sandwich-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.sandwich {
+  background-color: #fff;
+  height: 3px;
+  width: 33px;
+  margin-top: 3px;
 }
 
 .button-search {
@@ -149,10 +157,6 @@ header a {
 .search-bar {
   vertical-align: sub;
   margin-left: 20px;
-}
-
-.search-bar {
-  width: 300px;
   display: inline-block;
 }
 
@@ -171,11 +175,6 @@ header a {
   width: 23px;
 }
 
-#icon-menu {
-  height: 19px;
-  width: 33px;
-}
-
 .telephone-con {
   display: flex;
   margin-left: 15px;
@@ -185,6 +184,21 @@ header a {
   padding-top: 20px;
 }
 
+.form-class {
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+
+.search-bar-small {
+  width: 100%;
+}
+
+#search1 {
+  width: 100%;
+}
+
+/*=================== Bottom nav bar ===============*/
 .navbar-bottom {
   background-color: #333645;
   display: flex;
@@ -198,6 +212,14 @@ header a {
   color: white;
   max-width: 100%;
   text-decoration: none;
+}
+
+.box-item-1 {
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.box-item-6 {
+  border-right: 1px solid rgba(0, 0, 0, 0.25);
 }
 
 .navbar-bottom a:hover {
@@ -269,11 +291,23 @@ header a {
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
-  box-shadow: 1px 0px 0px 0px #666666;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  border-left: 1px solid rgba(0, 0, 0, 0.25);
 }
 
 span icon-1 a:hover {
   color: #fff;
+}
+
+#item-1,
+#item-2,
+#item-3,
+#item-4,
+#item-5,
+#item-6 {
+  height: 33px;
+  width: 193px;
+  padding-bottom: 10px;
 }
 
 /* ================Banner================== */
@@ -314,6 +348,12 @@ span icon-1 a:hover {
   text-align: left;
 }
 
+.gradient {
+  height: 100%;
+  position: relative;
+  background-image: linear-gradient(to left, rgba(255, 0, 0, 0), black);
+}
+
 .banner-text-con {
   position: relative;
   display: block;
@@ -321,15 +361,15 @@ span icon-1 a:hover {
 
 .banner-text-con h1 {
   font-size: 48px;
-  line-height: 52.8px;
+  line-height: 39.6px;
   margin-bottom: 25px;
   text-transform: uppercase;
 }
 
 .banner-text-con p {
-  line-height: 36px;
+  line-height: 30px;
   font-size: 20px;
-  margin-bottom: 35px;
+  margin-bottom: 25px;
 }
 
 .large-readmore {
@@ -339,6 +379,14 @@ span icon-1 a:hover {
   border: none;
   border-radius: 3px;
   text-transform: uppercase;
+  width: 225px;
+  height: 62px;
+  font-size: 1.25em;
+}
+
+.large-readmore svg {
+  margin-bottom: 3px;
+  margin-left: 10px;
 }
 
 .large-readmore:hover {
@@ -381,6 +429,10 @@ span icon-1 a:hover {
   text-align: center;
   color: #333645;
   width: 100%;
+}
+
+.block p {
+  font-size: 0.8125em;
 }
 
 .block:hover,
@@ -618,7 +670,7 @@ a .block-links {
 }
 
 /* ================Banner 2 ================== */
-.section-nm {
+.netmatters-logo-bg {
   background-color: #333645;
   color: #fff;
 }
@@ -626,7 +678,10 @@ a .block-links {
 .banner2 {
   display: block;
   position: absolute;
-  background-image: url(images/banner-2.png);
+  width: 100%;
+  height: 60%;
+  overflow: hidden;
+  background-image: url(../images/banner-2.png);
   background-repeat: no-repeat;
   background-position: 100%;
   background-size: auto 100%;
@@ -644,6 +699,9 @@ a .block-links {
   width: 100%;
   height: auto;
   line-height: 30px;
+  position: relative;
+  font-family: 'poppins', sans-serif;
+  letter-spacing: .4px;
 }
 
 .column-nm p {
@@ -691,7 +749,7 @@ a .block-links {
 }
 
 .card-btn {
-  background-color: #333645;
+  display: block;
   padding: 5px 15px;
   width: 129px;
   height: 47px;
@@ -702,10 +760,12 @@ a .block-links {
   text-align: center;
   border: none;
   text-decoration: none;
+  line-height: 35px;
 }
 
 .card-btn:hover {
-  color: white;
+  color: #ffffff;
+  background-color: white;
 }
 
 .card-heading {
@@ -719,8 +779,10 @@ a .block-links {
 .createdby {
   margin-top: 30px;
   padding-top: 30px;
-  border-top: 1px solid #666666;
-  display: inline-flex;
+  border-top: 1px solid #ccc;
+  height: 78px;
+  width: 100%;
+  display: flex;
 }
 
 .card1 {
@@ -745,6 +807,27 @@ a .block-links {
 
 .author {
   margin-left: 20px;
+}
+
+.side-banner {
+  color: #fff;
+  font-size: 0.75em;
+  text-decoration: none;
+  background-color: #4183d7;
+  padding: 0 10px;
+  position: absolute;
+  right: 0px;
+  top: 10px;
+  z-index: 1;
+}
+
+.side-banner:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+#side-banner2 {
+  background-color: #926fb1;
 }
 
 /* ================ Previous Work ================== */
@@ -888,6 +971,7 @@ a .block-links {
   background-color: #dddddd;
   color: #333645;
   font-size: 1em;
+  padding: 0px;
 }
 
 .email-newsletter form a {
@@ -934,6 +1018,14 @@ a .block-links {
   margin-bottom: 5px;
 }
 
+#nl-form {
+  padding: 20px 50px;
+}
+
+#nl-form h2 {
+  font-weight: 400;
+}
+
 /* ================ Footer ================== */
 .block-container-footer {
   max-width: 100%;
@@ -970,7 +1062,8 @@ footer ul li a:hover {
   margin-left: auto;
   margin-right: auto;
   padding: 0 15px;
-  display: block;
+  display: flex;
+  flex-direction: column;
 }
 
 .f-contact,
@@ -988,29 +1081,33 @@ footer ul li a:hover {
   margin-top: 30px;
   width: auto;
   height: 55px;
-  background-color: #000000;
-  padding: 5px 15px;
+  background-color: rgba(0, 0, 0, 0.25);
+  padding: 15px 15px;
   border: none;
 }
 
-.linkedin button path {
+#icon-linkedin {
   opacity: 100%;
 }
 
 #facebook:hover {
   background-color: #3b5998;
+  opacity: 100%;
 }
 
 #twitter:hover {
   background-color: #00aced;
+  opacity: 100%;
 }
 
 #linkedin:hover {
   background-color: #0077b5;
+  opacity: 100%;
 }
 
 #instagram:hover {
   background-color: #d93175;
+  opacity: 100%;
 }
 
 .facebook,
@@ -1151,15 +1248,15 @@ footer ul li a:hover {
   }
 }
 
-@media (max-width: 1259px) {
-  .form-control {
-    display: none;
-  }
-  .button-search {
-    border-radius: 3px;
-  }
-  #icon-search {
-    height: 27px;
+@media (max-width: 1260px) {
+  .item-1,
+  .item-2,
+  .item-3,
+  .item-4,
+  .item-5,
+  .item-6 {
+    width: 154px;
+    height: 99px;
   }
 }
 
@@ -1183,6 +1280,9 @@ footer ul li a:hover {
   div .row {
     flex-direction: column;
   }
+  #block1-nm {
+    margin-top: 0px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -1198,17 +1298,67 @@ footer ul li a:hover {
   }
 }
 
+@media (min-width: 1260px) {
+  .column-nm {
+    width: 50%;
+  }
+}
+
 /* ================ cards ================== */
-@media (min-width: 767px) and (max-width: 1259px) {
+@media (min-width: 768px) and (max-width: 1260px) {
   #card3 {
     display: none;
   }
 }
 
-/* ================ newsletter ================== */
 /* ================ previous work ================== */
 @media (max-width: 1243px) {
   height: 160px;
 }
 
+/* ================ email sign-up ================== */
 /* ================ footer ================== */
+@media (max-width: 768px) {
+  .f-social {
+    margin-bottom: 0px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1258px) {
+  .footer-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .f-contact,
+  .f-about,
+  .f-web,
+  .f-social {
+    width: 50%;
+  }
+}
+
+@media (min-width: 992px) {
+  .footer-container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer-container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 1259px) {
+  .footer-container {
+    flex-direction: row;
+    justify-content: center;
+    width: 1200px;
+  }
+  .f-contact,
+  .f-about,
+  .f-web,
+  .f-social {
+    width: 25%;
+  }
+}

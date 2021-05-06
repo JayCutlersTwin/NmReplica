@@ -1,11 +1,65 @@
-/* ================ Banner ================== */
-@media (max-width:768px) {
-    .search-bar {
+/* ========================================== */
+/* ========================================== */
+/* ================== Main ================== */
+/* ========================================== */
+/* ========================================== */
+body {
+    font-family: 'poppins', sans-serif;
+}
+.container {
+    padding: 0px 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+// Main Breakpoints
+@media (min-width:567px){
+    .container {
+        max-width: none;
+    }
+}
+
+
+@media (min-width:768px){
+    .container {
+        max-width:750px;
+    }
+}
+
+@media (min-width:992px){
+    .container {
+        max-width:970px;
+    }
+}
+
+@media (min-width:1260px){
+    .container {
+        max-width:1200px;
+    }
+}
+
+/* ================ NavBar ================== */
+
+
+
+
+@media (min-width:769px) {
+    .search-bar-small {
         display: none;
     }
 }
 
-@media (max-width:992px) {
+@media (max-width:768px) {
+    .search-bar {
+        display: none;
+    }
+    .search-bar-small {
+        display: block;
+    }
+}
+
+@media (min-width:993px) and (max-width:1259px) {
     .form-control {
         display: none;
     }
@@ -15,8 +69,18 @@
         border-bottom-left-radius: 3px;
     }
 }
-
 /* ================ Banner ================== */
+h1 {
+    font-weight: 400;
+}
+
+@media (max-width:992px) {
+    .banner-text-con .container {
+        text-align: center;
+    }
+}
+
+
 
 
 
@@ -29,7 +93,7 @@
     }
 }
 
-@media (max-width:991px) {
+@media (max-width:992px) {
     .col-md-4 {
         width:100%;
     }
@@ -40,6 +104,98 @@
         width: 25%;
     }
 }
+/* ================ CARD Section ================== */
+.card-img-top {
+    overflow:hidden;
+}
+
+.card-body{
+    padding:30px;
+    height: auto;
+    .card-heading a {
+        text-decoration: none;
+        color: #4183d7;
+        .card-title {
+            font-size: 1em;
+            font-weight: 600;
+        }
+    }
+    .card-heading .card-title:hover {
+        text-decoration: underline;
+    }
+    p {
+        font-size: 0.8125em;
+    }
+}
+#card-title2 {
+    color: #926fb1;
+}
+
+#button1,
+#button3  {
+    background-color: #4183d7;
+}
+#button1:hover,
+#button3:hover  {
+    background-color: #2a6ec6;
+}
+#button2 {
+    background-color: #926fb1;
+}
+#button2:hover {
+    background-color: #7e57a0;
+}
+
+@media (max-width:767px){
+    #cardmain {
+        margin-top: 30px;
+    }
+}
+@media (min-width:768px){
+    .card1,
+    .card2 {
+        width: 50%;
+    }
+    .card-text {
+        min-height: 4.125rem;
+    }
+    .card-title {
+        min-height: 3rem;
+    }
+}
+@media (min-width: 992px) {
+    .pic {
+        transform: scale(1);
+        transition: transform .2s ease;
+    }
+
+    .card-img-top:hover .pic{
+            transform: scale(1.1);
+            opacity:.6;
+    }
+    .card-text {
+        min-height: 4.125rem;
+    }
+    .card-title {
+        min-height: 3rem;
+    }
+}
+
+@media (min-width:1260px){
+    .card1,
+    .card2,
+    .card3 {
+        width: 33.33333333333%;
+    }
+}
+
+
+
+/* ================ Newsletter ================== */
+
+
+
+
 
 
 /* ================ partners ================== */
