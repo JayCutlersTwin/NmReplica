@@ -204,8 +204,9 @@ h1 {
 .sign-up input {
     width: 100%;
     height: 47px;
-    border-color: 1px solid #ccc;
     outline: none;
+    border: 1px solid #e5e5e5;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
     padding: 5px 15px;
 }
 
