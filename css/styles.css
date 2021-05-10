@@ -38,13 +38,13 @@ ul {
   margin-left: auto;
 }
 
+.required {
+  color: red;
+}
+
 /* ================Navbar================== */
 .main-header {
   position: block;
-}
-
-.inner-row {
-  padding-bottom: 15px;
 }
 
 .logo-con {
@@ -52,6 +52,10 @@ ul {
   justify-content: center;
   width: 100%;
   padding: 20px 20px;
+}
+
+.main-logo {
+  display: flex;
 }
 
 .navbar-logo {
@@ -179,10 +183,8 @@ header a {
 .telephone-con {
   display: flex;
   margin-left: 15px;
-}
-
-#telephone {
-  padding-top: 20px;
+  height: 70px;
+  width: auto;
 }
 
 .form-class {
@@ -219,6 +221,14 @@ header a {
 
 #search1:focus {
   outline: none;
+}
+
+.button-support-link {
+  margin-left: 10px;
+}
+
+.telephone-link {
+  margin-left: 25px;
 }
 
 /*=================== Bottom nav bar ===============*/
@@ -426,6 +436,10 @@ span icon-1 a:hover {
 }
 
 /* ================7 blocks================== */
+.block-section {
+  padding-top: 20px;
+}
+
 .col-md-4,
 .col {
   padding: 0px 15px;
@@ -443,9 +457,7 @@ span icon-1 a:hover {
 
 .block h2 {
   font-size: 1.125em;
-  padding-bottom: 17px;
   margin-bottom: 11px;
-  border-bottom: 3px solid #333645;
 }
 
 .block p {
@@ -478,56 +490,56 @@ span icon-1 a:hover {
   background-color: #67809f;
 }
 
-.block-1:hover h2 {
-  border-bottom: 3px solid #ffffff;
+.block-1:hover .underline {
+  background-color: #ffffff;
 }
 
 .block-2:hover {
   background-color: #4183d7;
 }
 
-.block-2:hover h2 {
-  border-bottom: 3px solid #ffffff;
+.block-2:hover .underline {
+  background-color: #ffffff;
 }
 
 .block-3:hover {
   background-color: #2ecc71;
 }
 
-.block-3:hover h2 {
-  border-bottom: 3px solid #ffffff;
+.block-3:hover .underline {
+  background-color: #ffffff;
 }
 
 .block-4:hover {
   background-color: #d64541;
 }
 
-.block-4:hover h2 {
-  border-bottom: 3px solid #ffffff;
+.block-4:hover .underline {
+  background-color: #ffffff;
 }
 
 .block-5:hover {
   background-color: #926fb1;
 }
 
-.block-5:hover h2 {
-  border-bottom: 3px solid #ffffff;
+.block-5:hover .underline {
+  background-color: #ffffff;
 }
 
 .block-6:hover {
   background-color: #f62459;
 }
 
-.block-6:hover h2 {
-  border-bottom: 3px solid #ffffff;
+.block-6:hover .underline {
+  background-color: #ffffff;
 }
 
 .block-7:hover {
   background-color: #926fb1;
 }
 
-.block-7:hover h2 {
-  border-bottom: 3px solid #ffffff;
+.block-7:hover .underline {
+  background-color: #ffffff;
 }
 
 #btn-block-1 {
@@ -701,7 +713,20 @@ a .block-links {
   background: #fff;
 }
 
-/* ================Banner 2 ================== */
+.underline {
+  width: 28px;
+  display: inline-block;
+  background-color: #333645;
+  height: 3px;
+  margin-bottom: 10px;
+}
+
+#ffffff
+.section-nm {
+  background-color: #333645;
+  color: #fff;
+}
+
 .netmatters-logo-bg {
   background-color: #333645;
   color: #fff;
@@ -717,6 +742,7 @@ a .block-links {
   background-repeat: no-repeat;
   background-position: 100%;
   background-size: auto 100%;
+  background-color: #333645;
 }
 
 .row-nm {
@@ -734,6 +760,7 @@ a .block-links {
   position: relative;
   font-family: 'poppins', sans-serif;
   letter-spacing: .4px;
+  color: #fff;
 }
 
 .column-nm p {
@@ -983,12 +1010,19 @@ a .block-links {
   padding-bottom: 17px;
   margin-bottom: 11px;
   font-size: 1.125rem;
-  border-bottom: 5px solid #ffffff;
 }
 
 .speechbubble p {
   font-size: .8125rem;
   line-height: 1.375rem;
+}
+
+.underline-speech {
+  width: 28px;
+  display: inline-block;
+  background-color: #ffffff;
+  height: 3px;
+  margin-bottom: 5px;
 }
 
 .speechbubble::after {
@@ -1050,9 +1084,10 @@ a .block-links {
 }
 
 .sign-up {
-  padding-left: 15px;
-  padding-right: 15px;
   display: inline-block;
+  font-weight: 600;
+  width: 100%;
+  margin-bottom: 20px;
 }
 
 .sign-up label {
@@ -1064,16 +1099,21 @@ a .block-links {
 }
 
 .checkbox-1 {
-  display: block;
-  margin-bottom: 5px;
+  display: flex;
+  margin-bottom: 20px;
+  margin-top: 10px;
 }
 
 #nl-form {
-  padding: 20px 50px;
+  padding: 50px 30px;
 }
 
 #nl-form h2 {
   font-weight: 400;
+}
+
+#Recieve {
+  margin-right: 20px;
 }
 
 /* ================ Footer ================== */
@@ -1287,15 +1327,39 @@ footer ul li a:hover {
 /* ================ Navbar ================== */
 @media (max-width: 768px) {
   .logo-con {
-    justify-content: space-between;
-    padding-left: 0px;
-    padding-right: 0px;
+    display: table;
+  }
+  .main-logo {
+    display: table-row;
+  }
+  .navbar-logo,
+  .telephone-con,
+  .button-menu {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  .menu-div {
+    padding-top: 7px;
+    padding-bottom: 7px;
+  }
+  #logo {
+    max-width: 335px;
+    margin-left: 15px;
+  }
+  .inner-row {
+    padding-bottom: 15px;
   }
 }
 
 @media (min-width: 768px) {
   .logo-con {
     justify-content: center;
+  }
+  #telephone {
+    padding-top: 20px;
+  }
+  .button-menu {
+    vertical-align: middle;
   }
 }
 
@@ -1320,8 +1384,8 @@ footer ul li a:hover {
 }
 
 @media (max-width: 992px) {
-  .button-contact,
-  .button-support {
+  .button-contact-link,
+  .button-support-link {
     display: none;
   }
 }
@@ -1353,13 +1417,28 @@ footer ul li a:hover {
     flex-direction: column;
   }
   #block1-nm {
-    margin-top: 0px;
+    margin-top: 30px;
   }
 }
 
 @media (min-width: 768px) {
   .column-small {
     width: 50%;
+  }
+  .p-row-1 {
+    min-height: 76px;
+  }
+  .p-row-2 {
+    min-height: 57px;
+  }
+}
+
+@media (min-width: 992px) {
+  .p-row-1 {
+    min-height: 95px;
+  }
+  .p-row-2 {
+    min-height: 44px;
   }
 }
 
@@ -1389,6 +1468,14 @@ footer ul li a:hover {
 }
 
 /* ================ email sign-up ================== */
+@media (min-width: 992px) {
+  .sign-up {
+    width: 49.7%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
 /* ================ footer ================== */
 @media (max-width: 768px) {
   .f-social {
