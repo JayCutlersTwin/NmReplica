@@ -1,3 +1,7 @@
+/* ================Partials================== */
+@import "_colors";
+
+
 /* ================Main================== */
 * {
     box-sizing: border-box;
@@ -12,7 +16,7 @@ body {
 
 .structure {
     width: 100%;
-    background-color: #fff;
+    background-color: $White;
     display: block;
 }
 
@@ -29,6 +33,7 @@ small {
 
 ul {
     list-style-type: none;
+    line-height: 22px;
 }
 
 .container {
@@ -37,7 +42,7 @@ ul {
     margin-left: auto;
 }
 .required {
-    color: red;
+    color: $Red;
 }
 
 /* ================Navbar================== */
@@ -50,7 +55,7 @@ ul {
     display: flex;
     justify-content: center;
     width: 100%;
-    padding: 20px 20px;
+    padding: 20px 0px;
 }
 
 .main-logo {
@@ -76,18 +81,18 @@ header a {
     display: inline-block;
 }
 .button-support {
-    background-color: #4183d7;
+    background-color: $Blue;
     padding: 5px 15px;
     width: auto;
     height: 56px;
     border-radius: 3px;
     text-transform: uppercase;
-    color: white;
+    color: $White;
     font-size: 1rem;
     text-align: center;
 }
 .button-support:hover {
-    background-color: #2a6ec6;
+    background-color: $DarkBlue;
 }
 
 .button-contact {
@@ -98,32 +103,33 @@ header a {
     height: 56px;
     border-radius: 3px;
     text-transform: uppercase;
-    color: white;
+    color: $White;
     font-size: 1rem;
     text-align: center;
 }
 
 .button-contact:hover {
-    background-color: #84858f;
+    background-color: $DullGray;
 }
 
 
 .button-menu {
-    background-color: #333645;
+    background-color: $DarkGray;
     padding: 5px 15px;
     width: 63px;
     height: 56px;
     border-radius: 3px;
     border: none;
     text-transform: uppercase;
-    color: white;
+    color: $White;
     font-size: .75em;
     text-align: center;
     margin-left: 20px;
+    float: right;
 }
 
 .button-menu:hover {
-    background-color: #22242e;
+    background-color: $russBlue;
 }
 
 .sandwich-box {
@@ -134,7 +140,7 @@ header a {
 }
 
 .sandwich {
-    background-color: #fff;
+    background-color: $White;
     height: 3px;
     width: 33px;
 }
@@ -146,14 +152,14 @@ header a {
     height: 56px;
     border-top-right-radius: 3px;
     border-bottom-right-radius: 3px;
-    color: white;
+    color: $White;
     font-size: 1rem;
     border: none;
     vertical-align: middle;
 }
 
 .button-search:hover {
-    background-color: #7e808f;
+    background-color: $DarkerDullGray;
 }
 
 .search-bar {
@@ -219,17 +225,25 @@ header a {
 }
 
 .button-support-link {
-    margin-left: 10px;
+    margin-left: 60px;
 }
 
 .telephone-link {
     margin-left: 25px;
 }
 
+.button-support,
+.button-contact,
+.button-menu,
+.search-bar {
+    margin-top: 5px;
+}
+
+
 /*=================== Bottom nav bar ===============*/
 
 .navbar-bottom {
-    background-color: #333645;
+    background-color: $DarkGray;
     display: flex;
     justify-content: center;
     margin-left: auto;
@@ -237,7 +251,7 @@ header a {
 }
 .navbar-bottom a {
     display:block;
-    color: white;
+    color: $White;
     max-width: 100%;
     text-decoration: none;
 }
@@ -251,52 +265,52 @@ header a {
 }
 
 .navbar-bottom a:hover{
-    color: white;
+    color: $White;
 }
 
 .item-1:hover {
     background-color: #79539a;
 }
 .item-1:hover #item-1 path{
-    fill: white;
+    fill: $White;
 }
 
 .item-2:hover {
-    background-color: #286ADB;
+    background-color: $hoverBlue;
 }
 .item-2:hover #item-2 path{
-    fill: white;
+    fill: $White;
 }
 
 .item-3:hover {
     background-color: #d44645;
 }
 .item-3:hover #item-3 path{
-    fill: white;
+    fill: $White;
 }
 
 .item-4:hover {
     background-color: #526781;
 }
 .item-4:hover #item-4 path{
-    fill: white;
+    fill: $White;
 }
 
 .item-5:hover {
-    background-color: #25a25a;
+    background-color: $EuGreen;
 }
 .item-5:hover #item-5 path{
-    fill: white;
+    fill: $White;
 }
 
 .item-6:hover {
-    background-color: #DE093F;
+    background-color: $Pink;
 }
 .item-6:hover #item-6 path{
-    fill: white;
+    fill: $White;
 }
 .item-1 {
-    border-left: 1px solid #666666
+    border-left: 1px solid $Gray
 }
 
 .item-1,
@@ -317,7 +331,7 @@ header a {
 }
 
 span icon-1 a:hover {
-    color: #fff;
+    color: $White;
 }
 
 #item-1,
@@ -335,12 +349,12 @@ span icon-1 a:hover {
 }
 
 /* ================Banner================== */
-.unfair {
+.first-con {
     display: flex;
     flex-direction: row;
 }
 
-.microphone {
+.second-con {
     display: flex;
     flex-direction: column;
     height: 80vh;
@@ -348,7 +362,7 @@ span icon-1 a:hover {
 }
 .banner-con {
     flex: 1 0 auto;
-    color: #fff;
+    color: $White;
     border-top: 1px solid rgba(51,54,69,.5);
 }
 .banner-con .container{
@@ -397,8 +411,8 @@ span icon-1 a:hover {
 
 .large-readmore {
     padding: 15px;
-    color: white;
-    background-color: #926fb1;
+    color: $White;
+    background-color: $Purple;
     border: none;
     border-radius: 3px;
     text-transform: uppercase;
@@ -411,7 +425,7 @@ span icon-1 a:hover {
     }
 }
 .large-readmore:hover {
-    background-color: #7e57a0;
+    background-color: $hoverPurple;
 }
 
 
@@ -450,7 +464,7 @@ span icon-1 a:hover {
     padding: 30px;
     margin-top: 30px;
     text-align: center;
-    color: #333645;
+    color: $DarkGray;
     width:100%;
     p {
         font-size: 0.8125em;
@@ -459,8 +473,8 @@ span icon-1 a:hover {
 
 .block:hover,
 .block:hover path {
-    color: #fff;
-    fill: white;
+    color: $White;
+    fill: $White;
     border: none;
 }
 
@@ -468,43 +482,43 @@ span icon-1 a:hover {
 .block-1:hover {
     background-color: #67809f;
     .underline {
-        background-color: #ffffff;
+        background-color: $White;
     }
 }
 .block-2:hover {
-    background-color: #4183d7;
+    background-color: $Blue;
     .underline {
-        background-color: #ffffff;
+        background-color: $White;
     }
 }
 .block-3:hover {
-    background-color: #2ecc71;
+    background-color: $SeaGreen;
     .underline {
-        background-color: #ffffff;
+        background-color: $White;
     }
 }
 .block-4:hover {
     background-color: #d64541;
     .underline {
-        background-color: #ffffff;
+        background-color: $White;
     }
 }
 .block-5:hover {
-    background-color: #926fb1;
+    background-color: $Purple;
     .underline {
-        background-color: #ffffff;
+        background-color: $White;
     }
 }
 .block-6:hover {
-    background-color: #f62459;
+    background-color: $Red;
     .underline {
-        background-color: #ffffff;
+        background-color: $White;
     }
 }
 .block-7:hover {
-    background-color: #926fb1;
+    background-color: $Purple;
     .underline {
-        background-color: #ffffff;
+        background-color: $White;
     }
 }
 #btn-block-1 {
@@ -512,78 +526,79 @@ span icon-1 a:hover {
     padding: 5px 15px;
     border-radius: 3px;
     text-transform: uppercase;
-    color: white;
+    color: $White;
     font-size: 1rem;
 }
 #btn-block-2 {
-    background-color: #4183d7;
+    background-color: $Blue;
     padding: 5px 15px;
     border-radius: 3px;
     text-transform: uppercase;
-    color: white;
+    color: $White;
 }
 #btn-block-3 {
-    background-color: #2ecc71;
+    background-color: $SeaGreen;
     padding: 5px 15px;
     border-radius: 3px;
     text-transform: uppercase;
-    color: white;
+    color: $White;
 }
 #btn-block-4{
     background-color: #d64541;
     padding: 5px 15px;
     border-radius: 3px;
     text-transform: uppercase;
-    color: white;
+    color: $White;
 }
 #btn-block-5 {
-    background-color: #926fb1;
+    background-color: $Purple;
     padding: 5px 15px;
     border-radius: 3px;
     text-transform: uppercase;
-    color: white;
+    color: $White;
 }
 #btn-block-6 {
-    background-color: #f62459;
+    background-color: $Red;
     padding: 5px 15px;
     border-radius: 3px;
     text-transform: uppercase;
-    color: white;
+    color: $White;
 }
 #btn-block-7 {
-    background-color: #926fb1;
+    background-color: $Purple;
     padding: 5px 15px;
     border-radius: 3px;
     text-transform: uppercase;
-    color: white;
+    color: $White;
+    min-height: 47px;
 }
 .block:hover #btn-block-1{
     color: #67809f;
-    background: white;
+    background: $White;
 }
 .block:hover #btn-block-2 {
-    color: #4183d7;
-    background: white;
+    color: $Blue;
+    background: $White;
 }
 .block:hover #btn-block-3 {
-    color: #2ecc71;
-    background: white;
+    color: $SeaGreen;
+    background: $White;
 }
 .block:hover #btn-block-4 {
     color: #d64541;
-    background: white;
+    background: $White;
 }
 .block:hover #btn-block-5 {
-    color: #926fb1;
-    background: white;
+    color: $Purple;
+    background: $White;
 }
 .block:hover #btn-block-6 {
-    color: #f62459;
-    background: white;
+    color: $Red;
+    background: $White;
 }
 .block:hover #btn-block-7 {
-    color: #926fb1;
-    background: white;
+    color: $Purple;
+    background: $White;
 }
 
 a .block-links {
@@ -592,7 +607,7 @@ a .block-links {
 }
 
 .block-links:hover {
-    color: white;
+    color: $White;
 }
 
 .icon {
@@ -608,79 +623,71 @@ a .block-links {
     background-color: #67809f;
 }
 .icon-2 {
-    background-color: #4183d7;
+    background-color: $Blue;
 }
 .icon-3 {
-    background-color: #2ecc71;
+    background-color: $SeaGreen;
 }
 .icon-4 {
     background-color: #d64541;
 }
 .icon-5 {
-    background-color: #926fb1;
+    background-color: $Purple;
 }
 .icon-6 {
-    background-color: #f62459;
+    background-color: $Red;
 }
 .icon-7 {
-    background-color: #926fb1;
+    background-color: $Purple;
 }
 
 .block:hover .icon-1 path {
     fill: #67809f;
 }
 .block:hover .icon-2 path {
-    fill: #4183d7;
+    fill: $Blue;
 }
 .block:hover .icon-3 path {
-    fill: #2ecc71;
+    fill: $SeaGreen;
 }
 .block:hover .icon-4 path {
     fill: #d64541;
 }
 .block:hover .icon-5 path {
-    fill: #926fb1;
+    fill: $Purple;
 }
 .block:hover .icon-6 path {
-    fill: #f62459;
+    fill: $Red;
 }
 .block:hover .icon-7 path {
-    fill: #926fb1;
+    fill: $Purple;
 }
 
 .block:hover .icon {
-    background: #fff;
+    background: $White;
 }
 
 .underline {
     width: 28px;
     display: inline-block;
-    background-color: #333645;
+    background-color: $DarkGray;
     height: 3px;
     margin-bottom: 10px;
-}#ffffff
+}
 
 /* ================Banner 2 ================== */
-.section-nm {
-    background-color: #333645;
-    color: #fff;
-}
+
 .netmatters-logo-bg {
-    background-color: #333645;
-    color: #fff;
+    background-color: $DarkGray;
+    color: $White;
 }
 
 .banner2 {
     display: block;
-    position: absolute;
-    width: 100%;
-    height: 60%;
-    overflow: hidden;
     background-image: url(../images/banner-2.png);
     background-repeat: no-repeat;
     background-position: 100%;
     background-size: auto 100%;
-    background-color: #333645;
 }
 
 .row-nm {
@@ -698,7 +705,7 @@ a .block-links {
     position: relative;
     font-family: 'poppins', sans-serif;
     letter-spacing: .4px;
-    color: #fff;
+    color: $White;
     p {
         font-size: 1rem;
     }
@@ -713,11 +720,14 @@ a .block-links {
 .culture-btn {
     height: 47px;
     width: 173px;
-    color: #333645;
-    background-color: #fff;
+    color: $DarkGray;
+    background-color: $White;
     border-radius: 3px;
     border: none;
     text-transform: uppercase;
+    svg {
+        margin-left: 10px;
+    }
 }
 
 .culture-btn:hover {
@@ -735,9 +745,10 @@ a .block-links {
     padding: 40px 0px;
     height: 104px;
     width: 71px;
-    border-bottom: 5px solid #333645;
+    border-bottom: 5px solid $DarkGray;
     text-transform: uppercase;
     font-size: 20px;
+    font-weight: 600;
 }
 
 /* ================ News cards ================== */
@@ -753,7 +764,7 @@ a .block-links {
     height: 47px;
     border-radius: 3px;
     text-transform: uppercase;
-    color: white;
+    color: $White;
     font-size: 1rem;
     text-align: center;
     border: none;
@@ -762,8 +773,8 @@ a .block-links {
 }
 
 .card-btn:hover {
-    color: #ffffff;
-    background-color: white;
+    color: $White;
+    background-color: $White;
 }
 
 .card-heading {
@@ -795,20 +806,20 @@ a .block-links {
 }
 
 .author strong{
-    color: #333645;
+    color: $DarkGray;
 }
 .author {
-    color: #666666;
+    color: $Gray;
 }
 .author {
     margin-left: 20px;
 }
 
 .side-banner {
-    color: #fff;
+    color: $White;
     font-size: 0.75em;
     text-decoration: none;
-    background-color: #4183d7;
+    background-color: $Blue;
     padding: 0 10px;
     position: absolute;
     right: 0px;
@@ -816,16 +827,16 @@ a .block-links {
     z-index: 1;
 }
 .side-banner:hover {
-    color: #ffffff;
+    color: $White;
     text-decoration: underline;
 }
 #side-banner2 {
-    background-color: #926fb1;
+    background-color: $Purple;
 }
 /* ================ Previous Work ================== */
 
 .previous-work {
-    background-color: #fff;
+    background-color: $White;
     box-shadow: inset .1px 20px 50px #ededed;
     padding-top: 50px;
     padding-bottom: 50px;
@@ -931,8 +942,8 @@ a .block-links {
     margin-right: auto;
     margin-bottom: 50px;
     max-width: 260px;
-    background-color: #333645;
-    color: #ffffff;
+    background-color: $DarkGray;
+    color: $White;
     text-align: center;
 
     h3 {
@@ -950,7 +961,7 @@ a .block-links {
 .underline-speech {
     width: 28px;
     display: inline-block;
-    background-color: #ffffff;
+    background-color: $White;
     height: 3px;
     margin-bottom: 5px;
 }
@@ -964,7 +975,7 @@ a .block-links {
     position: absolute;
     border-width: 50px;
     border-style: solid;
-    border-color: #333645 transparent transparent transparent;
+    border-color: $DarkGray transparent transparent transparent;
 }
 
 #busseys-speech::after,
@@ -977,7 +988,7 @@ a .block-links {
     position: absolute;
     border-width: 50px;
     border-style: solid;
-    border-color: #333645 transparent transparent transparent;
+    border-color: $DarkGray transparent transparent transparent;
 }
 
 
@@ -985,34 +996,34 @@ a .block-links {
 /* ================ News Letter section ================== */
 
 .email-newsletter {
-    background-color: #dddddd;
-    color: #333645;
+    background-color: $LightGray;
+    color: $DarkGray;
     font-size: 1em;
     padding: 0px;
 }
 
 .email-newsletter form a {
-    color: #333645;
+    color: $DarkGray;
 }
 .email-newsletter form a:hover {
     color: #121419;
 }
 
 #newsletter-submit {
-    background-color: #333645;
+    background-color: $DarkGray;
     padding: 5px 15px;
     width: 120px;
     height: 45px;
     border-radius: 3px;
     text-transform: uppercase;
-    color: white;
+    color: $White;
     font-size: 1rem;
     text-align: center;
     border: none;
 }
 
 #newsletter-submit:hover {
-    background-color: #22242e;
+    background-color: $russBlue;
 }
 
 .sign-up {
@@ -1039,6 +1050,10 @@ a .block-links {
     padding: 50px 30px;
     h2 {
         font-weight: 400;
+        font-size: 2em;
+    }
+    label strong{
+        line-height:2em;
     }
 }
 #Recieve {
@@ -1051,7 +1066,7 @@ a .block-links {
 .block-container-footer{
     max-width: 100%;
     height: auto;
-    background-color: #333645;
+    background-color: $DarkGray;
     display: block;
     padding-top: 47px;
     padding-bottom: 43px;
@@ -1069,12 +1084,12 @@ footer ul {
     width: 100%;
 }
 footer ul li a{
-    color: #fff;
+    color: $White;
     text-decoration: none;
 }
 
 footer ul li a:hover{
-    color: #fff;
+    color: $White;
     text-decoration: underline;
 }
 
@@ -1092,7 +1107,7 @@ footer ul li a:hover{
 .f-web,
 .f-social {
     display: block;
-    color: white;
+    color: $White;
     text-align: left;
     margin-bottom: 30px;
 }
@@ -1112,19 +1127,19 @@ footer ul li a:hover{
 }
 
 #facebook:hover {
-    background-color: #3b5998;
+    background-color: $MarinerBlue;
     opacity:100%;
 }
 #twitter:hover {
-    background-color: #00aced;
+    background-color: $SkyBlue;
     opacity:100%;
 }
 #linkedin:hover {
-    background-color: #0077b5;
+    background-color: $CeruleanBlue;
     opacity:100%;
 }
 #instagram:hover {
-    background-color: #d93175;
+    background-color: $DarkPink;
     opacity:100%;
 }
 
@@ -1301,11 +1316,7 @@ footer ul li a:hover{
         justify-content: space-around;
         padding-left: 0px;
         padding-right: 0px;
-    }
-}
-@media (min-width:1260px) {
-    .logo-con {
-        justify-content: space-around;
+        padding-bottom: 10px;
     }
 }
 
@@ -1315,14 +1326,14 @@ footer ul li a:hover{
     }
 }
 
-@media (max-width:992px) {
+@media (max-width:991px) {
     .button-contact-link,
     .button-support-link {
         display: none;
     }
 }
 
-@media (max-width:1260px) {
+@media (max-width:1259px) {
     .item-1,
     .item-2,
     .item-3,
@@ -1330,6 +1341,17 @@ footer ul li a:hover{
     .item-5,
     .item-6 {
         width: 154px;
+        height: 99px;
+    }
+}
+@media (min-width:1260px) {
+    .item-1,
+    .item-2,
+    .item-3,
+    .item-4,
+    .item-5,
+    .item-6 {
+        width: 194px;
         height: 99px;
     }
 }
@@ -1377,12 +1399,22 @@ footer ul li a:hover{
     }
 }
 
+@media (min-width: 1260px){
+    .p-row-1 {
+        min-height: auto;
+    }
+    .p-row-2 {
+        min-height: 44px;
+    }
+}
+
+
 
 /* ================ banner 2 ================== */
 
 @media (max-width:991px) {
     .banner2 {
-        display: none;
+        background-image: none;
     }
 }
 
@@ -1394,7 +1426,7 @@ footer ul li a:hover{
 
 /* ================ cards ================== */
 
-@media (min-width: 768px) and (max-width: 1260px){
+@media (min-width: 768px) and (max-width: 1259px){
     #card3 {
         display: none;
     }
@@ -1423,7 +1455,7 @@ footer ul li a:hover{
     }
 }
 
-@media (min-width: 768px) and (max-width: 1258px) {
+@media (min-width: 768px) and (max-width: 1260px) {
     .footer-container {
         flex-direction: row;
         flex-wrap: wrap;
@@ -1436,21 +1468,20 @@ footer ul li a:hover{
     }
 }
 
-@media (min-width:992px) {
-    .footer-container {
-        width: 970px;
-    }
-}
-
 @media (min-width:768px) {
     .footer-container {
         width: 750px;
     }
 }
 
+@media (min-width:992px) {
+    .footer-container {
+        width: 970px;
+    }
+}
 
 
-@media (min-width: 1259px) {
+@media (min-width: 1260px) {
     .footer-container {
         flex-direction: row;
         justify-content: center;

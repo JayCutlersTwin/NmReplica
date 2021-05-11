@@ -53,7 +53,7 @@ body {
   }
 }
 
-@media (min-width: 993px) and (max-width: 1259px) {
+@media (min-width: 992px) and (max-width: 1259px) {
   .form-control {
     display: none;
   }
@@ -105,6 +105,10 @@ h1 {
 }
 
 /* ================ CARD Section ================== */
+.card {
+  border: none;
+}
+
 .card-img-top {
   overflow: hidden;
 }
@@ -112,6 +116,11 @@ h1 {
 .card-body {
   padding: 30px;
   height: auto;
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
 }
 
 .card-body .card-heading a {
@@ -249,4 +258,52 @@ h1 {
 .partners .container {
   display: flex;
   justify-content: center;
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .button-support,
+  .button-contact {
+    display: flex;
+  }
+  ul {
+    padding-left: 0px;
+  }
+}
+
+@media all and (-ms-high-contrast: none) and (max-width: 767px), all and (-ms-high-contrast: active) and (max-width: 767px) {
+  .row {
+    display: block;
+  }
+}
+
+@media all and (-ms-high-contrast: none) and (min-width: 768px), all and (-ms-high-contrast: active) and (min-width: 768px) {
+  .card1,
+  .card2 {
+    margin-right: 25px;
+    width: 50%;
+  }
+}
+
+@media all and (-ms-high-contrast: none) and (min-width: 992px), all and (-ms-high-contrast: active) and (min-width: 992px) {
+  .card1,
+  .card2 {
+    margin-right: 25px;
+  }
+  .card1,
+  .card2,
+  .card3 {
+    width: 31.5%;
+  }
+  .banner2 {
+    max-height: 100%;
+  }
+}
+
+@media all and (-ms-high-contrast: none) and (min-width: 1260px), all and (-ms-high-contrast: active) and (min-width: 1260px) {
+  .p-row-1 {
+    min-height: 80px;
+  }
+  .p-row-2 {
+    min-height: 79px;
+  }
 }

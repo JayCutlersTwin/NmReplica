@@ -1,3 +1,7 @@
+@import "_colors";
+
+
+
 /* ========================================== */
 /* ========================================== */
 /* ================== Main ================== */
@@ -41,10 +45,6 @@ body {
 
 /* ================ NavBar ================== */
 
-
-
-
-
 @media (min-width:769px) {
     .search-bar-small {
         display: none;
@@ -60,7 +60,7 @@ body {
     }
 }
 
-@media (min-width:993px) and (max-width:1259px) {
+@media (min-width:992px) and (max-width:1259px) {
     .form-control {
         display: none;
     }
@@ -89,10 +89,6 @@ h1 {
     }
 }
 
-
-
-
-
 /* ================ blocks ================== */
 @media (min-width: 768px){
     .col{
@@ -113,6 +109,9 @@ h1 {
     }
 }
 /* ================ CARD Section ================== */
+.card {
+    border:none;
+}
 .card-img-top {
     overflow:hidden;
 }
@@ -120,9 +119,14 @@ h1 {
 .card-body{
     padding:30px;
     height: auto;
+    border-left: 1px solid rgba(0,0,0,.1);
+    border-right: 1px solid rgba(0,0,0,.1);
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
     .card-heading a {
         text-decoration: none;
-        color: #4183d7;
+        color: $Blue;
         .card-title {
             font-size: 1em;
             font-weight: 600;
@@ -136,22 +140,22 @@ h1 {
     }
 }
 #card-title2 {
-    color: #926fb1;
+    color: $Purple;
 }
 
 #button1,
 #button3  {
-    background-color: #4183d7;
+    background-color: $Blue;
 }
 #button1:hover,
 #button3:hover  {
-    background-color: #2a6ec6;
+    background-color: $DarkBlue;
 }
 #button2 {
-    background-color: #926fb1;
+    background-color: $Purple;
 }
 #button2:hover {
-    background-color: #7e57a0;
+    background-color: $hoverPurple;
 }
 
 @media (max-width:767px){
@@ -220,8 +224,8 @@ h1 {
     appearance:none;
     height: 32px;
     min-width: 32px;
-    background-color: #dddddd;
-    border: 3px solid #333645;
+    background-color: $LightGray;
+    border: 3px solid $DarkGray;
     border-radius: 3px;
     cursor: pointer;
     display: flex;
@@ -230,7 +234,7 @@ h1 {
 }
 
 .checkbox-1 input[type="checkbox"]:after{
-    background-color: #333645;
+    background-color: $DarkGray;
     font-family: "Font Awesome 5 Free";
     font-weight: 600;
     font-size: 1em;
@@ -239,7 +243,7 @@ h1 {
     display:none;
 }
 .checkbox-1 input[type="checkbox"]:checked{
-    background-color: #333645;
+    background-color: $DarkGray;
 }
 .checkbox-1 input[type="checkbox"]:checked:after{
     display: block;
@@ -251,4 +255,52 @@ h1 {
 .partners .container {
     display: flex;
     justify-content: center;
+}
+
+// IE
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .button-support,
+    .button-contact {
+        display: flex;
+    }
+    ul {
+        padding-left: 0px;
+    }
+    @media all and (max-width:767px){
+        .row {
+            display: block;
+        }
+    }
+
+    @media all and (min-width:768px){
+        .card1,
+        .card2 {
+            margin-right: 25px;
+            width: 50%;
+        }
+    }
+
+    @media all and (min-width:992px){
+        .card1,
+        .card2 {
+            margin-right: 25px;
+        }
+        .card1,
+        .card2,
+        .card3 {
+            width: 31.5%;
+        }
+
+        .banner2 {
+            max-height: 100%;
+        }
+    }
+    @media all and (min-width:1260px){
+        .p-row-1 {
+            min-height: 80px;
+        }
+        .p-row-2 {
+            min-height: 79px;
+        }
+    }
 }
