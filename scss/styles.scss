@@ -498,7 +498,7 @@ span icon-1 a:hover {
     }
 }
 .block-4:hover {
-    background-color: #d64541;
+    background-color: $CinnaRed;
     .underline {
         background-color: $White;
     }
@@ -521,56 +521,49 @@ span icon-1 a:hover {
         background-color: $White;
     }
 }
-#btn-block-1 {
-    background-color: #67809f;
-    padding: 5px 15px;
+#btn-block-1,
+#btn-block-2,
+#btn-block-3,
+#btn-block-4,
+#btn-block-5,
+#btn-block-6,
+#btn-block-7 {
+    display: inline-block;
+    height: 47px;
+    padding: 12px 15px;
     border-radius: 3px;
     text-transform: uppercase;
     color: $White;
     font-size: 1rem;
 }
+
+#btn-block-1 {
+    background-color: #67809f;
+
+}
 #btn-block-2 {
     background-color: $Blue;
-    padding: 5px 15px;
-    border-radius: 3px;
-    text-transform: uppercase;
-    color: $White;
+
 }
 #btn-block-3 {
     background-color: $SeaGreen;
-    padding: 5px 15px;
-    border-radius: 3px;
-    text-transform: uppercase;
-    color: $White;
+
 }
 #btn-block-4{
-    background-color: #d64541;
-    padding: 5px 15px;
-    border-radius: 3px;
-    text-transform: uppercase;
-    color: $White;
+    background-color: $CinnaRed;
+
 }
 #btn-block-5 {
     background-color: $Purple;
-    padding: 5px 15px;
-    border-radius: 3px;
-    text-transform: uppercase;
-    color: $White;
+
 }
 #btn-block-6 {
     background-color: $Red;
-    padding: 5px 15px;
-    border-radius: 3px;
-    text-transform: uppercase;
-    color: $White;
+
 }
 #btn-block-7 {
     background-color: $Purple;
-    padding: 5px 15px;
-    border-radius: 3px;
-    text-transform: uppercase;
-    color: $White;
-    min-height: 47px;
+
 }
 .block:hover #btn-block-1{
     color: #67809f;
@@ -585,7 +578,7 @@ span icon-1 a:hover {
     background: $White;
 }
 .block:hover #btn-block-4 {
-    color: #d64541;
+    color: $CinnaRed;
     background: $White;
 }
 .block:hover #btn-block-5 {
@@ -629,7 +622,7 @@ a .block-links {
     background-color: $SeaGreen;
 }
 .icon-4 {
-    background-color: #d64541;
+    background-color: $CinnaRed;
 }
 .icon-5 {
     background-color: $Purple;
@@ -651,7 +644,7 @@ a .block-links {
     fill: $SeaGreen;
 }
 .block:hover .icon-4 path {
-    fill: #d64541;
+    fill: $CinnaRed;
 }
 .block:hover .icon-5 path {
     fill: $Purple;

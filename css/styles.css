@@ -552,62 +552,48 @@ span icon-1 a:hover {
   background-color: #ffffff;
 }
 
-#btn-block-1 {
-  background-color: #67809f;
-  padding: 5px 15px;
+#btn-block-1,
+#btn-block-2,
+#btn-block-3,
+#btn-block-4,
+#btn-block-5,
+#btn-block-6,
+#btn-block-7 {
+  display: inline-block;
+  height: 47px;
+  padding: 12px 15px;
   border-radius: 3px;
   text-transform: uppercase;
   color: #ffffff;
   font-size: 1rem;
 }
 
+#btn-block-1 {
+  background-color: #67809f;
+}
+
 #btn-block-2 {
   background-color: #4183d7;
-  padding: 5px 15px;
-  border-radius: 3px;
-  text-transform: uppercase;
-  color: #ffffff;
 }
 
 #btn-block-3 {
   background-color: #2ecc71;
-  padding: 5px 15px;
-  border-radius: 3px;
-  text-transform: uppercase;
-  color: #ffffff;
 }
 
 #btn-block-4 {
   background-color: #d64541;
-  padding: 5px 15px;
-  border-radius: 3px;
-  text-transform: uppercase;
-  color: #ffffff;
 }
 
 #btn-block-5 {
   background-color: #926fb1;
-  padding: 5px 15px;
-  border-radius: 3px;
-  text-transform: uppercase;
-  color: #ffffff;
 }
 
 #btn-block-6 {
   background-color: #f62459;
-  padding: 5px 15px;
-  border-radius: 3px;
-  text-transform: uppercase;
-  color: #ffffff;
 }
 
 #btn-block-7 {
   background-color: #926fb1;
-  padding: 5px 15px;
-  border-radius: 3px;
-  text-transform: uppercase;
-  color: #ffffff;
-  min-height: 47px;
 }
 
 .block:hover #btn-block-1 {
