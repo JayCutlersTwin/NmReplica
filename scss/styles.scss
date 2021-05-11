@@ -480,7 +480,7 @@ span icon-1 a:hover {
 
 
 .block-1:hover {
-    background-color: #67809f;
+    background-color: $SlateGray;
     .underline {
         background-color: $White;
     }
@@ -538,7 +538,7 @@ span icon-1 a:hover {
 }
 
 #btn-block-1 {
-    background-color: #67809f;
+    background-color: $SlateGray;
 
 }
 #btn-block-2 {
@@ -566,7 +566,7 @@ span icon-1 a:hover {
 
 }
 .block:hover #btn-block-1{
-    color: #67809f;
+    color: $SlateGray;
     background: $White;
 }
 .block:hover #btn-block-2 {
@@ -613,7 +613,7 @@ a .block-links {
     padding:15px;
 }
 .icon-1 {
-    background-color: #67809f;
+    background-color: $SlateGray;
 }
 .icon-2 {
     background-color: $Blue;
@@ -635,7 +635,7 @@ a .block-links {
 }
 
 .block:hover .icon-1 path {
-    fill: #67809f;
+    fill: $SlateGray;
 }
 .block:hover .icon-2 path {
     fill: $Blue;
