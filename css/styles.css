@@ -1322,7 +1322,7 @@ footer ul li a:hover {
 /* ========================================= */
 /* ========================================= */
 /* ================ Navbar ================== */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .logo-con {
     display: table;
   }
@@ -1484,7 +1484,6 @@ footer ul li a:hover {
 @media (min-width: 992px) {
   .sign-up {
     width: 49.7%;
-    padding-left: 15px;
     padding-right: 15px;
   }
 }

@@ -38,18 +38,18 @@ body {
 }
 
 /* ================ NavBar ================== */
-@media (min-width: 769px) {
-  .search-bar-small {
-    display: none;
-  }
-}
-
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .search-bar {
     display: none;
   }
   .search-bar-small {
     display: block;
+  }
+}
+
+@media (min-width: 768px) {
+  .search-bar-small {
+    display: none;
   }
 }
 
@@ -92,7 +92,7 @@ h1 {
   }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   .col-md-4 {
     width: 100%;
   }
