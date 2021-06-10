@@ -744,7 +744,6 @@ span icon-1 a:hover {
 .banner-text-con {
     position: relative;
     display: block;
-
     h1 {
         font-size: 48px;
         line-height: 39.6px;
@@ -1756,7 +1755,11 @@ footer ul li a:hover{
 }
 
 /* ================ Banner ================== */
-
+@media (min-width:993px) {
+    #onlyOneMedia {
+        padding-left: 25px;
+    }
+}
 /* ================ blocks ================== */
 @media (max-width: 767px){
     div .row {

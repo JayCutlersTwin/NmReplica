@@ -1797,6 +1797,12 @@ footer ul li a:hover {
 }
 
 /* ================ Banner ================== */
+@media (min-width: 993px) {
+  #onlyOneMedia {
+    padding-left: 25px;
+  }
+}
+
 /* ================ blocks ================== */
 @media (max-width: 767px) {
   div .row {
