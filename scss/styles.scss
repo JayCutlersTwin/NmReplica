@@ -12,6 +12,7 @@ body {
     font-family: 'poppins', sans-serif;
     letter-spacing: .4px;
     line-height: 1.42px;
+    overflow-x: hidden;
 }
 
 .structure {
@@ -53,7 +54,7 @@ ul {
 
 .logo-con {
     display: flex;
-    justify-content: center;
+    // justify-content: center;
     width: 100%;
     padding: 20px 0px;
 }
@@ -225,7 +226,7 @@ header a {
 }
 
 .button-support-link {
-    margin-left: 60px;
+    margin-left: 78px;
 }
 
 .telephone-link {
@@ -269,42 +270,42 @@ header a {
 }
 
 .item-1:hover {
-    background-color: #79539a;
+    background-color: $navBarItem1;
 }
 .item-1:hover #item-1 path{
     fill: $White;
 }
 
 .item-2:hover {
-    background-color: $hoverBlue;
+    background-color: $navBarItem2;
 }
 .item-2:hover #item-2 path{
     fill: $White;
 }
 
 .item-3:hover {
-    background-color: #d44645;
+    background-color: $navBarItem3;
 }
 .item-3:hover #item-3 path{
     fill: $White;
 }
 
 .item-4:hover {
-    background-color: #526781;
+    background-color: $navBarItem4;
 }
 .item-4:hover #item-4 path{
     fill: $White;
 }
 
 .item-5:hover {
-    background-color: $EuGreen;
+    background-color: $navBarItem5;
 }
 .item-5:hover #item-5 path{
     fill: $White;
 }
 
 .item-6:hover {
-    background-color: $Pink;
+    background-color: $navBarItem6;
 }
 .item-6:hover #item-6 path{
     fill: $White;
@@ -322,6 +323,8 @@ header a {
     height: 99px;
     width: 192px;
     padding-top:19px;
+    position: relative;
+    display: block;
     padding-bottom: 18px;
     text-align: center;
     text-transform: uppercase;
@@ -347,6 +350,355 @@ span icon-1 a:hover {
         vertical-align: baseline;
     }
 }
+
+
+// creating a dash for the list items. Need to add ::after to class dash. I also need
+//
+
+.sub-menu-1,
+.sub-menu-2,
+.sub-menu-3,
+.sub-menu-4,
+.sub-menu-5,
+.sub-menu-6, {
+    padding: 0px;
+    margin: 0px;
+    display: none;
+    position: absolute;
+    top: 100%;
+    z-index: 1;
+}
+
+.item-1:hover {
+    .sub-menu-1 {
+        display: block;
+        left: -20px;
+        padding: 0px;
+        margin: 0px;
+        top: 100%;
+        z-index: 1;
+
+        ul {
+            width: 2000px;
+            margin: 0px;
+            padding: 0px;
+            display: flex;
+            flex-direction: row;
+            background-color: $subMenuItem1;
+            left: 0px;
+            height: 45px;
+            li {
+                padding-left: 20px;
+                top: 25%;
+                position: relative;
+                font-size: 13px;
+            }
+
+            li:not(:last-child) .dash::after {
+                content: "-";
+                padding-left: 20px;
+            }
+        }
+        ul::after {
+            content: "";
+            position: absolute;
+            display: block;
+            top: 0px;
+            left: 100%;
+            background-color: $subMenuItem1;
+            height: 45px;
+            width: 100%;
+        }
+        ul::before {
+            content: "";
+            position: absolute;
+            display: block;
+            top: 0px;
+            right: 99%;
+            background-color: $subMenuItem1;
+            height: 45px;
+            width: 100%;
+        }
+
+    }
+}
+
+.item-2:hover {
+    .sub-menu-2 {
+        display: block;
+        left: -172px;
+        padding: 0px;
+        margin: 0px;
+        top: 100%;
+        z-index: 1;
+
+        ul {
+            width: 2000px;
+            margin: 0px;
+            padding: 0px;
+            display: flex;
+            flex-direction: row;
+            background-color: $subMenuItem2;
+            left: 0px;
+            height: 45px;
+            li {
+                padding-left: 20px;
+                top: 25%;
+                position: relative;
+                font-size: 13px;
+            }
+
+            li:not(:last-child) .dash::after {
+                content: "-";
+                padding-left: 20px;
+            }
+        }
+        ul::after {
+            content: "";
+            position: absolute;
+            display: block;
+            top: 0px;
+            left: 100%;
+            background-color: $subMenuItem2;
+            height: 45px;
+            width: 100%;
+        }
+        ul::before {
+            content: "";
+            position: absolute;
+            display: block;
+            top: 0px;
+            right: 99%;
+            background-color: $subMenuItem2;
+            height: 45px;
+            width: 100%;
+        }
+
+    }
+}
+
+.item-3:hover {
+    .sub-menu-3 {
+        display: block;
+        left: -325px;
+        padding: 0px;
+        margin: 0px;
+        top: 100%;
+        z-index: 1;
+
+        ul {
+            width: 2000px;
+            margin: 0px;
+            padding: 0px;
+            display: flex;
+            flex-direction: row;
+            background-color: $subMenuItem3;
+            left: 0px;
+            height: 45px;
+            li {
+                padding-left: 20px;
+                top: 25%;
+                position: relative;
+                font-size: 13px;
+            }
+
+            li:not(:last-child) .dash::after {
+                content: "-";
+                padding-left: 20px;
+            }
+        }
+        ul::after {
+            content: "";
+            position: absolute;
+            display: block;
+            top: 0px;
+            left: 100%;
+            background-color: $subMenuItem3;
+            height: 45px;
+            width: 100%;
+        }
+        ul::before {
+            content: "";
+            position: absolute;
+            display: block;
+            top: 0px;
+            right: 99%;
+            background-color: $subMenuItem3;
+            height: 45px;
+            width: 100%;
+        }
+
+    }
+}
+
+.item-4:hover {
+    .sub-menu-4 {
+        display: block;
+        left: -480px;
+        padding: 0px;
+        margin: 0px;
+        top: 100%;
+        z-index: 1;
+
+        ul {
+            width: 2000px;
+            margin: 0px;
+            padding: 0px;
+            display: flex;
+            flex-direction: row;
+            background-color: $subMenuItem4;
+            left: 0px;
+            height: 45px;
+            li {
+                padding-left: 20px;
+                top: 25%;
+                position: relative;
+                font-size: 13px;
+            }
+
+            li:not(:last-child) .dash::after {
+                content: "-";
+                padding-left: 20px;
+            }
+        }
+        ul::after {
+            content: "";
+            position: absolute;
+            display: block;
+            top: 0px;
+            left: 100%;
+            background-color: $subMenuItem4;
+            height: 45px;
+            width: 100%;
+        }
+        ul::before {
+            content: "";
+            position: absolute;
+            display: block;
+            top: 0px;
+            right: 99%;
+            background-color: $subMenuItem4;
+            height: 45px;
+            width: 100%;
+        }
+
+    }
+}
+
+.item-5:hover {
+    .sub-menu-5 {
+        display: block;
+        left: -635px;
+        padding: 0px;
+        margin: 0px;
+        top: 100%;
+        z-index: 1;
+
+        ul {
+            width: 2000px;
+            margin: 0px;
+            padding: 0px;
+            display: flex;
+            flex-direction: row;
+            background-color: $subMenuItem5;
+            left: 0px;
+            height: 45px;
+            li {
+                padding-left: 20px;
+                top: 25%;
+                position: relative;
+                font-size: 13px;
+            }
+
+            li:not(:last-child) .dash::after {
+                content: "-";
+                padding-left: 20px;
+            }
+        }
+        ul::after {
+            content: "";
+            position: absolute;
+            display: block;
+            top: 0px;
+            left: 100%;
+            background-color: $subMenuItem5;
+            height: 45px;
+            width: 100%;
+        }
+        ul::before {
+            content: "";
+            position: absolute;
+            display: block;
+            top: 0px;
+            right: 99%;
+            background-color: $subMenuItem5;
+            height: 45px;
+            width: 100%;
+        }
+
+    }
+}
+
+.item-6:hover {
+    .sub-menu-6 {
+        display: block;
+        left: -790px;
+        padding: 0px;
+        margin: 0px;
+        top: 100%;
+        z-index: 1;
+
+        ul {
+            width: 2000px;
+            margin: 0px;
+            padding: 0px;
+            display: flex;
+            flex-direction: row;
+            background-color: $subMenuItem6;
+            left: 0px;
+            height: 45px;
+            li {
+                padding-left: 20px;
+                top: 25%;
+                position: relative;
+                font-size: 13px;
+            }
+
+            li:not(:last-child) .dash::after {
+                content: "-";
+                padding-left: 20px;
+            }
+        }
+        ul::after {
+            content: "";
+            position: absolute;
+            display: block;
+            top: 0px;
+            left: 100%;
+            background-color: $subMenuItem6;
+            height: 45px;
+            width: 100%;
+        }
+        ul::before {
+            content: "";
+            position: absolute;
+            display: block;
+            top: 0px;
+            right: 99%;
+            background-color: $subMenuItem6;
+            height: 45px;
+            width: 100%;
+        }
+
+    }
+}
+
+
+
+
+
+
+
 
 /* ================Banner================== */
 .first-con {
@@ -702,7 +1054,7 @@ a .block-links {
     p {
         font-size: 1rem;
     }
-    h1 {
+    h2 {
         font-weight: 400;
         font-size: 2.25rem;
         margin-bottom: 28px;
@@ -727,7 +1079,7 @@ a .block-links {
     background-color: $LighterGray;
 }
 
-#sec-nm-h1 {
+#sec-nm-h2 {
     text-transform: uppercase;
 }
 
@@ -818,6 +1170,9 @@ a .block-links {
     right: 0px;
     top: 10px;
     z-index: 1;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1.2px;
 }
 .side-banner:hover {
     color: $White;
@@ -1105,6 +1460,10 @@ footer ul li a:hover{
     margin-bottom: 30px;
 }
 
+.list-item-gap {
+    margin-bottom: 50px;
+}
+
 .f-social span{
     display: block;
     margin-top: 30px;
@@ -1294,9 +1653,9 @@ footer ul li a:hover{
     }
 }
 @media (min-width:768px) {
-    .logo-con {
-        justify-content: center;
-    }
+    // .logo-con {
+    //     justify-content: center;
+    // }
     #telephone {
         padding-top: 20px;
     }
@@ -1306,7 +1665,7 @@ footer ul li a:hover{
 }
 @media (min-width:992px) {
     .logo-con {
-        justify-content: space-around;
+        // justify-content: space-around;
         padding-left: 0px;
         padding-right: 0px;
         padding-bottom: 10px;
@@ -1347,8 +1706,46 @@ footer ul li a:hover{
         width: 194px;
         height: 99px;
     }
+    .button-support-link {
+        margin-left: 85px;
+    }
+    .item-1:hover .sub-menu-1 {
+        left: -20px;
+        ul li{
+            font-size: 16px;
+        }
+    }
+    .item-2:hover .sub-menu-2 {
+        left: -215px;
+        ul li{
+            font-size: 16px;
+        }
+    }
+    .item-3:hover .sub-menu-3 {
+        left: -405px;
+        ul li{
+            font-size: 16px;
+        }
+    }
+    .item-4:hover .sub-menu-4 {
+        left: -600px;
+        ul li{
+            font-size: 16px;
+        }
+    }
+    .item-5:hover .sub-menu-5 {
+        left: -795px;
+        ul li{
+            font-size: 16px;
+        }
+    }
+    .item-6:hover .sub-menu-6 {
+        left: -990px;
+        ul li{
+            font-size: 16px;
+        }
+    }
 }
-
 
 @media  (max-width: 991px){
     .navbar-bottom-container,

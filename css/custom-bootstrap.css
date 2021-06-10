@@ -160,11 +160,13 @@ h1 {
 }
 
 #button2:hover {
-  background-color: #7e57a0;
+  background-color: #926fb1;
 }
 
 @media (max-width: 767px) {
-  #cardmain {
+  .card1,
+  .card2,
+  .card3 {
     margin-top: 30px;
   }
 }

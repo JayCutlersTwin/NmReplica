@@ -9,6 +9,7 @@ body {
   font-family: 'poppins', sans-serif;
   letter-spacing: .4px;
   line-height: 1.42px;
+  overflow-x: hidden;
 }
 
 .structure {
@@ -51,7 +52,6 @@ ul {
 
 .logo-con {
   display: flex;
-  justify-content: center;
   width: 100%;
   padding: 20px 0px;
 }
@@ -227,7 +227,7 @@ header a {
 }
 
 .button-support-link {
-  margin-left: 60px;
+  margin-left: 78px;
 }
 
 .telephone-link {
@@ -270,7 +270,7 @@ header a {
 }
 
 .item-1:hover {
-  background-color: #79539a;
+  background-color: #926fb1;
 }
 
 .item-1:hover #item-1 path {
@@ -278,7 +278,7 @@ header a {
 }
 
 .item-2:hover {
-  background-color: #286ADB;
+  background-color: #4183d7;
 }
 
 .item-2:hover #item-2 path {
@@ -286,7 +286,7 @@ header a {
 }
 
 .item-3:hover {
-  background-color: #d44645;
+  background-color: #d64561;
 }
 
 .item-3:hover #item-3 path {
@@ -294,7 +294,7 @@ header a {
 }
 
 .item-4:hover {
-  background-color: #526781;
+  background-color: #67809f;
 }
 
 .item-4:hover #item-4 path {
@@ -302,7 +302,7 @@ header a {
 }
 
 .item-5:hover {
-  background-color: #25a25a;
+  background-color: #2ecc71;
 }
 
 .item-5:hover #item-5 path {
@@ -310,7 +310,7 @@ header a {
 }
 
 .item-6:hover {
-  background-color: #DE093F;
+  background-color: #f62459;
 }
 
 .item-6:hover #item-6 path {
@@ -330,6 +330,8 @@ header a {
   height: 99px;
   width: 192px;
   padding-top: 19px;
+  position: relative;
+  display: block;
   padding-bottom: 18px;
   text-align: center;
   text-transform: uppercase;
@@ -360,6 +362,344 @@ span icon-1 a:hover {
 #item-5 svg,
 #item-6 svg {
   vertical-align: baseline;
+}
+
+.sub-menu-1,
+.sub-menu-2,
+.sub-menu-3,
+.sub-menu-4,
+.sub-menu-5,
+.sub-menu-6 {
+  padding: 0px;
+  margin: 0px;
+  display: none;
+  position: absolute;
+  top: 100%;
+  z-index: 1;
+}
+
+.item-1:hover .sub-menu-1 {
+  display: block;
+  left: -20px;
+  padding: 0px;
+  margin: 0px;
+  top: 100%;
+  z-index: 1;
+}
+
+.item-1:hover .sub-menu-1 ul {
+  width: 2000px;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-direction: row;
+  background-color: #79539a;
+  left: 0px;
+  height: 45px;
+}
+
+.item-1:hover .sub-menu-1 ul li {
+  padding-left: 20px;
+  top: 25%;
+  position: relative;
+  font-size: 13px;
+}
+
+.item-1:hover .sub-menu-1 ul li:not(:last-child) .dash::after {
+  content: "-";
+  padding-left: 20px;
+}
+
+.item-1:hover .sub-menu-1 ul::after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0px;
+  left: 100%;
+  background-color: #79539a;
+  height: 45px;
+  width: 100%;
+}
+
+.item-1:hover .sub-menu-1 ul::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0px;
+  right: 99%;
+  background-color: #79539a;
+  height: 45px;
+  width: 100%;
+}
+
+.item-2:hover .sub-menu-2 {
+  display: block;
+  left: -172px;
+  padding: 0px;
+  margin: 0px;
+  top: 100%;
+  z-index: 1;
+}
+
+.item-2:hover .sub-menu-2 ul {
+  width: 2000px;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-direction: row;
+  background-color: #286abd;
+  left: 0px;
+  height: 45px;
+}
+
+.item-2:hover .sub-menu-2 ul li {
+  padding-left: 20px;
+  top: 25%;
+  position: relative;
+  font-size: 13px;
+}
+
+.item-2:hover .sub-menu-2 ul li:not(:last-child) .dash::after {
+  content: "-";
+  padding-left: 20px;
+}
+
+.item-2:hover .sub-menu-2 ul::after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0px;
+  left: 100%;
+  background-color: #286abd;
+  height: 45px;
+  width: 100%;
+}
+
+.item-2:hover .sub-menu-2 ul::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0px;
+  right: 99%;
+  background-color: #286abd;
+  height: 45px;
+  width: 100%;
+}
+
+.item-3:hover .sub-menu-3 {
+  display: block;
+  left: -325px;
+  padding: 0px;
+  margin: 0px;
+  top: 100%;
+  z-index: 1;
+}
+
+.item-3:hover .sub-menu-3 ul {
+  width: 2000px;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-direction: row;
+  background-color: #bc2c28;
+  left: 0px;
+  height: 45px;
+}
+
+.item-3:hover .sub-menu-3 ul li {
+  padding-left: 20px;
+  top: 25%;
+  position: relative;
+  font-size: 13px;
+}
+
+.item-3:hover .sub-menu-3 ul li:not(:last-child) .dash::after {
+  content: "-";
+  padding-left: 20px;
+}
+
+.item-3:hover .sub-menu-3 ul::after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0px;
+  left: 100%;
+  background-color: #bc2c28;
+  height: 45px;
+  width: 100%;
+}
+
+.item-3:hover .sub-menu-3 ul::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0px;
+  right: 99%;
+  background-color: #bc2c28;
+  height: 45px;
+  width: 100%;
+}
+
+.item-4:hover .sub-menu-4 {
+  display: block;
+  left: -480px;
+  padding: 0px;
+  margin: 0px;
+  top: 100%;
+  z-index: 1;
+}
+
+.item-4:hover .sub-menu-4 ul {
+  width: 2000px;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-direction: row;
+  background-color: #526781;
+  left: 0px;
+  height: 45px;
+}
+
+.item-4:hover .sub-menu-4 ul li {
+  padding-left: 20px;
+  top: 25%;
+  position: relative;
+  font-size: 13px;
+}
+
+.item-4:hover .sub-menu-4 ul li:not(:last-child) .dash::after {
+  content: "-";
+  padding-left: 20px;
+}
+
+.item-4:hover .sub-menu-4 ul::after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0px;
+  left: 100%;
+  background-color: #526781;
+  height: 45px;
+  width: 100%;
+}
+
+.item-4:hover .sub-menu-4 ul::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0px;
+  right: 99%;
+  background-color: #526781;
+  height: 45px;
+  width: 100%;
+}
+
+.item-5:hover .sub-menu-5 {
+  display: block;
+  left: -635px;
+  padding: 0px;
+  margin: 0px;
+  top: 100%;
+  z-index: 1;
+}
+
+.item-5:hover .sub-menu-5 ul {
+  width: 2000px;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-direction: row;
+  background-color: #25a25a;
+  left: 0px;
+  height: 45px;
+}
+
+.item-5:hover .sub-menu-5 ul li {
+  padding-left: 20px;
+  top: 25%;
+  position: relative;
+  font-size: 13px;
+}
+
+.item-5:hover .sub-menu-5 ul li:not(:last-child) .dash::after {
+  content: "-";
+  padding-left: 20px;
+}
+
+.item-5:hover .sub-menu-5 ul::after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0px;
+  left: 100%;
+  background-color: #25a25a;
+  height: 45px;
+  width: 100%;
+}
+
+.item-5:hover .sub-menu-5 ul::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0px;
+  right: 99%;
+  background-color: #25a25a;
+  height: 45px;
+  width: 100%;
+}
+
+.item-6:hover .sub-menu-6 {
+  display: block;
+  left: -790px;
+  padding: 0px;
+  margin: 0px;
+  top: 100%;
+  z-index: 1;
+}
+
+.item-6:hover .sub-menu-6 ul {
+  width: 2000px;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-direction: row;
+  background-color: #de093f;
+  left: 0px;
+  height: 45px;
+}
+
+.item-6:hover .sub-menu-6 ul li {
+  padding-left: 20px;
+  top: 25%;
+  position: relative;
+  font-size: 13px;
+}
+
+.item-6:hover .sub-menu-6 ul li:not(:last-child) .dash::after {
+  content: "-";
+  padding-left: 20px;
+}
+
+.item-6:hover .sub-menu-6 ul::after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0px;
+  left: 100%;
+  background-color: #de093f;
+  height: 45px;
+  width: 100%;
+}
+
+.item-6:hover .sub-menu-6 ul::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0px;
+  right: 99%;
+  background-color: #de093f;
+  height: 45px;
+  width: 100%;
 }
 
 /* ================Banner================== */
@@ -442,7 +782,7 @@ span icon-1 a:hover {
 }
 
 .large-readmore:hover {
-  background-color: #7e57a0;
+  background-color: #926fb1;
 }
 
 /* ================7 blocks================== */
@@ -754,7 +1094,7 @@ a .block-links {
   font-size: 1rem;
 }
 
-.column-nm h1 {
+.column-nm h2 {
   font-weight: 400;
   font-size: 2.25rem;
   margin-bottom: 28px;
@@ -778,7 +1118,7 @@ a .block-links {
   background-color: #ebebeb;
 }
 
-#sec-nm-h1 {
+#sec-nm-h2 {
   text-transform: uppercase;
 }
 
@@ -870,6 +1210,9 @@ a .block-links {
   right: 0px;
   top: 10px;
   z-index: 1;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1.2px;
 }
 
 .side-banner:hover {
@@ -1163,6 +1506,10 @@ footer ul li a:hover {
   margin-bottom: 30px;
 }
 
+.list-item-gap {
+  margin-bottom: 50px;
+}
+
 .f-social span {
   display: block;
   margin-top: 30px;
@@ -1349,9 +1696,6 @@ footer ul li a:hover {
 }
 
 @media (min-width: 768px) {
-  .logo-con {
-    justify-content: center;
-  }
   #telephone {
     padding-top: 20px;
   }
@@ -1362,7 +1706,6 @@ footer ul li a:hover {
 
 @media (min-width: 992px) {
   .logo-con {
-    justify-content: space-around;
     padding-left: 0px;
     padding-right: 0px;
     padding-bottom: 10px;
@@ -1403,6 +1746,45 @@ footer ul li a:hover {
   .item-6 {
     width: 194px;
     height: 99px;
+  }
+  .button-support-link {
+    margin-left: 85px;
+  }
+  .item-1:hover .sub-menu-1 {
+    left: -20px;
+  }
+  .item-1:hover .sub-menu-1 ul li {
+    font-size: 16px;
+  }
+  .item-2:hover .sub-menu-2 {
+    left: -215px;
+  }
+  .item-2:hover .sub-menu-2 ul li {
+    font-size: 16px;
+  }
+  .item-3:hover .sub-menu-3 {
+    left: -405px;
+  }
+  .item-3:hover .sub-menu-3 ul li {
+    font-size: 16px;
+  }
+  .item-4:hover .sub-menu-4 {
+    left: -600px;
+  }
+  .item-4:hover .sub-menu-4 ul li {
+    font-size: 16px;
+  }
+  .item-5:hover .sub-menu-5 {
+    left: -795px;
+  }
+  .item-5:hover .sub-menu-5 ul li {
+    font-size: 16px;
+  }
+  .item-6:hover .sub-menu-6 {
+    left: -990px;
+  }
+  .item-6:hover .sub-menu-6 ul li {
+    font-size: 16px;
   }
 }
 
