@@ -46,10 +46,6 @@ ul {
 }
 
 /* ================Navbar================== */
-.main-header {
-  position: block;
-}
-
 .logo-con {
   display: flex;
   width: 100%;
@@ -257,14 +253,6 @@ header a {
   text-decoration: none;
 }
 
-.box-item-1 {
-  border-left: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.box-item-6 {
-  border-right: 1px solid rgba(0, 0, 0, 0.25);
-}
-
 .navbar-bottom a:hover {
   color: #ffffff;
 }
@@ -340,6 +328,18 @@ header a {
   border-left: 1px solid rgba(0, 0, 0, 0.25);
 }
 
+.start {
+  width: 1px;
+  height: 99px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.ending {
+  width: 1px;
+  height: 99px;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
 span icon-1 a:hover {
   color: #ffffff;
 }
@@ -388,7 +388,7 @@ span icon-1 a:hover {
 }
 
 .item-1:hover .sub-menu-1 ul {
-  width: 2000px;
+  width: 1500px;
   margin: 0px;
   padding: 0px;
   display: flex;
@@ -442,7 +442,7 @@ span icon-1 a:hover {
 }
 
 .item-2:hover .sub-menu-2 ul {
-  width: 2000px;
+  width: 1500px;
   margin: 0px;
   padding: 0px;
   display: flex;
@@ -496,7 +496,7 @@ span icon-1 a:hover {
 }
 
 .item-3:hover .sub-menu-3 ul {
-  width: 2000px;
+  width: 1500px;
   margin: 0px;
   padding: 0px;
   display: flex;
@@ -550,7 +550,7 @@ span icon-1 a:hover {
 }
 
 .item-4:hover .sub-menu-4 ul {
-  width: 2000px;
+  width: 1500px;
   margin: 0px;
   padding: 0px;
   display: flex;
@@ -604,7 +604,7 @@ span icon-1 a:hover {
 }
 
 .item-5:hover .sub-menu-5 ul {
-  width: 2000px;
+  width: 1500px;
   margin: 0px;
   padding: 0px;
   display: flex;
@@ -658,7 +658,7 @@ span icon-1 a:hover {
 }
 
 .item-6:hover .sub-menu-6 ul {
-  width: 2000px;
+  width: 1500px;
   margin: 0px;
   padding: 0px;
   display: flex;

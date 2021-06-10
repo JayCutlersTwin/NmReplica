@@ -48,10 +48,6 @@ ul {
 
 /* ================Navbar================== */
 
-.main-header {
-    position: block;
-}
-
 .logo-con {
     display: flex;
     // justify-content: center;
@@ -257,14 +253,6 @@ header a {
     text-decoration: none;
 }
 
-.box-item-1 {
-    border-left: 1px solid hsla(0,0%,100%,.1);
-}
-
-.box-item-6 {
-    border-right: 1px solid rgba(0,0,0,.25);
-}
-
 .navbar-bottom a:hover{
     color: $White;
 }
@@ -332,6 +320,17 @@ header a {
     border-right: 1px solid hsla(0,0%,100%,.1);
     border-left: 1px solid rgba(0,0,0,.25);
 }
+.start {
+    width: 1px;
+    height: 99px;
+    background-color: hsla(0,0%,100%,.1);
+}
+.ending {
+    width: 1px;
+    height: 99px;
+    background-color: rgba(0,0,0,.25);
+
+}
 
 span icon-1 a:hover {
     color: $White;
@@ -379,7 +378,7 @@ span icon-1 a:hover {
         z-index: 1;
 
         ul {
-            width: 2000px;
+            width: 1500px;
             margin: 0px;
             padding: 0px;
             display: flex;
@@ -433,7 +432,7 @@ span icon-1 a:hover {
         z-index: 1;
 
         ul {
-            width: 2000px;
+            width: 1500px;
             margin: 0px;
             padding: 0px;
             display: flex;
@@ -487,7 +486,7 @@ span icon-1 a:hover {
         z-index: 1;
 
         ul {
-            width: 2000px;
+            width: 1500px;
             margin: 0px;
             padding: 0px;
             display: flex;
@@ -541,7 +540,7 @@ span icon-1 a:hover {
         z-index: 1;
 
         ul {
-            width: 2000px;
+            width: 1500px;
             margin: 0px;
             padding: 0px;
             display: flex;
@@ -595,7 +594,7 @@ span icon-1 a:hover {
         z-index: 1;
 
         ul {
-            width: 2000px;
+            width: 1500px;
             margin: 0px;
             padding: 0px;
             display: flex;
@@ -649,7 +648,7 @@ span icon-1 a:hover {
         z-index: 1;
 
         ul {
-            width: 2000px;
+            width: 1500px;
             margin: 0px;
             padding: 0px;
             display: flex;
@@ -1824,7 +1823,7 @@ footer ul li a:hover{
 
 /* ================ previous work ================== */
 
-@media (max-width: 1243px){
+@media (max-width: 1243px) {
     height: 160px;
 }
 
@@ -1870,7 +1869,7 @@ footer ul li a:hover{
 }
 
 
-@media (min-width: 1260px) {
+@media (min-width:1260px) {
     .footer-container {
         flex-direction: row;
         justify-content: center;
