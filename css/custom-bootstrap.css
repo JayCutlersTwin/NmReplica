@@ -1,10 +1,11 @@
+@charset "UTF-8";
 /* ========================================== */
 /* ========================================== */
 /* ================== Main ================== */
 /* ========================================== */
 /* ========================================== */
 body {
-  font-family: 'poppins', sans-serif;
+  font-family: "poppins", sans-serif;
 }
 
 .container {
@@ -18,51 +19,46 @@ body {
     max-width: none;
   }
 }
-
 @media (min-width: 768px) {
   .container {
     max-width: 750px;
   }
 }
-
 @media (min-width: 992px) {
   .container {
     max-width: 970px;
   }
 }
-
 @media (min-width: 1260px) {
   .container {
     max-width: 1200px;
   }
 }
-
 /* ================ NavBar ================== */
 @media (max-width: 767px) {
   .search-bar {
     display: none;
   }
+
   .search-bar-small {
     display: block;
   }
 }
-
 @media (min-width: 768px) {
   .search-bar-small {
     display: none;
   }
 }
-
 @media (min-width: 992px) and (max-width: 1259px) {
   .form-control {
     display: none;
   }
+
   #button-addon2 {
     border-top-left-radius: 3px;
     border-bottom-left-radius: 3px;
   }
 }
-
 .form-control {
   border-top-left-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -83,7 +79,6 @@ h1 {
     text-align: center;
   }
 }
-
 /* ================ blocks ================== */
 @media (min-width: 768px) {
   .col {
@@ -91,19 +86,16 @@ h1 {
     width: 50%;
   }
 }
-
 @media (max-width: 991px) {
   .col-md-4 {
     width: 100%;
   }
 }
-
 @media (min-width: 1260px) {
   .col {
     width: 25%;
   }
 }
-
 /* ================ CARD Section ================== */
 .card {
   border: none;
@@ -122,21 +114,17 @@ h1 {
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
 }
-
 .card-body .card-heading a {
   text-decoration: none;
   color: #4183d7;
 }
-
 .card-body .card-heading a .card-title {
   font-size: 1em;
   font-weight: 600;
 }
-
 .card-body .card-heading .card-title:hover {
   text-decoration: underline;
 }
-
 .card-body p {
   font-size: 0.8125em;
 }
@@ -160,55 +148,56 @@ h1 {
 }
 
 #button2:hover {
-  background-color: #926fb1;
+  background-color: #7e57a0;
 }
 
 @media (max-width: 767px) {
   .card1,
-  .card2,
-  .card3 {
+.card2,
+.card3 {
     margin-top: 30px;
   }
 }
-
 @media (min-width: 768px) {
   .card1,
-  .card2 {
+.card2 {
     width: 50%;
   }
+
   .card-text {
     min-height: 4.125rem;
   }
+
   .card-title {
     min-height: 3rem;
   }
 }
-
 @media (min-width: 992px) {
   .pic {
     transform: scale(1);
-    transition: transform .2s ease;
+    transition: transform 0.2s ease;
   }
+
   .card-img-top:hover .pic {
     transform: scale(1.1);
-    opacity: .6;
+    opacity: 0.6;
   }
+
   .card-text {
     min-height: 4.125rem;
   }
+
   .card-title {
     min-height: 3rem;
   }
 }
-
 @media (min-width: 1260px) {
   .card1,
-  .card2,
-  .card3 {
-    width: 33.33333333333%;
+.card2,
+.card3 {
+    width: 33.3333333333%;
   }
 }
-
 /* ================ Newsletter ================== */
 .sign-up input {
   width: 100%;
@@ -225,8 +214,9 @@ h1 {
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(91, 192, 222, 0.6);
 }
 
-.checkbox-1 input[type="checkbox"] {
-  appearance: none;
+.checkbox-1 input[type=checkbox] {
+  -webkit-appearance: none;
+          appearance: none;
   height: 32px;
   min-width: 32px;
   background-color: #dddddd;
@@ -238,21 +228,21 @@ h1 {
   justify-content: center;
 }
 
-.checkbox-1 input[type="checkbox"]:after {
+.checkbox-1 input[type=checkbox]:after {
   background-color: #333645;
   font-family: "Font Awesome 5 Free";
   font-weight: 600;
   font-size: 1em;
   color: #ffffff;
-  content: "\f00c";
+  content: "";
   display: none;
 }
 
-.checkbox-1 input[type="checkbox"]:checked {
+.checkbox-1 input[type=checkbox]:checked {
   background-color: #333645;
 }
 
-.checkbox-1 input[type="checkbox"]:checked:after {
+.checkbox-1 input[type=checkbox]:checked:after {
   display: block;
 }
 
@@ -264,47 +254,47 @@ h1 {
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   .button-support,
-  .button-contact {
+.button-contact {
     display: flex;
   }
+
   ul {
     padding-left: 0px;
   }
 }
-
-@media all and (-ms-high-contrast: none) and (max-width: 767px), all and (-ms-high-contrast: active) and (max-width: 767px) {
+@media all and (-ms-high-contrast: none) and (max-width: 767px), (-ms-high-contrast: active) and (max-width: 767px) {
   .row {
     display: block;
   }
 }
-
-@media all and (-ms-high-contrast: none) and (min-width: 768px), all and (-ms-high-contrast: active) and (min-width: 768px) {
+@media all and (-ms-high-contrast: none) and (min-width: 768px), (-ms-high-contrast: active) and (min-width: 768px) {
   .card1,
-  .card2 {
+.card2 {
     margin-right: 25px;
     width: 50%;
   }
 }
-
-@media all and (-ms-high-contrast: none) and (min-width: 992px), all and (-ms-high-contrast: active) and (min-width: 992px) {
+@media all and (-ms-high-contrast: none) and (min-width: 992px), (-ms-high-contrast: active) and (min-width: 992px) {
   .card1,
-  .card2 {
+.card2 {
     margin-right: 25px;
   }
+
   .card1,
-  .card2,
-  .card3 {
+.card2,
+.card3 {
     width: 31.5%;
   }
+
   .banner2 {
     max-height: 100%;
   }
 }
-
-@media all and (-ms-high-contrast: none) and (min-width: 1260px), all and (-ms-high-contrast: active) and (min-width: 1260px) {
+@media all and (-ms-high-contrast: none) and (min-width: 1260px), (-ms-high-contrast: active) and (min-width: 1260px) {
   .p-row-1 {
     min-height: 80px;
   }
+
   .p-row-2 {
     min-height: 79px;
   }

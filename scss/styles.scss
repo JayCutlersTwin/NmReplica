@@ -692,13 +692,6 @@ span icon-1 a:hover {
     }
 }
 
-
-
-
-
-
-
-
 /* ================Banner================== */
 .first-con {
     display: flex;
@@ -1695,6 +1688,9 @@ footer ul li a:hover{
     }
 }
 @media (min-width:1260px) {
+    .search-bar {
+        width: 290px;
+    }
     .item-1,
     .item-2,
     .item-3,
@@ -1826,9 +1822,6 @@ footer ul li a:hover{
 
 /* ================ previous work ================== */
 
-@media (max-width: 1243px) {
-    height: 160px;
-}
 
 /* ================ email sign-up ================== */
 
