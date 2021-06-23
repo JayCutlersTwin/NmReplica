@@ -1878,3 +1878,11 @@ footer ul li a:hover{
         width: 25%;
     }
 }
+
+
+@media screen and (orientation: landscape) {
+    .first-con,
+    .banner-outer {
+        height: 150vh;
+    }
+}
