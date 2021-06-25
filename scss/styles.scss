@@ -1880,7 +1880,8 @@ footer ul li a:hover{
 }
 
 
-@media screen and (orientation: landscape) {
+// try 415px
+@media (max-height: 582px) and (orientation: landscape) {
     .first-con,
     .banner-outer {
         height: 150vh;
