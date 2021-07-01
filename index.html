@@ -1,264 +1,791 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en" dir="ltr" id="HTMLTAG">
 
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Netmatters | Full Service digital agency | Norwich, Norfolk Netmatters</title>
         <link rel="shortcut icon" type="image/x-icon" href="icons/user-2.png" />
+        <link rel="stylesheet" href="css/slick.css">
+        <link rel="stylesheet" href="css/slick-theme.css">
         <link rel="stylesheet" href="css/styles.css">
-
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
         <link rel="stylesheet" href="css/custom-bootstrap.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- <script src="jquery-3.6.0.min.js" charset="utf-8"></script> -->
 
     </head>
 
-    <body>
-
-        <header class="main-header">
-            <div class="structure">
-                <div class="container">
-                    <div class="inner-row">
-                        <div class="logo-con">
-                            <div class="main-logo">
-                                <a class="navbar-logo" href="#">
-                                    <img src="images/netmatters-logo.png" alt="netmatters-logo" id="logo">
-                                </a>
+    <body id="body">
 
 
-
-                                <a href="#" class="button-support-link">
-                                    <div class="button-support">
-                                        <span>
-                                            <img src="icons/mouse.svg" alt="Support button" id="icon-support">
-                                            support
-                                        </span>
-                                    </div>
-                                </a>
-
-                                <a href="#" class="button-contact-link">
-                                    <div class="button-contact">
-                                        <span>
-                                            <img src="icons/paper-plane-regular.svg" alt="Contact Button" id="icon-contact">
-                                            Contact
-                                        </span>
-                                    </div>
-                                </a>
-
-
-                                <div class="telephone-con">
-                                    <a href="#" class="telephone-link">
-                                        <img id="telephone" src="icons/067-phone.svg" alt="Call Now">
-                                    </a>
-                                </div>
-
-<!-- add click focus to search button to hide the contact and telephone button -->
-                                <div class="search-bar">
-                                    <div class="input-group mb-3">
-                                      <input type="text" class="form-control" placeholder="Search.." aria-label="Recipient's username" aria-describedby="button-addon2" id="searchbar-input">
-                                      <button class="button-search" type="button" id="button-addon2"><img src="icons/135-search.svg" alt="search Button" id="icon-search"></button>
-                                    </div>
-                                </div>
-
-                                <div class="menu-div">
-                                    <button type="button" name="button" class="button-menu">
-                                        <span class="sandwich-box">
-                                            <span class="sandwich"></span>
-                                            <span class="sandwich"></span>
-                                            <span class="sandwich"></span>
-                                        </span>
-                                        Menu
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="search-bar-small">
-                            <form class="form-class" action="#" method="post">
-                                <input id="search1" name="search1" type="text" placeholder="Search...">
-                                <button type="button" name="button">
-                                    <img src="icons/135-search2.svg" alt="Search icon">
-                                </button>
-                            </form>
-                        </div>
+        <!-- Cookie Modal -->
+        <div class="modal-popUp">
+            <div class="modal-holder" id="modal-holder">
+                <div class="modal-container">
+                    <div class="modal-header-container">
+                        <h2>Cookies Policy</h2>
+                    </div>
+                    <div class="modal-paragraph-container">
+                        <p id="first-paragraph" class="modal-paragragh">We use cookies to obtain aggregate data regarding site traffic and interaction, in order to identify user trends and obtain insights in order to continually improve our site. These cookies enable us to improve your customer experience as you use our site and help provide you with relevant online marketing.</p>
+                        <p class="modal-paragragh">You can see a list of the other companies who use cookies on this website, by visiting cookie settings at the bottom of each page. For full details of how we use your personal information, and your rights in relation to it, view our privacy policy.</p>
+                    </div>
+                    <div class="modal-button-container">
+                        <button id="change-settings" class="modal-button" type="button" name="button">Change Settings</button>
+                        <button id="accept-cookies"class="modal-button" type="button" name="button">Accept Cookies</button>
                     </div>
                 </div>
             </div>
-        </header>
+        </div>
+
+        <!-- Change Settings Page -->
+        <div class="change-settings-modal" id="change-settings-modal">
+            <div class="container">
+                <h3>Cookie Preferences</h3>
+                <p>
+                    Netmatters uses cookies on their website. Cookies are small text files that are stored on your computer or other device by websites that you visit. This page explains the cookies we use and what we use them for, and lets you turn them on or off. (Some cookies are necessary in order for our website to work properly.) We also explain below which other companies use cookies on our website and what they use them for, and lets you turn those other companies' cookies on or off.
+                </p>
+                <p>
+                    Our website uses cookies in order to make the website easier to use, to support the provision of information and functionality to you, as well as to provide us with information about how the website is used so that we can make sure it is as up to date, relevant and error free as we can. We also use cookies to try to ensure that our online adverts reflect the interests of web users. Further information about the types of cookies that are used on our website is set out box below.
+                </p>
+                <p>
+                    As well as the options provided below, you can choose to restrict or block cookies through your browser settings at any time. For more information about how to do this, and about cookies in general, you can visit <a>www.allaboutcookies.org</a> and <a>www.youronlinechoices.eu</a>. However, please be aware that restricting or blocking cookies set on our website may impact the functionality or performance of the website, or prevent you from using certain services provided through the website
+                </p>
+                <p>
+                    Please note that third parties (including, for example, advertising networks and providers of external services like website analysis services) may also use cookies, over which we have no control, although we may receive services from these third parties (including, for example, for targeted advertising purposes and website analytics). These cookies are likely to be performance cookies or targeting cookies (as described below).
+                </p>
+            </div>
+
+            <div class="container">
+                <h1>Functional Cookies</h1>
+                <p>
+                    Functional cookies allow our website to remember choices you make, such as your user name, log in details or language preferences, and any customisations you make to pages on our website during your visit.
+                </p>
+                <p class="bold-paragragh">
+                    <strong>Examples of how we use these cookies include:</strong>
+                </p>
+                <ul>
+                    <li>Live Chat</li>
+                </ul>
+                <div class="buttons">
+                    <button class="modal-button active-button" id="disable1" type="button" name="button">Disable</button>
+                    <button class="modal-button inactive-button" id="enable1" type="button" name="button">Enable</button>
+                </div>
+            </div>
+
+            <div class="container">
+                <h1>Performance & Analytics</h1>
+                <p>
+                    These cookies help us understand how people use our website. They collect information such as which pages on our website visitors go to most often, which features they use, and which websites people have visited before they visit ours. We use this information to improve our website and provide a better user experience.
+                </p>
+                <p class="bold-paragragh">
+                    <strong>Examples of how we use these cookies include:</strong>
+                </p>
+                <ul>
+                    <li>Monitoring and providing statistics on how our website is used.</li>
+                    <li>Helping us improve our website by measuring any errors that occur.</li>
+                    <li>Testing the website's design and operability</li>
+                </ul>
+                <div class="buttons">
+                    <button class="modal-button active-button" id="disable2" type="button" name="button">Disable</button>
+                    <button class="modal-button inactive-button" id="enable2"type="button" name="button">Enable</button>
+                </div>
+            </div>
+
+            <div class="container">
+                <p>
+                    Different web browsers may use different methods for managing cookies. Please follow the instructions below, from the web browser manufacturers directly, to configure your browser settings*.
+                </p>
+                <ul>
+                    <li><a>Microsoft Internet Explorer (IE)</a></li>
+                    <li><a>Google Chrome</a></li>
+                    <li><a>Safari</a></li>
+                    <li><a>Firefox</a></li>
+                </ul>
+            </div>
+
+            <div class="container">
+                <div class="detailed-button">
+                    <button class="modal-button" id="detailed-button" type="button" name="button">Show Detailed Preferences</button>
+                </div>
+
+                <div class="table-container hideTable" id="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>Company</td>
+                                <td>Domain</td>
+                                <td></td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><span id="leadForensicsTable">+ Lead Forensics</span></td>
+                                <td>https://www.leadforensics.com/</td>
+                                <td>
+                                    <div class="flexed-dis-en">
+                                        <button class="modal-button active-button" id="disableTable1" type="button" name="button">Disable</button>
+                                        <button class="modal-button inactive-button" id="enableTable1" type="button" name="button">Enable</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr id="leadForensicsCell" class="hideTable">
+                                <td colspan="3">
+                                    <p class="table-cell-description">
+                                        Netmatters use a paid for software on our website which allows us access to information on the company you work for. This is done through the business' registered IP address and only allows us access to the information such as contact details, year founded, SIC codes and other information about the business. It also records the behaviour of the user from the company on the website, such as page views, time on the site, "goals" completed and other similar metrics. We use this data to help us improve lead generation through the website as this tool allows us access to see which businesses have visited the website but have not converted by calling, emailing or sending a contact form.
+                                    </p>
+                                    <div class="tcpp">
+                                        <button class="tcpp-button" type="button" name="button">Terms &amp; Conditions</button>
+                                        <button class="tcpp-button" type="button" name="button">Privacy Policy</button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td><span id="hotjarTable">+ Hotjar Ltd</span></td>
+                                <td>hotjar.com</td>
+                                <td>
+                                    <div class="flexed-dis-en">
+                                        <button class="modal-button active-button" id="disableTable2" type="button" name="button">Disable</button>
+                                        <button class="modal-button inactive-button" id="enableTable2" type="button" name="button">Enable</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr id="hotjarCell" class="hideTable">
+                                <td colspan="3">
+                                    <div class="tcpp">
+                                        <button class="tcpp-button" type="button" name="button">Terms &amp; Conditions</button>
+                                        <button class="tcpp-button" type="button" name="button">Privacy Policy</button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td><span id="facebookTable">+ Facebook Inc.</span></td>
+                                <td>facebook.com, facebook.net</td>
+                                <td>
+                                    <div class="flexed-dis-en">
+                                        <button class="modal-button active-button" id="disableTable3" type="button" name="button">Disable</button>
+                                        <button class="modal-button inactive-button" id="enableTable3"type="button" name="button">Enable</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr id="facebookCell" class="hideTable">
+                                <td colspan="3">
+                                    <div class="tcpp">
+                                        <button class="tcpp-button" type="button" name="button">Terms &amp; Conditions</button>
+                                        <button class="tcpp-button" type="button" name="button">Privacy Policy</button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td><span id="googleTable">+ Google Inc.</span></td>
+                                <td>google.com, googletagmanager.com, google-analytics.com</td>
+                                <td>
+                                    <div class="flexed-dis-en">
+                                        <button class="modal-button active-button" id="disableTable4" type="button" name="button">Disable</button>
+                                        <button class="modal-button inactive-button" id="enableTable4" type="button" name="button">Enable</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr id="googleCell" class="hideTable">
+                                <td colspan="3">
+                                    <div class="tcpp">
+                                        <button class="tcpp-button" type="button" name="button">Terms &amp; Conditions</button>
+                                        <button class="tcpp-button" type="button" name="button">Privacy Policy</button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td><span id="tawkTable">+ Tawk.to Inc.</span></td>
+                                <td>tawk.io</td>
+                                <td>
+                                    <div class="flexed-dis-en">
+                                        <button class="modal-button active-button" id="disableTable5" type="button" name="button">Disable</button>
+                                        <button class="modal-button inactive-button" id="enableTable5" type="button" name="button">Enable</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr id="tawkCell" class="hideTable">
+                                <td colspan="3">
+                                    <div class="tcpp">
+                                        <button class="tcpp-button" type="button" name="button">Terms &amp; Conditions</button>
+                                        <button class="tcpp-button" type="button" name="button">Privacy Policy</button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="final-buttons">
+                    <button id="cancel-button" class="cancel-button" type="button" name="button">Cancel</button>
+                    <button id="accept-button" class="accept-button" type="button" name="button">Accept Cookies</button>
+                </div>
+            </div>
+        </div>
+
+
+<!-- Sidebar Menu -->
+        <div class="side-bar" id="side-bar">
+            <div class="main-menu">
+                <!-- Main nav items min-width:992px -->
+                <div class="main-nav-items">
+                    <ul>
+                        <li>
+                            <a href="#" class="main-sidebar-items-standout" id="sidebar-contactUS">Contact US</a>
+                        </li>
+                        <li>
+                            <a href="#" class="main-sidebar-items-standout">
+                                <span>
+                                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="code" class="svg-inline--fa fa-code fa-w-20" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" width="23" height="23">
+                                        <path fill="#926fb1" d="M278.9 511.5l-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2l43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6l144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z"></path>
+                                    </svg>
+                                </span>
+                                <small>Web</small>
+                                Design
+                            </a>
+                            <ul>
+                                <li><a href="#">Stylish Websites</a></li>
+                                <li><a href="#">Ecommerce Stores</a></li>
+                                <li><a href="#">Branding</a></li>
+                                <li><a href="#">Apps</a></li>
+                                <li><a href="#">Web hosting</a></li>
+                                <li><a href="#">Pay Monthly Websites</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="main-sidebar-items-standout">
+                                <span>
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="23" viewBox="0 0 16 16">
+                                        <path fill="#4183d7" d="M0 1v10h16v-10h-16zM15 10h-14v-8h14v8zM10.5 12h-5l-0.5 2-1 1h8l-1-1z"></path>
+                                    </svg>
+                                </span>
+                                <small>IT</small>
+                                Support
+                            </a>
+                            <ul>
+                                <li><a href="#">Managed IT</a></li>
+                                <li><a href="#">Business IT</a></li>
+                                <li><a href="#">Office 365</a></li>
+                                <li><a href="#">Consultancy</a></li>
+                                <li><a href="#">Cloud Provider</a></li>
+                                <li><a href="#">Data Backup</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="main-sidebar-items-standout">
+                                <span>
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26" height="26" viewBox="0 0 16 16">
+                                        <path fill="#d64561" d="M11 10c-1 1-1 2-2 2s-2-1-3-2-2-2-2-3 1-1 2-2-2-4-3-4-3 3-3 3c0 2 2.055 6.055 4 8s6 4 8 4c0 0 3-2 3-3s-3-4-4-3z"></path>
+                                    </svg>
+                                </span>
+                                <small>Telecoms</small>
+                                Services
+                            </a>
+                            <ul>
+                                <li><a href="#">Gigabit Voucher</a></li>
+                                <li><a href="#">Hosted Voip</a></li>
+                                <li><a href="#">Business Voip</a></li>
+                                <li><a href="#">Business Broadband</a></li>
+                                <li><a href="#">Leased Line</a></li>
+                                <li><a href="#">3cx Systems</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="main-sidebar-items-standout">
+                                <span>
+                                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="th" class="svg-inline--fa fa-th fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="23" height="23">
+                                        <path fill="#67809f" d="M149.333 56v80c0 13.255-10.745 24-24 24H24c-13.255 0-24-10.745-24-24V56c0-13.255 10.745-24 24-24h101.333c13.255 0 24 10.745 24 24zm181.334 240v-80c0-13.255-10.745-24-24-24H205.333c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24h101.333c13.256 0 24.001-10.745 24.001-24zm32-240v80c0 13.255 10.745 24 24 24H488c13.255 0 24-10.745 24-24V56c0-13.255-10.745-24-24-24H386.667c-13.255 0-24 10.745-24 24zm-32 80V56c0-13.255-10.745-24-24-24H205.333c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24h101.333c13.256 0 24.001-10.745 24.001-24zm-205.334 56H24c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24h101.333c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24zM0 376v80c0 13.255 10.745 24 24 24h101.333c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H24c-13.255 0-24 10.745-24 24zm386.667-56H488c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H386.667c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24zm0 160H488c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H386.667c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24zM181.333 376v80c0 13.255 10.745 24 24 24h101.333c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H205.333c-13.255 0-24 10.745-24 24z">
+                                        </path>
+                                    </svg>
+                                </span>
+                                <small>Bespoke</small>
+                                Software
+                            </a>
+                            <ul>
+                                <li><a href="#">Workflow</a></li>
+                                <li><a href="#">Automation</a></li>
+                                <li><a href="#">Intergration</a></li>
+                                <li><a href="#">Database</a></li>
+                                <li><a href="#">SharePoint</a></li>
+                                <li><a href="#">Business Management</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="main-sidebar-items-standout">
+                                <span>
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="23" viewBox="0 0 16 16">
+                                        <path fill="#2ecc71" d="M14 4v-2h-14v11c0 0.552 0.448 1 1 1h13.5c0.828 0 1.5-0.672 1.5-1.5v-8.5h-2zM13 13h-12v-10h12v10zM2 5h10v1h-10zM8 7h4v1h-4zM8 9h4v1h-4zM8 11h3v1h-3zM2 7h5v5h-5z"></path>
+                                    </svg>
+                                </span>
+                                <small></small>
+                                Marketing
+                            </a>
+                            <ul>
+                                <li><a href="#">Search (SEO)</a></li>
+                                <li><a href="#">Paid (PPC)</a></li>
+                                <li><a href="#">Conversion (CRO)</a></li>
+                                <li><a href="#">Email</a></li>
+                                <li><a href="#">Social Media</a></li>
+                                <li><a href="#">Content</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="main-sidebar-items-standout">
+                                <span>
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
+                                        <path fill="#f62459" d="M15 0l-7 2-7-2c0 0-0.070 0.808 0 2l7 2.189 7-2.189c0.070-1.192 0-2 0-2zM1.128 3.049c0.375 3.917 1.773 10.504 6.872 12.951 5.099-2.448 6.497-9.034 6.872-12.951l-6.872 2.584-6.872-2.584z"></path>
+                                    </svg>
+                                </span>
+                                <small>Cyber</small>
+                                Security</a>
+                            <ul>
+                                <li><a href="#">Assessment</a></li>
+                                <li><a href="#">Management</a></li>
+                                <li><a href="#">Penetration Testing</a></li>
+                                <li><a href="#">Cyber Essentials</a></li>
+                                <li><a href="#">PCI/DSS</a></li>
+                                <li><a href="#">Hacker Prevention</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <ul class="secondary-menu">
+                    <li>
+                        <a href="#" class="secondary-sidebar-items-standout">Training</a>
+                        <ul>
+                            <li><a href="#">
+                                <span class="angle-quotemark">&raquo;</span>Web Developer Course</a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="angle-quotemark">&raquo;</span>SCS Frequently Asked Questions</a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="angle-quotemark">&raquo;</span>Scion Collaborators</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="secondary-sidebar-items-standout">Events</a>
+                        <ul>
+                            <li>
+                                <a href="#"><span class="angle-quotemark">&raquo;</span>Buiness Automation Seminar</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="secondary-sidebar-items-standout">Our Company</a>
+                        <ul>
+                            <li>
+                                <a href="#"><span class="angle-quotemark">&raquo;</span>Our Culture</a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="angle-quotemark">&raquo;</span>Our Team</a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="angle-quotemark">&raquo;</span>Our Careers</a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="angle-quotemark">&raquo;</span>Our Benefits</a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="angle-quotemark">&raquo;</span>It Support Great Yarmouth</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="secondary-sidebar-items-standout">Our Work</a>
+                        <ul>
+                            <li>
+                                <a href="#"><span class="angle-quotemark">&raquo;</span>Case Studies</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="secondary-sidebar-items-standout">Our Knowledge</a>
+                        <ul>
+                            <li>
+                                <a href="#"><span class="angle-quotemark">&raquo;</span>Guides</a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="angle-quotemark">&raquo;</span>News</a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="angle-quotemark">&raquo;</span>Insights</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="secondary-sidebar-items-standout">Covid Risk Assessments</a>
+                    </li>
+                    <li>
+                        <a href="#" class="secondary-sidebar-items-standout">Contact Us</a>
+                    </li>
+                    <li>
+                        <a href="#" class="secondary-sidebar-items-standout">Support</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+<!-- Header -->
+        <div id="dontShow">
+
+        </div>
+        <div id="wrapper" class="wrapper">
+
+        <header id="fake">
+            <div class="main-header" id="full-Header">
+                <div class="structure">
+                    <div class="container">
+                        <div class="inner-row">
+                            <div class="logo-con">
+                                <div class="main-logo">
+                                    <a class="navbar-logo" href="#">
+                                        <img src="images/netmatters-logo.png" alt="netmatters-logo" id="logo">
+                                    </a>
+
+
+
+                                    <a href="#" class="button-support-link">
+                                        <div class="button-support">
+                                            <span>
+                                                <img src="icons/mouse.svg" alt="Support button" id="icon-support">
+                                                support
+                                            </span>
+                                        </div>
+                                    </a>
+
+                                    <a href="#" class="button-contact-link">
+                                        <div class="button-contact">
+                                            <span>
+                                                <img src="icons/paper-plane-regular.svg" alt="Contact Button" id="icon-contact">
+                                                Contact
+                                            </span>
+                                        </div>
+                                    </a>
+
+
+                                    <div class="telephone-con">
+                                        <a href="#" class="telephone-link">
+                                            <img id="telephone" src="icons/067-phone.svg" alt="Call Now">
+                                        </a>
+                                    </div>
+
+    <!-- add click focus to search button to hide the contact and telephone button -->
+                                    <div class="search-bar">
+                                        <div class="input-group mb-3">
+                                          <input type="text" class="form-control" placeholder="Search.." aria-label="Recipient's username" aria-describedby="button-addon2" id="searchbar-input">
+                                          <button class="button-search" type="button" id="button-addon2"><img src="icons/135-search.svg" alt="search Button" id="icon-search"></button>
+                                        </div>
+                                    </div>
+
+                                    <div class="menu-div">
+                                        <button type="button" name="button" class="button-menu" id="burger-MenuBtn">
+                                            <span class="sandwich-box">
+                                                <span class="sandwich"></span>
+                                            </span>
+                                            Menu
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="search-bar-small">
+                                <form class="form-class" action="#" method="post">
+                                    <input id="search1" name="search1" type="text" placeholder="Search...">
+                                    <button type="button" name="button">
+                                        <img src="icons/135-search2.svg" alt="Search icon">
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
 
 <!--                 Bottom Navbar section                 -->
 
 
-        <div class="navbar-bottom-container">
-            <div class="navbar-bottom">
-                <span class="start"></span>
-                    <div class="item-1">
-                        <a href="#" class="box-item-1">
-                            <span id="item-1">
-                                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="code" class="svg-inline--fa fa-code fa-w-20" role="img" xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 640 512">
-                                    <path fill="#926fb1" d="M278.9 511.5l-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2l43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6l144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z"></path>
-                                </svg>
-                            </span>
-                            <small class="correct">Web</small> Design
-                        </a>
-                        <div class="sub-menu-1">
-                            <ul>
-                                <li><a href="#" class="dash">Stylish Websites</a></li>
-                                <li><a href="#" class="dash">Ecommerce Stores</a></li>
-                                <li><a href="#" class="dash">Branding</a></li>
-                                <li><a href="#" class="dash">Apps</a></li>
-                                <li><a href="#" class="dash">Webhosting</a></li>
-                                <li><a href="#">Pay Monthly Websites</a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-
-
-                    <div class="item-2">
-                        <a href="#">
-                            <span id="item-2">
-                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="23" height="23" viewBox="0 0 16 16">
-                                    <path fill="#4183d7" d="M0 1v10h16v-10h-16zM15 10h-14v-8h14v8zM10.5 12h-5l-0.5 2-1 1h8l-1-1z"></path>
-                                </svg>
-                            </span>
-                            <small class="correct">IT</small> Support
-                        </a>
-                        <div class="sub-menu-2">
-                            <ul>
-                                <li><a href="#" class="dash">Managed IT</a></li>
-                                <li><a href="#" class="dash">Business IT</a></li>
-                                <li><a href="#" class="dash">Office 365</a></li>
-                                <li><a href="#" class="dash">Consultancy</a></li>
-                                <li><a href="#" class="dash">Cloud Provider</a></li>
-                                <li><a href="#">Data Backup</a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-
-
-                    <div class="item-3">
-                        <a href="#">
-                            <span id="item-3">
-                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="23" height="23" viewBox="0 0 16 16">
-                                    <path fill="#d64541" d="M11 10c-1 1-1 2-2 2s-2-1-3-2-2-2-2-3 1-1 2-2-2-4-3-4-3 3-3 3c0 2 2.055 6.055 4 8s6 4 8 4c0 0 3-2 3-3s-3-4-4-3z"></path>
-                                </svg>
-                            </span>
-                            <small class="correct">Telecoms</small> Services
-                        </a>
-                        <div class="sub-menu-3">
-                            <ul>
-                                <li><a href="#" class="dash">Gigabit Voucher</a></li>
-                                <li><a href="#" class="dash">Hosted VOIP</a></li>
-                                <li><a href="#" class="dash">Business VOIP</a></li>
-                                <li><a href="#" class="dash">Business Broadband</a></li>
-                                <li><a href="#" class="dash">Leased Line</a></li>
-                                <li><a href="#">3CX Systems</a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-
-
-                    <div class="item-4">
-                        <a href="#">
-                            <span id="item-4">
-                                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="th" class="svg-inline--fa fa-th fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="23" height="23">
-                                    <path fill="#67809f" d="M149.333 56v80c0 13.255-10.745 24-24 24H24c-13.255 0-24-10.745-24-24V56c0-13.255 10.745-24 24-24h101.333c13.255 0 24 10.745 24 24zm181.334 240v-80c0-13.255-10.745-24-24-24H205.333c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24h101.333c13.256 0 24.001-10.745 24.001-24zm32-240v80c0 13.255 10.745 24 24 24H488c13.255 0 24-10.745 24-24V56c0-13.255-10.745-24-24-24H386.667c-13.255 0-24 10.745-24 24zm-32 80V56c0-13.255-10.745-24-24-24H205.333c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24h101.333c13.256 0 24.001-10.745 24.001-24zm-205.334 56H24c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24h101.333c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24zM0 376v80c0 13.255 10.745 24 24 24h101.333c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H24c-13.255 0-24 10.745-24 24zm386.667-56H488c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H386.667c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24zm0 160H488c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H386.667c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24zM181.333 376v80c0 13.255 10.745 24 24 24h101.333c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H205.333c-13.255 0-24 10.745-24 24z">
-                                    </path>
-                                </svg>
-
-                            </span>
-                            <small class="correct">Bespoke</small> Software
-                        </a>
-                        <div class="sub-menu-4">
-                            <ul>
-                                <li><a href="#" class="dash">Workflow</a></li>
-                                <li><a href="#" class="dash">Automation</a></li>
-                                <li><a href="#" class="dash">Integration</a></li>
-                                <li><a href="#" class="dash">Database</a></li>
-                                <li><a href="#" class="dash">Sharepoint</a></li>
-                                <li><a href="#">Business Management</a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-
-
-                    <div class="item-5">
-                        <a href="#">
-                            <span id="item-5">
-                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="23" height="23" viewBox="0 0 16 16">
-                                    <path fill="#2ecc71" d="M14 4v-2h-14v11c0 0.552 0.448 1 1 1h13.5c0.828 0 1.5-0.672 1.5-1.5v-8.5h-2zM13 13h-12v-10h12v10zM2 5h10v1h-10zM8 7h4v1h-4zM8 9h4v1h-4zM8 11h3v1h-3zM2 7h5v5h-5z"></path>
-                                </svg>
-                            </span>
-                            <small class="correct">Digital</small> Marketing
-                        </a>
-                        <div class="sub-menu-5">
-                            <ul>
-                                <li><a href="#" class="dash">Search (SEO)</a></li>
-                                <li><a href="#" class="dash">Paid (PPC)</a></li>
-                                <li><a href="#" class="dash">Conversion (CRO)</a></li>
-                                <li><a href="#" class="dash">Email</a></li>
-                                <li><a href="#" class="dash">Social Media</a></li>
-                                <li><a href="#">Content</a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-
-
-                    <div class="item-6">
-                        <a href="#" class="box-item-6">
-                            <span id="item-6">
-                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="23" height="23" viewBox="0 0 16 16">
-                                    <path fill="#f62459" d="M15 0l-7 2-7-2c0 0-0.070 0.808 0 2l7 2.189 7-2.189c0.070-1.192 0-2 0-2zM1.128 3.049c0.375 3.917 1.773 10.504 6.872 12.951 5.099-2.448 6.497-9.034 6.872-12.951l-6.872 2.584-6.872-2.584z"></path>
-                                </svg>
-                            </span>
-                            <small class="correct">Cyber</small> Security
-                        </a>
-
-                            <div class="sub-menu-6">
-                                <ul>
-                                    <li><a href="#" class="dash">Assessment</a></li>
-                                    <li><a href="#" class="dash">Management</a></li>
-                                    <li><a href="#" class="dash">Penetration Testing</a></li>
-                                    <li><a href="#" class="dash">Cyber Essentials</a></li>
-                                    <li><a href="#" class="dash">PCI/DSS</a></li>
-                                    <li><a href="#">Hacker Prevention</a></li>
-                                </ul>
+                <div class="navbar-bottom-container">
+                    <div class="navbar-bottom">
+                        <span class="start"></span>
+                            <div class="item-1">
+                                <a href="#" class="box-item-1">
+                                    <span id="item-1">
+                                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="code" class="svg-inline--fa fa-code fa-w-20" role="img" xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 640 512">
+                                            <path fill="#926fb1" d="M278.9 511.5l-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2l43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6l144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z"></path>
+                                        </svg>
+                                    </span>
+                                    <small class="correct">Web</small> Design
+                                </a>
+                                <div class="sub-menu-1">
+                                    <ul>
+                                        <li><a href="#" class="dash">Stylish Websites</a></li>
+                                        <li><a href="#" class="dash">Ecommerce Stores</a></li>
+                                        <li><a href="#" class="dash">Branding</a></li>
+                                        <li><a href="#" class="dash">Apps</a></li>
+                                        <li><a href="#" class="dash">Webhosting</a></li>
+                                        <li><a href="#">Pay Monthly Websites</a></li>
+                                    </ul>
+                                </div>
                             </div>
 
+
+
+                            <div class="item-2">
+                                <a href="#">
+                                    <span id="item-2">
+                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="23" height="23" viewBox="0 0 16 16">
+                                            <path fill="#4183d7" d="M0 1v10h16v-10h-16zM15 10h-14v-8h14v8zM10.5 12h-5l-0.5 2-1 1h8l-1-1z"></path>
+                                        </svg>
+                                    </span>
+                                    <small class="correct">IT</small> Support
+                                </a>
+                                <div class="sub-menu-2">
+                                    <ul>
+                                        <li><a href="#" class="dash">Managed IT</a></li>
+                                        <li><a href="#" class="dash">Business IT</a></li>
+                                        <li><a href="#" class="dash">Office 365</a></li>
+                                        <li><a href="#" class="dash">Consultancy</a></li>
+                                        <li><a href="#" class="dash">Cloud Provider</a></li>
+                                        <li><a href="#">Data Backup</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+
+
+                            <div class="item-3">
+                                <a href="#">
+                                    <span id="item-3">
+                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="23" height="23" viewBox="0 0 16 16">
+                                            <path fill="#d64541" d="M11 10c-1 1-1 2-2 2s-2-1-3-2-2-2-2-3 1-1 2-2-2-4-3-4-3 3-3 3c0 2 2.055 6.055 4 8s6 4 8 4c0 0 3-2 3-3s-3-4-4-3z"></path>
+                                        </svg>
+                                    </span>
+                                    <small class="correct">Telecoms</small> Services
+                                </a>
+                                <div class="sub-menu-3">
+                                    <ul>
+                                        <li><a href="#" class="dash">Gigabit Voucher</a></li>
+                                        <li><a href="#" class="dash">Hosted VOIP</a></li>
+                                        <li><a href="#" class="dash">Business VOIP</a></li>
+                                        <li><a href="#" class="dash">Business Broadband</a></li>
+                                        <li><a href="#" class="dash">Leased Line</a></li>
+                                        <li><a href="#">3CX Systems</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+
+
+                            <div class="item-4">
+                                <a href="#">
+                                    <span id="item-4">
+                                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="th" class="svg-inline--fa fa-th fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="23" height="23">
+                                            <path fill="#67809f" d="M149.333 56v80c0 13.255-10.745 24-24 24H24c-13.255 0-24-10.745-24-24V56c0-13.255 10.745-24 24-24h101.333c13.255 0 24 10.745 24 24zm181.334 240v-80c0-13.255-10.745-24-24-24H205.333c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24h101.333c13.256 0 24.001-10.745 24.001-24zm32-240v80c0 13.255 10.745 24 24 24H488c13.255 0 24-10.745 24-24V56c0-13.255-10.745-24-24-24H386.667c-13.255 0-24 10.745-24 24zm-32 80V56c0-13.255-10.745-24-24-24H205.333c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24h101.333c13.256 0 24.001-10.745 24.001-24zm-205.334 56H24c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24h101.333c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24zM0 376v80c0 13.255 10.745 24 24 24h101.333c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H24c-13.255 0-24 10.745-24 24zm386.667-56H488c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H386.667c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24zm0 160H488c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H386.667c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24zM181.333 376v80c0 13.255 10.745 24 24 24h101.333c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H205.333c-13.255 0-24 10.745-24 24z">
+                                            </path>
+                                        </svg>
+
+                                    </span>
+                                    <small class="correct">Bespoke</small> Software
+                                </a>
+                                <div class="sub-menu-4">
+                                    <ul>
+                                        <li><a href="#" class="dash">Workflow</a></li>
+                                        <li><a href="#" class="dash">Automation</a></li>
+                                        <li><a href="#" class="dash">Integration</a></li>
+                                        <li><a href="#" class="dash">Database</a></li>
+                                        <li><a href="#" class="dash">Sharepoint</a></li>
+                                        <li><a href="#">Business Management</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+
+
+                            <div class="item-5">
+                                <a href="#">
+                                    <span id="item-5">
+                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="23" height="23" viewBox="0 0 16 16">
+                                            <path fill="#2ecc71" d="M14 4v-2h-14v11c0 0.552 0.448 1 1 1h13.5c0.828 0 1.5-0.672 1.5-1.5v-8.5h-2zM13 13h-12v-10h12v10zM2 5h10v1h-10zM8 7h4v1h-4zM8 9h4v1h-4zM8 11h3v1h-3zM2 7h5v5h-5z"></path>
+                                        </svg>
+                                    </span>
+                                    <small class="correct">Digital</small> Marketing
+                                </a>
+                                <div class="sub-menu-5">
+                                    <ul>
+                                        <li><a href="#" class="dash">Search (SEO)</a></li>
+                                        <li><a href="#" class="dash">Paid (PPC)</a></li>
+                                        <li><a href="#" class="dash">Conversion (CRO)</a></li>
+                                        <li><a href="#" class="dash">Email</a></li>
+                                        <li><a href="#" class="dash">Social Media</a></li>
+                                        <li><a href="#">Content</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+
+
+                            <div class="item-6">
+                                <a href="#" class="box-item-6">
+                                    <span id="item-6">
+                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="23" height="23" viewBox="0 0 16 16">
+                                            <path fill="#f62459" d="M15 0l-7 2-7-2c0 0-0.070 0.808 0 2l7 2.189 7-2.189c0.070-1.192 0-2 0-2zM1.128 3.049c0.375 3.917 1.773 10.504 6.872 12.951 5.099-2.448 6.497-9.034 6.872-12.951l-6.872 2.584-6.872-2.584z"></path>
+                                        </svg>
+                                    </span>
+                                    <small class="correct">Cyber</small> Security
+                                </a>
+
+                                    <div class="sub-menu-6">
+                                        <ul>
+                                            <li><a href="#" class="dash">Assessment</a></li>
+                                            <li><a href="#" class="dash">Management</a></li>
+                                            <li><a href="#" class="dash">Penetration Testing</a></li>
+                                            <li><a href="#" class="dash">Cyber Essentials</a></li>
+                                            <li><a href="#" class="dash">PCI/DSS</a></li>
+                                            <li><a href="#">Hacker Prevention</a></li>
+                                        </ul>
+                                    </div>
+
+                            </div>
+                        <span class="ending"></span>
                     </div>
-                <span class="ending"></span>
+                </div>
             </div>
-        </div>
+
+        </header>
 
 
     <!--                        Banner                  -->
         <div class="first-con">
             <div class="second-con">
-                <div class="banner-con">
-                    <div class="banner-outer">
-                        <img id="banner-img" src="images/web-design-banner.jpeg" alt="This is the Banner">
-                        <div class="gradient">
-                            <div class="banner-text-con">
-                                <div class="container" id="onlyOneMedia">
-                                    <h1>Web Design</h1>
-                                    <p>For businesses looking to make a strong <br> and effective first impression. </p>
-                                    <button type="button" name="Read More" class="large-readmore">
-                                        Find Out More
-                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="35" viewBox="0 0 16 16">
-                                            <path fill="#fff" d="M9.707 13.707l5-5c0.391-0.39 0.391-1.024 0-1.414l-5-5c-0.391-0.391-1.024-0.391-1.414 0s-0.391 1.024 0 1.414l3.293 3.293h-9.586c-0.552 0-1 0.448-1 1s0.448 1 1 1h9.586l-3.293 3.293c-0.195 0.195-0.293 0.451-0.293 0.707s0.098 0.512 0.293 0.707c0.391 0.391 1.024 0.391 1.414 0z"></path>
-                                        </svg>
-                                    </button>
+                <div class="banner-con" id="slideshow">
+
+                    <div class="banner-outer slick">
+
+                        <div class="image-text-container web-design" id="">
+                            <!-- <img class="banner-img" src="images/slide-images/web-design-banner.jpeg" alt="This is the Banner"> -->
+                            <div class="gradient">
+                                <div class="banner-text-con">
+                                    <div class="container" id="onlyOneMedia">
+                                        <h1>Web Design</h1>
+                                        <p>For businesses looking to make a strong <br> and effective first impression. </p>
+                                        <button id="web-design-readbtn" type="button" name="Read More" class="large-readmore">
+                                            Find Out More
+                                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="35" viewBox="0 0 16 16">
+                                                <path fill="#fff" d="M9.707 13.707l5-5c0.391-0.39 0.391-1.024 0-1.414l-5-5c-0.391-0.391-1.024-0.391-1.414 0s-0.391 1.024 0 1.414l3.293 3.293h-9.586c-0.552 0-1 0.448-1 1s0.448 1 1 1h9.586l-3.293 3.293c-0.195 0.195-0.293 0.451-0.293 0.707s0.098 0.512 0.293 0.707c0.391 0.391 1.024 0.391 1.414 0z"></path>
+                                            </svg>
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+
+                        <div class="image-text-container IT-support">
+                            <!-- <img class="banner-img" src="images/slide-images/it-support-banner.jpeg" alt="This is the Banner"> -->
+                            <div class="gradient">
+                                <div class="banner-text-con">
+                                    <div class="container" id="onlyOneMedia">
+                                        <h1>IT Support</h1>
+                                        <p>Fast and cost-effective IT support <br> services for your business. </p>
+                                        <button id="IT-support-readbtn" type="button" name="Read More" class="large-readmore">
+                                            Find Out More
+                                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="35" viewBox="0 0 16 16">
+                                                <path fill="#fff" d="M9.707 13.707l5-5c0.391-0.39 0.391-1.024 0-1.414l-5-5c-0.391-0.391-1.024-0.391-1.414 0s-0.391 1.024 0 1.414l3.293 3.293h-9.586c-0.552 0-1 0.448-1 1s0.448 1 1 1h9.586l-3.293 3.293c-0.195 0.195-0.293 0.451-0.293 0.707s0.098 0.512 0.293 0.707c0.391 0.391 1.024 0.391 1.414 0z"></path>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="image-text-container telecomm-services">
+                            <!-- <img class="banner-img" src="images/slide-images/telecomm-services-banner.jpeg" alt="This is the Banner"> -->
+                            <div class="gradient">
+                                <div class="banner-text-con">
+                                    <div class="container" id="onlyOneMedia">
+                                        <h1>Telecomm Services</h1>
+                                        <p>A new approach to connectivity, see how  <br> we can help your business. </p>
+                                        <button id="Telecomm-readbtn" type="button" name="Read More" class="large-readmore">
+                                            Find Out More
+                                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="35" viewBox="0 0 16 16">
+                                                <path fill="#fff" d="M9.707 13.707l5-5c0.391-0.39 0.391-1.024 0-1.414l-5-5c-0.391-0.391-1.024-0.391-1.414 0s-0.391 1.024 0 1.414l3.293 3.293h-9.586c-0.552 0-1 0.448-1 1s0.448 1 1 1h9.586l-3.293 3.293c-0.195 0.195-0.293 0.451-0.293 0.707s0.098 0.512 0.293 0.707c0.391 0.391 1.024 0.391 1.414 0z"></path>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="image-text-container bespoke-design">
+                            <!-- <img class="banner-img" src="images/slide-images/bespoke-design-banner.jpeg" alt="This is the Banner"> -->
+                            <div class="gradient">
+                                <div class="banner-text-con">
+                                    <div class="container" id="onlyOneMedia">
+                                        <h1>Bespoke Design</h1>
+                                        <p>Bring your business together <br> with solutions that grow with you. </p>
+                                        <button id="bespoke-readbtn" type="button" name="Read More" class="large-readmore">
+                                            Find Out More
+                                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="35" viewBox="0 0 16 16">
+                                                <path fill="#fff" d="M9.707 13.707l5-5c0.391-0.39 0.391-1.024 0-1.414l-5-5c-0.391-0.391-1.024-0.391-1.414 0s-0.391 1.024 0 1.414l3.293 3.293h-9.586c-0.552 0-1 0.448-1 1s0.448 1 1 1h9.586l-3.293 3.293c-0.195 0.195-0.293 0.451-0.293 0.707s0.098 0.512 0.293 0.707c0.391 0.391 1.024 0.391 1.414 0z"></path>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="image-text-container digital-marketing" >
+                            <!-- <img class="banner-img" src="images/slide-images/digital-marketing-banner.jpeg" alt="This is the Banner"> -->
+                            <div class="gradient">
+                                <div class="banner-text-con">
+                                    <div class="container" id="onlyOneMedia">
+                                        <h1>Digital Marketing</h1>
+                                        <p>Generating you new business through <br> results-driven marketing activities. </p>
+                                        <button id="digital-readbtn" type="button" name="Read More" class="large-readmore">
+                                            See How We Can Help You
+                                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="35" viewBox="0 0 16 16">
+                                                <path fill="#fff" d="M9.707 13.707l5-5c0.391-0.39 0.391-1.024 0-1.414l-5-5c-0.391-0.391-1.024-0.391-1.414 0s-0.391 1.024 0 1.414l3.293 3.293h-9.586c-0.552 0-1 0.448-1 1s0.448 1 1 1h9.586l-3.293 3.293c-0.195 0.195-0.293 0.451-0.293 0.707s0.098 0.512 0.293 0.707c0.391 0.391 1.024 0.391 1.414 0z"></path>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="image-text-container cyber-security" >
+                            <!-- <img class="banner-img" src="images/slide-images/cyber-security-banner.jpeg" alt="This is the Banner"> -->
+                            <div class="gradient">
+                                <div class="banner-text-con">
+                                    <div class="container" id="onlyOneMedia">
+                                        <h1>Cyber Security</h1>
+                                        <p>Keeping businesses and their customers <br> sensitive information protected. </p>
+                                        <button id="cyber-readbtn"type="button" name="Read More" class="large-readmore">
+                                            Find Out More
+                                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="35" viewBox="0 0 16 16">
+                                                <path fill="#fff" d="M9.707 13.707l5-5c0.391-0.39 0.391-1.024 0-1.414l-5-5c-0.391-0.391-1.024-0.391-1.414 0s-0.391 1.024 0 1.414l3.293 3.293h-9.586c-0.552 0-1 0.448-1 1s0.448 1 1 1h9.586l-3.293 3.293c-0.195 0.195-0.293 0.451-0.293 0.707s0.098 0.512 0.293 0.707c0.391 0.391 1.024 0.391 1.414 0z"></path>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -731,6 +1258,31 @@
                 </div>
             </div>
         </section>
+
+        </div>
+        <!-- JavaScript  -->
+        <script src="dist/cookie-dist.js" charset="utf-8"></script>
+        <script src="js/carousel/slick.min.js" charset="utf-8"></script>
+        <!-- <script src="js/carousel/slick.min.js" charset="utf-8"></script> -->
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+        <script src="js/menu/sidebar.js" charset="utf-8"></script>
+        <script src="dist/stickyHeader-dist.js" charset="utf-8"></script>
+
+        <script type="text/javascript">
+            $(() => {
+                $('#slideshow .slick').slick({
+                    autoplay:true,
+                    autoplaySpeed: 4000,
+                    arrows:false,
+                    dots: true,
+                    infinite: true,
+                    pauseOnFocus: false,
+                    pauseOnHover: false,
+                    pauseOnDotsHover: false,
+                    swipe: true,
+                });
+            });
+        </script>
 
     </body>
 </html>

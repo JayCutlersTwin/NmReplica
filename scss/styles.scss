@@ -1,4 +1,9 @@
 /* ================Partials================== */
+// Components
+@use "components/carousel";
+@use "components/modal";
+@use "components/sidebar.scss";
+
 @import "_colors";
 
 
@@ -7,12 +12,21 @@
     box-sizing: border-box;
 }
 
+.HTMLTAGscrollLock {
+    overflow-y: hidden;
+}
+
 body {
     font-size: 1rem;
     font-family: 'poppins', sans-serif;
     letter-spacing: .4px;
     line-height: 1.42px;
     overflow-x: hidden;
+}
+
+.wrapper {
+    right: 0px;
+    transition: all 0.5s;
 }
 
 .structure {
@@ -130,16 +144,41 @@ header a {
 }
 
 .sandwich-box {
-    display: flex;
-    flex-direction: column;
+    display: block;
     height: 19px;
-    justify-content: space-between;
+    position: relative;
 }
 
 .sandwich {
+    display: block;
+    position: absolute;
+    background-color: $White;
+    left: 0px;
+    top: 6px;
+    height: 3px;
+    width: 33px;
+}
+.sandwich::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0px;
+    transform: translateY(8px);
     background-color: $White;
     height: 3px;
     width: 33px;
+    transition: all .2s;
+}
+.sandwich::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0px;
+    transform: translateY(-8px);
+    background-color: $White;
+    height: 3px;
+    width: 33px;
+    transition: all .2s;
 }
 
 .button-search {
@@ -705,9 +744,11 @@ span icon-1 a:hover {
     width: 100%;
 }
 .banner-con {
+    position: relative;
     flex: 1 0 auto;
     color: $White;
     border-top: 1px solid rgba(51,54,69,.5);
+    height: 80vh;
 }
 .banner-con .container{
     display: block;
@@ -720,10 +761,10 @@ span icon-1 a:hover {
     height: 100%;
 }
 
-#banner-img{
+.banner-img{
     position: absolute;
-    object-fit: cover;
-    width: 100%;
+    // object-fit: cover;
+    // width: 100%;
     height: 100%;
     text-align: left;
 }
@@ -759,8 +800,6 @@ span icon-1 a:hover {
     border: none;
     border-radius: 3px;
     text-transform: uppercase;
-    width: 225px;
-    height: 62px;
     font-size: 1.25em;
     svg {
         margin-bottom:3px;
@@ -769,6 +808,53 @@ span icon-1 a:hover {
 }
 .large-readmore:hover {
     background-color: $hoverPurple;
+}
+
+.image-text-container {
+    height: 100%;
+}
+
+// Button colors for each banner
+#web-design-readbtn{
+    background-color: $webDesign;
+}
+#web-design-readbtn:hover{
+    background-color: $webDesignHover;
+}
+
+#IT-support-readbtn{
+    background-color: $itSupport;
+}
+#IT-support-readbtn:hover{
+    background-color: $itSupportHover;
+}
+
+#Telecomm-readbtn{
+    background-color: $telecommServices;
+}
+#Telecomm-readbtn:hover{
+    background-color: $telecommServicesHover;
+}
+
+#bespoke-readbtn{
+    background-color: $bespokeSoftware;
+}
+#bespoke-readbtn:hover{
+    background-color: $bespokeSoftwareHover;
+}
+
+#digital-readbtn{
+    background-color: $digitalMarketing;
+}
+#digital-readbtn:hover{
+    background-color: $digitalMarketingHover;
+}
+
+#cyber-readbtn{
+    background-color: $cyberSecurity;
+}
+#cyber-readbtn:hover{
+    background-color: $cyberSecurityHover;
 }
 
 
@@ -1881,9 +1967,98 @@ footer ul li a:hover{
 
 
 // try 415px
-@media (max-height: 582px) and (orientation: landscape) {
-    .first-con,
-    .banner-outer {
-        height: 150vh;
+// @media (max-height: 582px) and (orientation: landscape) {
+//     .first-con,
+//     .banner-outer {
+//         height: 150vh;
+//     }
+// }
+
+// JavaScript
+
+.hideWrapper {
+    display: none;
+}
+
+// Animate Header
+
+header {
+    position: relative;
+    width: 100%;
+    height: 176px;
+    z-index: 3;
+}
+
+.main-header {
+    width: 100%;
+    display: block;
+    top: -176px;
+    transition-delay: 5s;
+    transition: all .5s ease;
+}
+
+.scrollUpheader {
+    position: fixed;
+    top: 0px;
+    transition-delay: 5s;
+    transition: all .5s ease;
+}
+
+@media (min-width: 768px) {
+    header{
+        height: 117px;
     }
+    .main-header {
+        transition-delay: 5s;
+        transition: all .5s ease;
+        .scrollUpheader {
+            position: fixed;
+            top: 0px;
+            transition-delay: 5s;
+            transition: all .5s ease;
+        }
+    }
+}
+@media (min-width: 992px) {
+    header{
+        height: 206px;
+    }
+    .main-header {
+        transition-delay: 5s;
+        transition: all .5s ease;
+    }
+    .scrollUpheader {
+        position: fixed;
+        top: 0px;
+        transition-delay: 5s;
+        transition: all .5s ease;
+    }
+}
+
+
+
+
+// Make ANimation spin and stuff
+.beforeAnimate::before {
+    transform-origin: center;
+    transform: translateY(0px);
+    transform: rotate(-225deg);
+    transition: all .2s;
+}
+
+.innerAnimate {
+    background-color: transparent;
+    transform: rotate(180deg);
+    transition: all .2s;
+}
+
+.afterAnimate::after {
+    transform-origin: center;
+    transform: translateY(0px);
+    transform: rotate(225deg);
+    transition: all .2s;
+}
+
+.lockBody {
+    position: fixed;
 }

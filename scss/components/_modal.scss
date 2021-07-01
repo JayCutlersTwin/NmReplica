@@ -1,0 +1,332 @@
+@import "_colors";
+
+//Mixins
+
+@mixin modal-button-style {
+    border: none;
+    border-radius: 3px;
+    text-transform: uppercase;
+    padding: 5px 15px;
+    color: $White;
+    height: 47px;
+}
+
+
+// MODAL POP-UP
+.modal-container {
+    border-radius: 5px;
+}
+.modal-popUp {
+    .modal-holder {
+        display: flex;
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        left: 0px;
+        bottom: 0px;
+        align-items: center;
+        z-index: 30;
+        background-color: rgba(0,0,0,0.7);
+        padding: 30px;
+        overflow-y: auto;
+        .modal-container {
+            background-color: $White;
+            .modal-header-container {
+                height: 68px;
+                padding: 15px 20px;
+                .modal-header {
+                    font-size: 1.625rem;
+                    color: $DarkGray;
+                }
+            }
+            .modal-paragraph-container {
+                border-top: 1px solid $ModalGrayBorder;
+                border-bottom: 1px solid $ModalGrayBorder;
+                padding: 20px;
+                .modal-paragragh {
+                    color: $Gray;
+                    line-height: 30px;
+                }
+                #first-paragraph{
+                    margin-bottom: 25px;
+                }
+            }
+            .modal-button-container {
+                display: block;
+                width: 100%;
+                padding: 20px;
+                .modal-button {
+                    border: none;
+                    border-radius: 3px;
+                    text-transform: uppercase;
+                    padding: 5px 15px;
+                    width: 100%;
+                    color: $White;
+                    height: 47px;
+                }
+                #change-settings {
+                    background-color: $lightShadeGray;
+                    margin-bottom: 30px;
+                }
+                #change-settings:hover {
+                    background-color: $Gray;
+                }
+
+                #accept-cookies {
+                    background-color: $Purple;
+                }
+                #accept-cookies:hover {
+                    background-color: $hoverPurple;
+                }
+            }
+        }
+    }
+}
+
+// MODAL CHANGE SETTINGS
+.change-settings-modal {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: $White;
+    z-index: 1000;
+    overflow: auto;
+    .container {
+        margin-top: 40px;
+        h1 {
+            color: $DarkGray;
+        }
+        h3 {
+            color: $DarkGray;
+        }
+        p {
+            color: $Gray;
+            font-size: 14px;
+            line-height: 15.4px;
+            a {
+                color: $DarkGray;
+            }
+            a:hover {
+                text-decoration: underline;
+                cursor: pointer;
+                color: $DarkGray;
+            }
+        }
+        .bold-paragragh {
+            color: $DarkGray;
+        }
+        li {
+            list-style: disc;
+            color:$DarkGray;
+            a:hover {
+                text-decoration: underline;
+                cursor: pointer;
+            }
+        }
+        button {
+            @include modal-button-style;
+        }
+        .final-buttons {
+            .cancel-button {
+                background-color: $lightShadeGray;
+            }
+            .cancel-button:hover {
+                background-color: $Gray;
+            }
+            .accept-button {
+                background-color: $Purple;
+            }
+            .accept-button:hover {
+                background-color: $hoverPurple;
+            }
+        }
+        //Javascript onclick Classes
+        .modal-button.active-button {
+            background-color: $Purple;
+        }
+        .modal-button.active-button:hover {
+            background-color: $hoverPurple;
+        }
+        .modal-button.inactive-button {
+            background-color: $White;
+            color: $FontColorGray;
+            border: 1px solid $ButtonBorderColor;
+        }
+
+        #detailed-button {
+            height: auto;
+            background-color: $lightShadeGray;
+        }
+        #detailed-button:hover {
+            height: auto;
+            background-color: $Gray;
+        }
+        .final-buttons {
+            margin: 30px 0px;
+        }
+        .table-container{
+            overflow-x: scroll;
+            max-width: 923px;
+            table {
+                margin-top: 20px;
+                thead {
+                    color: $White;
+                    background-color: $tableHeader;
+                    tr {
+                        td {
+                            border-left: 1px solid $White;
+                            padding: 15px;
+                        }
+                    }
+                }
+                tbody {
+                    background-color: $tableBody;
+                    tr {
+                        td {
+                            border: 1px solid $White;
+                            padding: 15px;
+                            .flexed-dis-en{
+                                display: flex;
+                                flex-direction: row;
+                                button {
+                                    @include modal-button-style;
+                                    margin: 2px;
+                                }
+                                .modal-button.active-button {
+                                    background-color: $Purple;
+                                }
+                                .modal-button.active-button:hover {
+                                    background-color: $hoverPurple;
+                                }
+                                .modal-button.inactive-button {
+                                    background-color: $White;
+                                    color: $FontColorGray;
+                                    border-color: $ButtonBorderColor;
+                                }
+                            }
+                            .table-cell-description {
+                                line-height: 23px;
+                            }
+                            .tcpp{
+                                .tcpp-button {
+                                    background-color: $tableButtonColor;
+                                    height: 32px;
+                                }
+                                .tcpp-button:hover {
+                                    background-color: $tableButtonColorHover;
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+@media (min-width:768px) {
+    .modal-popUp {
+         background-color: rgba(0,0,0,0.4);
+        .modal-holder {
+            display: flex;
+            justify-content: center;
+            .modal-container {
+                background-color: $White;
+                display: block;
+                width: 598px;
+                height: 492px;
+                border-radius: 5px;
+                .modal-header-container {
+                    .modal-header {}
+                }
+                .modal-paragraph-container {
+                    height: 335px;
+                    .modal-paragragh {}
+                }
+                .modal-button-container {
+                    display: flex;
+                    width: 100%;
+                    .modal-button {
+                        border: none;
+                        border-radius: 3px;
+                        text-transform: uppercase;
+                        padding: 5px 15px;
+                        width: 50%;
+                        font-size: 17px;
+                    }
+                    #change-settings {
+                        background-color: $lightShadeGray;
+                        margin: 0px 15px 0px 0px;
+                    }
+                    #change-settings:hover {
+                        background-color: $Gray;
+                    }
+
+                    #accept-cookies {
+                        background-color: $Purple;
+                        margin: 0px 0px 0px 15px;
+                    }
+                    #accept-cookies:hover {
+                        background-color: $hoverPurple;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:992px) {
+    .change-settings-modal {
+        .container {
+            .buttons {
+                display: flex;
+                justify-content: flex-end;
+                .modal-button {
+                    margin: 2px;
+                }
+            }
+            .final-buttons {
+                display: flex;
+                justify-content: flex-end;
+                .cancel-button,
+                .accept-button {
+                    margin: 2px;
+                }
+            }
+        }
+    }
+}
+
+#leadForensicsTable,
+#hotjarTable,
+#facebookTable,
+#googleTable,
+#tawkTable {
+    cursor: pointer;
+}
+
+
+
+//Javascript onclick Classes
+.active-button {
+    background-color: $Purple;
+}
+.inactive-button {
+    background-color: $White;
+    color: $FontColorGray;
+    border: 1px solid $ButtonBorderColor;
+}
+
+.hideBtn {
+    display: block;
+}
+
+.hideTable {
+    display: none;
+}
+.showTable {
+    display: block;
+}

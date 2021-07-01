@@ -1,0 +1,104 @@
+@import "_colors";
+
+.carousel-container{
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 22px;
+    width: 100vw;
+    margin-bottom: 20px;
+    z-index: 1;
+    .carousel{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        height: 22px;
+        .carousel-inner{
+            display: flex;
+            justify-content: space-around;
+            width: 186px;
+            .carousel-circle{
+                display: block;
+                position: relative;
+                width: 22px;
+                .circle{
+                    display: block;
+                    position: absolute;
+                    top: calc(50% - (10px / 2));
+                    left: calc(50% - (10px / 2));
+                    width: 11px;
+                    height: 11px;
+                    border-radius: 30px;
+                    background-color: $carouselUnfill;
+                    cursor: pointer;
+                }
+                .active {
+                    background-color: $White;
+                }
+                .circle.active::after {
+                    content: " ";
+                    display: block;
+                    position: absolute;
+                    width: 21px;
+                    height: 21px;
+                    border-radius: 22px;
+                    border: 2px solid $White;
+                    top: calc(50% - (20px / 2));
+                    left: calc(50% - (20px / 2));
+                }
+            }
+            .carousel-circle:hover .circle{
+                background-color: $CarouselHover;
+            }
+            .carousel-circle:hover .circle.active {
+                background-color: $CarouselActiveHover;
+            }
+        }
+    }
+}
+
+#web-design,
+#IT-support,
+#telecomm-services,
+#bespoke-design,
+#digital-marketing,
+#cyber-security{}
+
+
+.web-design{
+    background-image: url("../images/slide-images/web-design-banner.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.IT-support{
+    background-image: url("../images/slide-images/it-support-banner.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.telecomm-services{
+    background-image: url("../images/slide-images/telecomm-services-banner.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.bespoke-design{
+    background-image: url("../images/slide-images/bespoke-design-banner.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.digital-marketing{
+    background-image: url("../images/slide-images/digital-marketing-banner.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.cyber-security{
+    background-image: url("../images/slide-images/cyber-security-banner.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}

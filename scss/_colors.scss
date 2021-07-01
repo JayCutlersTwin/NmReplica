@@ -1,6 +1,4 @@
 
-
-
 // Main Colors
 
     $Blue: #4183d7;
@@ -19,8 +17,11 @@
     $Gray:#666666;
     $LighterGray:#ebebeb;
     $LightGray:#dddddd;
+    $lightShadeGray: #999aa2;
     $SlateGray:#67809f;
-
+    $ModalGrayBorder: #e5e5e5;
+    $FontColorGray: #AAAAAA;
+    $ButtonBorderColor: #f0f0f0;
 
     $SeaGreen: #2ecc71;
     $EuGreen:#25a25a;
@@ -40,18 +41,50 @@
 
     $White: #ffffff;
 
+//carousel colors
+    $carouselUnfill: rgba(255,255,255, .5);
+    $CarouselHover: #869791;
+    $CarouselActiveHover: $White;
+
+//section Colors
+    $webDesign: #926fb1;
+    $itSupport: #4183d7;
+    $telecommServices: #d64561;
+    $bespokeSoftware: #67809f;
+    $digitalMarketing: #2ecc71;
+    $cyberSecurity: #f62459;
+
+//Section Hover Colors
+    $webDesignHover: #79539a;
+    $itSupportHover: #286abd;
+    $telecommServicesHover: #bc2c28;
+    $bespokeSoftwareHover: #526781;
+    $digitalMarketingHover: #25a25a;
+    $cyberSecurityHover: #de093f;
+
+
 // Main Nav Colors
-    $navBarItem1: #926fb1;
-    $navBarItem2: #4183d7;
-    $navBarItem3: #d64561;
-    $navBarItem4: #67809f;
-    $navBarItem5: #2ecc71;
-    $navBarItem6: #f62459;
+    $navBarItem1: $webDesign;
+    $navBarItem2: $itSupport;
+    $navBarItem3: $telecommServices;
+    $navBarItem4: $bespokeSoftware;
+    $navBarItem5: $digitalMarketing;
+    $navBarItem6: $cyberSecurity;
 
 // Sub Menu Colors
-    $subMenuItem1: #79539a;
-    $subMenuItem2: #286abd;
-    $subMenuItem3: #bc2c28;
-    $subMenuItem4: #526781;
-    $subMenuItem5: #25a25a;
-    $subMenuItem6: #de093f;
+    $subMenuItem1: $webDesignHover;
+    $subMenuItem2: $itSupportHover;
+    $subMenuItem3: $telecommServicesHover;
+    $subMenuItem4: $bespokeSoftwareHover;
+    $subMenuItem5: $digitalMarketingHover;
+    $subMenuItem6: $cyberSecurityHover;
+
+// Table Colors
+    $tableHeader: #AAAAAA;
+    $tableBody: #DDDDDD;
+    $tableButtonColor: $lightShadeGray;
+    $tableButtonColorHover: $DullGray;
+
+// Menu Colors
+    $MenuHoverColor: hsla(0, 0%, 100%, 0.05);
+    $MenuBtnHover: $russBlue;
