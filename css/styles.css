@@ -399,6 +399,11 @@
   display: block;
 }
 
+@media (min-width: 280px) and (max-width: 420px) {
+  .modal-popUp .set-modal-block {
+    display: block;
+  }
+}
 .side-bar {
   position: fixed;
   transform: translateX(258px);
@@ -2530,14 +2535,12 @@ header {
   width: 100%;
   display: block;
   top: -176px;
-  transition-delay: 5s;
   transition: all 0.5s ease;
 }
 
 .scrollUpheader {
   position: fixed;
   top: 0px;
-  transition-delay: 5s;
   transition: all 0.5s ease;
 }
 
@@ -2547,13 +2550,12 @@ header {
   }
 
   .main-header {
-    transition-delay: 5s;
+    top: -117px;
     transition: all 0.5s ease;
   }
   .main-header .scrollUpheader {
     position: fixed;
     top: 0px;
-    transition-delay: 5s;
     transition: all 0.5s ease;
   }
 }
@@ -2563,14 +2565,12 @@ header {
   }
 
   .main-header {
-    transition-delay: 5s;
-    transition: all 0.5s ease;
+    top: -206px;
   }
 
   .scrollUpheader {
     position: fixed;
     top: 0px;
-    transition-delay: 5s;
     transition: all 0.5s ease;
   }
 }

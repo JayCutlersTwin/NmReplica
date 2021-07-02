@@ -48,7 +48,7 @@ window.onload = () => {
     acceptBtn.addEventListener('click', acceptTheCookieFunc);
 
     if (showModalPopup(storageType)) {
-        modalPopup.style.display = "flex";
+        modalPopup.classList.add("set-modal-block");
         HTMLLock.classList.add("HTMLTAGscrollLock");
     } else {
         modalPopup.style.display = "none";

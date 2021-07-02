@@ -1994,14 +1994,12 @@ header {
     width: 100%;
     display: block;
     top: -176px;
-    transition-delay: 5s;
     transition: all .5s ease;
 }
 
 .scrollUpheader {
     position: fixed;
     top: 0px;
-    transition-delay: 5s;
     transition: all .5s ease;
 }
 
@@ -2010,12 +2008,11 @@ header {
         height: 117px;
     }
     .main-header {
-        transition-delay: 5s;
+        top: -117px;
         transition: all .5s ease;
         .scrollUpheader {
             position: fixed;
             top: 0px;
-            transition-delay: 5s;
             transition: all .5s ease;
         }
     }
@@ -2025,13 +2022,11 @@ header {
         height: 206px;
     }
     .main-header {
-        transition-delay: 5s;
-        transition: all .5s ease;
+        top: -206px;
     }
     .scrollUpheader {
         position: fixed;
         top: 0px;
-        transition-delay: 5s;
         transition: all .5s ease;
     }
 }

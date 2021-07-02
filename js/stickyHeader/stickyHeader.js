@@ -60,11 +60,20 @@
         if(currentDirection === 2 && currentScroll <= threshold) {
             header.classList.remove('scrollUpheader');
             console.log("remove class");
+
         } else if(currentDirection === 1 && currentScroll <= threshold) {
             console.log("do nothing");
+
+        } else if(currentDirection === 2) {
+            header.classList.remove('scrollUpheader');
+            header.classList.add('lockBody');
+            console.log("remove class scroll down");
+
         } else if(currentDirection === 1) {
             header.classList.add('scrollUpheader');
+            header.classList.remove('lockBody');
             console.log("add class");
+
         } else {
             toggled = false;
         }

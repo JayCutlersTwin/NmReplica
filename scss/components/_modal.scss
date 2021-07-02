@@ -330,3 +330,11 @@
 .showTable {
     display: block;
 }
+
+@media (min-width: 280px) and (max-width: 420px) {
+    .modal-popUp {
+        .set-modal-block {
+            display: block;
+        }
+    }
+}
