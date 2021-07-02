@@ -2044,6 +2044,7 @@ a .block-links {
 }
 #nl-form label strong {
   line-height: 2em;
+  cursor: pointer;
 }
 
 #Recieve {
