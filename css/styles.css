@@ -514,7 +514,7 @@
 }
 .shiftSidemenuLeft {
   transform: translateX(0px);
-  transition: all 0 0.5s;
+  transition: all 0.5s;
   -ms-transition: all 0.5s;
   -ms-transform: translateX(0px);
 }
@@ -563,7 +563,7 @@
 
   .shiftSidemenuLeft {
     transform: translateX(0px);
-    transition: all 0 0.5s;
+    transition: all 0.5s;
     -ms-transition: all 0.5s;
     -ms-transform: translateX(0px);
   }
@@ -2437,8 +2437,8 @@ footer ul li a:hover {
   }
 }
 /* ================ Banner ================== */
-@media (min-width: 993px) {
-  #onlyOneMedia {
+@media (min-width: 992px) {
+  .onlyOneMedia {
     padding-left: 25px;
   }
 }

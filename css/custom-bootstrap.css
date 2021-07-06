@@ -307,4 +307,8 @@ h1 {
   .makeBlock {
     display: block;
   }
+
+  .onlyOneMedia {
+    padding-left: 25px !important;
+  }
 }

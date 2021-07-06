@@ -90,6 +90,7 @@ h1 {
     .banner-text-con .container {
         text-align: center;
     }
+
 }
 
 /* ================ blocks ================== */
@@ -314,5 +315,8 @@ h1 {
 @media (min-width:992px) and (max-width:1259px) {
     .makeBlock {
         display: block;
+    }
+    .onlyOneMedia {
+        padding-left: 25px !important;
     }
 }
