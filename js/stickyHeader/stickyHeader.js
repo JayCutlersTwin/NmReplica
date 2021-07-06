@@ -1,4 +1,3 @@
-(function(){
 
     var doc = document.documentElement;
     var w = window;
@@ -6,9 +5,9 @@
     /*
     defines four variables: currentScroll, previousScroll, currentDirection and previousDirection
     */
-
-    // var currentScroll = previousScroll = w.scrollY || doc.scrollTop;
-    var currentScroll = previousScroll = w.pageYOffset || doc.scrollTop;
+    var previousScroll;
+    var previousDirection;
+    var currentScroll = previousScroll = w.scrollY || doc.scrollTop;
     var currentDirection = previousDirection = 0;
 
     /*
@@ -36,8 +35,7 @@
     var toggled;
 
     var checkScroll = function() {
-        // currentScroll = w.scrollY || doc.scrollTop;
-        currentScroll = w.pageYOffset || doc.scrollTop;
+        currentScroll = w.scrollY || doc.scrollTop;
         if(currentScroll > previousScroll) {
             // scrolled down
             currentDirection = 2;
@@ -100,8 +98,7 @@
     //Search Button hide and show.
     var searchButton = document.getElementById("button-addon2");
 
-
-    var showSearchInput = () => {
+    var showSearchInput = event => {
         const searchBarInput = document.getElementById("searchbar-input");
         const contactBtn = document.getElementById("contactBtn");
         const supportBtn = document.getElementById("supportBtn");
@@ -111,8 +108,6 @@
         contactBtn.classList.toggle('hideBtns');
         supportBtn.classList.toggle('hideBtns');
         searchBarCon.classList.toggle('full-searchbar');
-
     }
 
-    searchButton.addEventListener('click', showSearchInput)
-})();
+    searchButton.addEventListener('click', showSearchInput);
