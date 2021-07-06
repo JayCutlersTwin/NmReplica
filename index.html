@@ -446,10 +446,10 @@
         <div id="dontShow">
 
         </div>
-        <div id="wrapper" class="wrapper">
+
 
         <header id="fake">
-            <div class="main-header" id="full-Header">
+            <div class="main-header static" id="full-Header">
                 <div class="structure">
                     <div class="container">
                         <div class="inner-row">
@@ -461,7 +461,7 @@
 
 
 
-                                    <a href="#" class="button-support-link">
+                                    <a href="#" class="button-support-link" id="supportBtn">
                                         <div class="button-support">
                                             <span>
                                                 <img src="icons/mouse.svg" alt="Support button" id="icon-support">
@@ -470,7 +470,7 @@
                                         </div>
                                     </a>
 
-                                    <a href="#" class="button-contact-link">
+                                    <a href="#" class="button-contact-link" id="contactBtn">
                                         <div class="button-contact">
                                             <span>
                                                 <img src="icons/paper-plane-regular.svg" alt="Contact Button" id="icon-contact">
@@ -487,7 +487,7 @@
                                     </div>
 
     <!-- add click focus to search button to hide the contact and telephone button -->
-                                    <div class="search-bar">
+                                    <div class="search-bar" id="FULLSEARCH">
                                         <div class="input-group mb-3">
                                           <input type="text" class="form-control" placeholder="Search.." aria-label="Recipient's username" aria-describedby="button-addon2" id="searchbar-input">
                                           <button class="button-search" type="button" id="button-addon2"><img src="icons/135-search.svg" alt="search Button" id="icon-search"></button>
@@ -670,6 +670,8 @@
 
         </header>
 
+
+    <div id="wrapper" class="wrapper">
 
     <!--                        Banner                  -->
         <div class="first-con">
@@ -1265,8 +1267,9 @@
         <script src="dist/cookie-dist.js" charset="utf-8"></script>
         <script src="js/carousel/slick.min.js" charset="utf-8"></script>
         <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+        <script src="js/stickyHeader/stickyHeader.js" charset="utf-8"></script>
         <script src="dist/sidebar-dist.js" charset="utf-8"></script>
-        <script src="dist/stickyHeader-dist.js" charset="utf-8"></script>
+        <!-- <script src="dist/stickyHeader-dist.js" charset="utf-8"></script> -->
 
         <script type="text/javascript">
             // $(() => {

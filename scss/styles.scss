@@ -1994,13 +1994,15 @@ header {
     width: 100%;
     display: block;
     top: -176px;
-    transition: all .5s ease;
+    transition: all .5s ease !important;
+    -ms-transition: all 0.5s !important;
 }
 
 .scrollUpheader {
     position: fixed;
     top: 0px;
-    transition: all .5s ease;
+    transition: all .2s ease;
+    -ms-transition: all .2s ease;
 }
 
 @media (min-width: 768px) {
@@ -2009,12 +2011,14 @@ header {
     }
     .main-header {
         top: -117px;
-        transition: all .5s ease;
-        .scrollUpheader {
-            position: fixed;
-            top: 0px;
-            transition: all .5s ease;
-        }
+        transition: all .2s ease;
+        -ms-transition: all .2s ease;
+    }
+    .scrollUpheader {
+        position: fixed;
+        top: 0px;
+        transition: all .2s ease;
+        -ms-transition: all .2s ease;
     }
 }
 @media (min-width: 992px) {
@@ -2023,11 +2027,14 @@ header {
     }
     .main-header {
         top: -206px;
+        transition: all .2s ease;
+        -ms-transition: all .2s ease;
     }
     .scrollUpheader {
         position: fixed;
         top: 0px;
-        transition: all .5s ease;
+        transition: all .2s ease;
+        -ms-transition: all .2s ease;
     }
 }
 
@@ -2054,7 +2061,24 @@ header {
     transform: rotate(225deg);
     transition: all .2s;
 }
-
 .lockBody {
     position: fixed;
+    transition: all .2s ease;
+    -ms-transition: all .2s ease;
+}
+
+@media (min-width:992px) and (max-width:1259px) {
+    .lockBody {
+        position: fixed;
+        transition: all .2s ease;
+        -ms-transition: all .2s ease;
+    }
+
+    .hideBtns {
+        display: none;
+    }
+
+    .full-searchbar {
+        margin-left: 155px;
+    }
 }

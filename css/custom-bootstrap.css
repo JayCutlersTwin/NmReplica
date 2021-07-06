@@ -303,3 +303,8 @@ h1 {
     min-height: 79px;
   }
 }
+@media (min-width: 992px) and (max-width: 1259px) {
+  .makeBlock {
+    display: block;
+  }
+}

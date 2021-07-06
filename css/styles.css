@@ -251,7 +251,7 @@
   margin: 30px 0px;
 }
 .change-settings-modal .container .table-container {
-  overflow-x: scroll;
+  overflow-x: auto;
   max-width: 923px;
 }
 .change-settings-modal .container .table-container table {
@@ -515,13 +515,17 @@
 .shiftSidemenuLeft {
   transform: translateX(0px);
   transition: all 0 0.5s;
+  -ms-transition: all 0.5s;
+  -ms-transform: translateX(0px);
 }
 
 .shiftLeft {
   transform: translateX(-258px);
   left: 0px;
   position: absolute;
-  transition: all 0.5s;
+  transition: all 0.5s !important;
+  -ms-transition: all 0.5s !important;
+  -ms-transform: translateX(-258px);
 }
 
 .dontShow {
@@ -535,20 +539,42 @@
   position: fixed;
   background-color: black;
   opacity: 0.5;
-  z-index: 2;
+  z-index: 4;
+  -ms-transition: all 0.5s;
+  -ms-transform: translateX(-258px);
+}
+
+.shiftHeaderLeft {
+  transform: translateX(-258px);
+  left: 0px;
+  transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -ms-transform: translateX(-258px);
 }
 
 @media (min-width: 992px) {
+  .shiftHeaderLeft {
+    transform: translateX(-350px);
+    left: 0px;
+    transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -ms-transform: translateX(-350px);
+  }
+
   .shiftSidemenuLeft {
     transform: translateX(0px);
     transition: all 0 0.5s;
+    -ms-transition: all 0.5s;
+    -ms-transform: translateX(0px);
   }
 
   .shiftLeft {
     transform: translateX(-350px);
     left: 0px;
     position: absolute;
-    transition: all 0.5s;
+    transition: all 0.5s !important;
+    -ms-transition: all 0.5s !important;
+    -ms-transform: translateX(-350px);
   }
 
   .dontShow {
@@ -562,9 +588,14 @@
     position: fixed;
     background-color: black;
     opacity: 0.5;
-    z-index: 2;
+    -ms-transition: all 0.5s;
+    -ms-transform: translateX(-258px);
   }
 }
+.static {
+  position: static;
+}
+
 /* ================Partials================== */
 /* ================Main================== */
 * {
@@ -2535,13 +2566,15 @@ header {
   width: 100%;
   display: block;
   top: -176px;
-  transition: all 0.5s ease;
+  transition: all 0.5s ease !important;
+  -ms-transition: all 0.5s !important;
 }
 
 .scrollUpheader {
   position: fixed;
   top: 0px;
-  transition: all 0.5s ease;
+  transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
 }
 
 @media (min-width: 768px) {
@@ -2551,12 +2584,15 @@ header {
 
   .main-header {
     top: -117px;
-    transition: all 0.5s ease;
+    transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
   }
-  .main-header .scrollUpheader {
+
+  .scrollUpheader {
     position: fixed;
     top: 0px;
-    transition: all 0.5s ease;
+    transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
   }
 }
 @media (min-width: 992px) {
@@ -2566,12 +2602,15 @@ header {
 
   .main-header {
     top: -206px;
+    transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
   }
 
   .scrollUpheader {
     position: fixed;
     top: 0px;
-    transition: all 0.5s ease;
+    transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
   }
 }
 .beforeAnimate::before {
@@ -2596,4 +2635,22 @@ header {
 
 .lockBody {
   position: fixed;
+  transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+}
+
+@media (min-width: 992px) and (max-width: 1259px) {
+  .lockBody {
+    position: fixed;
+    transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+  }
+
+  .hideBtns {
+    display: none;
+  }
+
+  .full-searchbar {
+    margin-left: 155px;
+  }
 }
