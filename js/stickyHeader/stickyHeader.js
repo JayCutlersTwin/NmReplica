@@ -64,19 +64,22 @@
             //scroll down in threshold
             header.classList.remove('scrollUpheader');
             header.classList.remove('lockBody');
+            header.style.top = "";
             console.log("remove class");
 
         } else if(currentDirection === 1 && currentScroll <= threshold) {
             //scroll up in threshold
             header.classList.remove('scrollUpheader');
             header.classList.remove('lockBody');
+            header.style.top = "0px";
             console.log("do nothing");
 
         } else if(currentDirection === 2) {
             //scroll down
             header.classList.remove('scrollUpheader');
             header.classList.add('lockBody');
-            console.log("111111111111111");
+            header.style.top = "";
+            console.log("Scrolling Down");
             header.classList.remove('static');
 
         } else if(currentDirection === 1) {

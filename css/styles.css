@@ -569,7 +569,7 @@
   }
 
   .shiftLeft {
-    transform: translateX(-350px);
+    transform: translateX(-333px);
     left: 0px;
     position: absolute;
     transition: all 0.5s !important;
@@ -582,14 +582,15 @@
     height: 100%;
     width: 100%;
     right: 0px;
-    transform: translateX(-258px);
+    transform: translateX(-350px);
     transition: all 0.5s;
     display: block;
     position: fixed;
     background-color: black;
     opacity: 0.5;
     -ms-transition: all 0.5s;
-    -ms-transform: translateX(-258px);
+    -ms-transform: translateX(-350px);
+    overflow: auto;
   }
 }
 .static {
@@ -1328,7 +1329,7 @@ span icon-1 a:hover {
 .banner-con .container {
   display: block;
   position: relative;
-  top: 150px;
+  align-self: center;
 }
 
 .banner-outer {
@@ -1350,7 +1351,8 @@ span icon-1 a:hover {
 
 .banner-text-con {
   position: relative;
-  display: block;
+  display: flex;
+  height: 100%;
 }
 .banner-text-con h1 {
   font-size: 48px;

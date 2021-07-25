@@ -5,6 +5,7 @@ function openMenu() {
     $('#dontShow').addClass("dontShow");
     $('#HTMLTAG').addClass("HTMLTAGscrollLock");
     $('#full-Header').addClass("shiftLeft");
+    // $('#full-Header').css("top", "0px");
 }
 function closeMenu() {
     if ($('#wrapper').hasClass("shiftLeft")) {
@@ -16,6 +17,7 @@ function closeMenu() {
         $('.sandwich').removeClass("afterAnimate");
         $('#HTMLTAG').removeClass("HTMLTAGscrollLock");
         $('#full-Header').removeClass("shiftLeft");
+        // $('#full-Header').css("top", "");
     }
 }
 

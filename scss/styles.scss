@@ -753,7 +753,7 @@ span icon-1 a:hover {
 .banner-con .container{
     display: block;
     position: relative;
-    top: 150px;
+    align-self: center;
 }
 
 .banner-outer {
@@ -777,7 +777,8 @@ span icon-1 a:hover {
 
 .banner-text-con {
     position: relative;
-    display: block;
+    display: flex;
+    height: 100%;
     h1 {
         font-size: 48px;
         line-height: 39.6px;
