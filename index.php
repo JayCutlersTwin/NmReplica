@@ -3,9 +3,9 @@
     require_once __DIR__ . '/php/modal.php';
     require_once __DIR__ . '/php/side-menu.php';
     require_once __DIR__ . '/php/nav.php';
+    require_once __DIR__ . '/php/wrapper.php';
 ?>
 
-        <div id="wrapper" class="wrapper">
     <!--                        Banner                  -->
         <div class="first-con">
             <div class="second-con">

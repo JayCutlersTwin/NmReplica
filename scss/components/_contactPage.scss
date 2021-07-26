@@ -1,0 +1,93 @@
+@import "_colors";
+
+.main-section {
+
+    .container {
+
+        .main-Page-smallHeader {
+            display: none;
+        }
+        .main-Page-LargeHeader {
+            display: block;
+        }
+        .main-page-content {
+
+            .three-Offices {
+                margin-bottom: 20px;
+                .office-card {
+                    .office-image {
+                        a {
+                            img {
+                                width: 100%;
+                                height: auto;
+                            }
+                        }
+                    }
+                    .office-description {
+                        padding:30px;
+                        h2 {}
+                        p {}
+                        .telephone-Number {
+                            a {}
+                        }
+                        .view-more-card {
+                            a {}
+                        }
+                    }
+                }
+                .office-map {
+                    position: relative;
+                    height: 300px;
+                    iframe {
+                        height: 300px;
+                        width: -webkit-fill-available;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .main-section {
+
+        .container {
+
+            .main-Page-smallHeader {}
+            .main-Page-LargeHeader {}
+            .main-page-content {
+
+                .three-Offices {
+                    .office-card {
+                        .office-image {}
+                        .office-description {}
+                    }
+                    .office-map {}
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .main-section {
+
+        .container {
+
+            .main-Page-smallHeader {}
+            .main-Page-LargeHeader {
+                display: none;
+            }
+            .main-page-content {
+
+                .three-Offices {
+                    .office-card {
+                        .office-image {}
+                        .office-description {}
+                    }
+                    .office-map {}
+                }
+            }
+        }
+    }
+}
