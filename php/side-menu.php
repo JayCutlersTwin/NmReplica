@@ -5,7 +5,7 @@
                 <div class="main-nav-items">
                     <ul>
                         <li>
-                            <a href="#" class="main-sidebar-items-standout" id="sidebar-contactUS">Contact US</a>
+                            <a href="contact-us.php" class="main-sidebar-items-standout" id="sidebar-contactUS">Contact US</a>
                         </li>
                         <li>
                             <a href="#" class="main-sidebar-items-standout">

@@ -11,7 +11,7 @@
                         <div class="inner-row">
                             <div class="logo-con">
                                 <div class="main-logo">
-                                    <a class="navbar-logo" href="#">
+                                    <a class="navbar-logo" href="index.php">
                                         <img src="images/netmatters-logo.png" alt="netmatters-logo" id="logo">
                                     </a>
 

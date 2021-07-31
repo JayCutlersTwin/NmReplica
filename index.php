@@ -1,4 +1,5 @@
 <?php
+//Files Partials
     require_once __DIR__ . '/php/head.php';
     require_once __DIR__ . '/php/modal.php';
     require_once __DIR__ . '/php/side-menu.php';
@@ -289,107 +290,10 @@
         </div>
 
     <!--                Latest News                    -->
-        <section class="news">
-            <div class="container">
-                <div class="row align-items-start">
-                    <div class="col-lg-4 card1">
-                        <div class="card" >
-                            <div class="card-img-top">
-                                <a href="#" class="side-banner" id="side-banner1">Careers</a>
-                                <a href="#">
-                                    <img class="card-img-top pic" src="images/card-top-1.jpeg" alt="Card image cap">
-                                </a>
-                            </div>
-
-                            <div class="card-body">
-
-                                <div class="card-heading">
-                                    <a href="#"><h5 class="card-title">Web Project Manager</h5></a>
-                                </div>
-                                <div class="card-paragraph">
-                                    <p class="card-text">Salary Ra...</p>
-                                </div>
-
-                                <a href="#" class="card-btn" id="button1">Read More</a>
-
-                                <div class="createdby">
-                                    <img src="icons/user-1.jpeg" alt="User icon" class="user-icon">
-                                    <p class="author">
-                                        <strong>Posted by Tom Lancaster</strong><br>
-                                        23rd April 2021
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 card2">
-                        <div class="card">
-
-                            <div class="card-img-top">
-                                <a href="#">
-                                    <img class="card-img-top pic" src="images/card-top-2.jpeg" alt="Card image cap">
-                                </a>
-                                <a href="#" class="side-banner" id="side-banner2">News</a>
-                            </div>
-
-                            <div class="card-body">
-
-                                <div class="card-heading">
-                                    <a href="#"><h5 class="card-title" id="card-title2">Rob Becomes a Netmatters Director</h5></a>
-                                </div>
-                                <div class="card-paragraph">
-                                    <p class="card-text">Netmatters is constantly evolving and day-by-day it continues to grow in every aspect. Despit...</p>
-                                </div>
-
-                                <a href="#" class="card-btn" id="button2">Read More</a>
-
-                                <div class="createdby">
-                                    <img src="icons/user-2.png" alt="User icon" class="user-icon">
-                                    <p class="author">
-                                        <strong>Posted by Netmatters Ltd</strong><br>
-                                        21st April 2021
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div id="card3" class="col-lg-4 card3">
-                        <div class="card">
-
-                            <div class="card-img-top">
-                                <a href="#">
-                                    <img class="card-img-top pic" src="images/card-top-3.jpeg" alt="Card image cap">
-                                </a>
-                                <a href="#" class="side-banner" id="side-banner3">News</a>
-                            </div>
-
-                            <div class="card-body">
-
-                                <div class="card-heading">
-                                    <a href="#"><h5 class="card-title">Drowning in Spreadsheets? A business system m...</h5></a>
-                                </div>
-                                <div class="card-paragraph">
-                                    <p class="card-text">If like many business owners you find yourself creating large numbers of spreadsheets to keep...</p>
-                                </div>
-
-                                <a href="#" class="card-btn" id="button3">Read More</a>
-
-                                <div class="createdby">
-                                    <img src="icons/user-3.jpeg" alt="User icon" class="user-icon">
-                                    <p class="author">
-                                        <strong>Posted by James Gulliver</strong><br>
-                                        20th April 2021
-                                    </p>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <?php
+        //Database File
+        require_once __DIR__ . '/php/database.php';
+    ?>
 
     <!--                         Previous work                 -->
 

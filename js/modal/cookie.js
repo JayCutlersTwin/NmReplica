@@ -1,4 +1,6 @@
 
+// Not sure but if this dont work on all pages add page=/ to target the root of website
+
 const cookieStorage = {
     getItem: (key) => {
         const cookies = document.cookie
@@ -61,14 +63,6 @@ window.onload = () => {
         - if canceled lock again
         - if accepted unlock
     */
-
-    // if (modalPopup.style.display === "block") {
-    //     wrapper.classList.add("lockBody");
-    // } else {
-    //     console.log("cookie is there");
-    // }
-
-
 
     //CHANGE SETTINGS POPUP
 

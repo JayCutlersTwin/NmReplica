@@ -5,7 +5,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Netmatters | Full Service digital agency | Norwich, Norfolk Netmatters</title>
-        <link rel="shortcut icon" type="image/x-icon" href="icons/user-2.png" />
+        <link rel="shortcut icon" type="image/x-icon" href="icons/user2.png" />
         <link rel="stylesheet" href="css/slick.css">
         <link rel="stylesheet" href="css/slick-theme.css">
         <link rel="stylesheet" href="css/styles.css">
