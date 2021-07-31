@@ -269,8 +269,8 @@
     <script src="dist/cookie-dist.js" charset="utf-8"></script>
     <script src="dist/stickyHeader-dist.js" charset="utf-8"></script>
     <script src="dist/sidebar-dist.js" charset="utf-8"></script>
-    <script src="js/contactPage/contactPage.js"></script>
-    <script src="js/contactPage/form-validation.js"></script>
+    <script src="dist/contactPage-dist.js"></script>
+    <script src="dist/form-validation-dist.js"></script>
     <!-- <script>
         if ( window.history.replaceState ) {
           window.history.replaceState( null, null, window.location.href );

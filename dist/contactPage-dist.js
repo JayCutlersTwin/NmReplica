@@ -1,0 +1,1 @@
+!function(){var e=document.getElementById("OUT-OF-HOURS-DESCRIPTION");document.getElementById("HEADING-AND-ARROW").addEventListener("click",(function(t){e.classList.toggle("HIDE")}))}();
