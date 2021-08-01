@@ -184,10 +184,10 @@
 
     SubjectInput.addEventListener("focusout", (event) => {
         var SubjectValue = document.getElementById("SUBJECT").value;
-        if (checkIfValidSubject(SubjectValue)) {
-            SubjectInput.style.borderColor = "#ccc";
-        } else {
+        if (SubjectValue == "" || SubjectValue == " ") {
             SubjectInput.style.borderColor = "red";
+        } else {
+            SubjectInput.style.borderColor = "#ccc";
             return false;
         }
     });
@@ -234,10 +234,10 @@
 
     MessageInput.addEventListener("focusout", (event) => {
         var MessageValue = document.getElementById("MESSAGE").value;
-        if (checkIfValidMessage(MessageValue)) {
-            MessageInput.style.borderColor = "#ccc";
-        } else {
+        if (MessageValue == "" || MessageValue == " ") {
             MessageInput.style.borderColor = "red";
+        } else {
+            MessageInput.style.borderColor = "#ccc";
             return false;
         }
     });
@@ -252,12 +252,25 @@
     });
 
 
+// PHP SUCCESS/Error Messages
+
     if (document.getElementById('NOTIFICATION')) {
         console.log('Element does exist');
         const notification = document.getElementById('NOTIFICATION');
         const close = document.getElementById('CLOSE');
             close.addEventListener('click', function() {
                 notification.style.display = 'none';
+            });
+    } else {
+        console.log("Element doesn't exist");
+    }
+
+    if (document.getElementById('THISISPhoneERROR')) {
+        console.log('Element does exist');
+        const notPhoneErr = document.getElementById('THISISPhoneERROR');
+        const closePhoneBTN = document.getElementById('CLOSEPHONEBTN');
+            closePhoneBTN.addEventListener('click', function() {
+                notPhoneErr.style.display = 'none';
             });
     } else {
         console.log("Element doesn't exist");

@@ -37,7 +37,7 @@
                 <div class="container">
                     <div class="heading-lists">
                         <ul>
-                            <li>Home</li>
+                            <li><a href="index.php">Home</a></li>
                             <li>Our Offices</li>
                         </ul>
                     </div>
@@ -197,8 +197,17 @@
                             } else if ($SUBMIT == 2){
                                 $HERE = "
                                     <div id='THISISERROR'; class='error'; style='color: #ffffff; background-color: #f62459; padding: 15px; margin-bottom: 20px; border: 1px solid transparent; border-radius: 2px; font-size: 16px; display: flex; justify-content: space-between; align-items: center;'>
-                                        Your message hasn't been sent!
+                                        Your Email is in invalid!
                                         <svg id='CLOSEBTN'; width='14px'; height='14px'; aria-hidden='true'; focusable='false'; data-prefix='fas'; data-icon='times'; class='svg-inline--fa fa-times fa-w-11'; role='img'; xmlns='http://www.w3.org/2000/svg'; viewBox='0 0 352 512';>
+                                            <path fill='currentColor'; d='M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z';></path>
+                                        </svg>
+                                    </div>";
+                                echo "$HERE";
+                            } else if ($SUBMIT == 3){
+                                $HERE = "
+                                    <div id='THISISPhoneERROR'; class='error'; style='color: #ffffff; background-color: #f62459; padding: 15px; margin-bottom: 20px; border: 1px solid transparent; border-radius: 2px; font-size: 16px; display: flex; justify-content: space-between; align-items: center;'>
+                                        Your phone number must be between 5-15 numbers long!
+                                        <svg id='CLOSEPHONEBTN'; width='14px'; height='14px'; aria-hidden='true'; focusable='false'; data-prefix='fas'; data-icon='times'; class='svg-inline--fa fa-times fa-w-11'; role='img'; xmlns='http://www.w3.org/2000/svg'; viewBox='0 0 352 512';>
                                             <path fill='currentColor'; d='M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z';></path>
                                         </svg>
                                     </div>";
@@ -212,30 +221,30 @@
                             <div class="row-inputs">
                                 <div class="input-container-form">
                                     <label for="NAME">Your Name</label>
-                                    <input class="form-input" type="text" name="fullName" id="NAME" required>
+                                    <input class="form-input" type="text" name="fullName" id="NAME" value="<?php if($SUBMIT == 2 || $SUBMIT == 3) { echo isset($_POST['fullName']) ? $_POST['fullName'] : ''; } ?>" required>
                                 </div>
 
                                 <div class="input-container-form">
                                     <label for="EMAIL">Your Email</label>
-                                    <input class="form-input" type="email" name="Email" id="EMAIL" required>
+                                    <input class="form-input" type="email" name="Email" id="EMAIL" value="<?php if($SUBMIT == 2 || $SUBMIT == 3) { echo isset($_POST['Email']) ? $_POST['Email'] : ''; } ?>" required>
                                 </div>
 
                             </div>
                             <div class="row-inputs">
                                 <div class="input-container-form">
                                     <label for="NUMBER">Your Telephone Number</label>
-                                    <input class="form-input" type="number" name="phoneNumber" id="NUMBER" required>
+                                    <input class="form-input" type="number" name="phoneNumber" id="NUMBER" value="<?php if($SUBMIT == 2 || $SUBMIT == 3) { echo isset($_POST['phoneNumber']) ? $_POST['phoneNumber'] : ''; } ?>" required>
                                 </div>
 
                                 <div class="input-container-form">
                                     <label for="SUBJECT">Subject</label>
-                                    <input class="form-input" type="text" name="subject" id="SUBJECT" required>
+                                    <input class="form-input" type="text" name="subject" id="SUBJECT" value="<?php if($SUBMIT == 2 || $SUBMIT == 3) { echo isset($_POST['subject']) ? $_POST['subject'] : ''; } ?>" required>
                                 </div>
 
                             </div>
 
                             <label for="MESSAGE">Message</label>
-                            <textarea class="form-input" name="message" id="MESSAGE" rows="10" cols="50" required></textarea>
+                            <textarea class="form-input" name="message" id="MESSAGE" rows="10" cols="50" required><?php if($SUBMIT == 2 || $SUBMIT == 3) { echo isset($_POST['message']) ? $_POST['message'] : ''; } ?></textarea>
 
                             <div class="checkbox-container">
                                 <div class="checkbox-outer">

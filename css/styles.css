@@ -620,6 +620,13 @@
 .main-section .main-page-header .main-Page-smallHeader .container .heading-lists ul li:not(:first-child)::before {
   content: " / ";
 }
+.main-section .main-page-header .main-Page-smallHeader .container .heading-lists ul li a {
+  text-decoration: none;
+  color: #333645;
+}
+.main-section .main-page-header .main-Page-smallHeader .container .heading-lists ul li a:hover {
+  text-decoration: underline;
+}
 .main-section .main-page-header .main-Page-LargeHeader {
   display: block;
   margin-left: -15px;
